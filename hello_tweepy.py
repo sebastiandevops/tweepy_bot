@@ -23,7 +23,7 @@ def tweet_job():
 
     # Tweet each line, then wait one minute and tweet another.
     # Note: this design means the bot runs continuously
-    myline = myline + '#thingsthathappened #history'
+    myline = myline + '#thingsthathappened'
     mystr = myline.replace("\n"," ")
     api.update_status(status=mystr)
     print(mystr)
