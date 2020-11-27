@@ -17,7 +17,7 @@ def tweet_job():
         print("Error during authentication")
     # Create a tweet
     # open Robin's Edgar Allen Poe data file and read every line into memory
-    with open('/home/sebastian/Holberton/tweepy_bot/history.txt','r') as filename:
+    with open('/path/to/file.txt','r') as filename:
         lines = filename.readlines()
     myline =random.choice(lines)
 
