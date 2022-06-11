@@ -19,7 +19,13 @@ def tweet_job():
     # open Robin's Edgar Allen Poe data file and read every line into memory
     with open('/home/sebastian/estudio/tweepy_bot/history.txt','r') as filename:
         lines = filename.readlines()
+
     myline =random.choice(lines)
+
+    deleted_line = lines.pop(lines.index(myline))
+
+    with open('/home/sebastian/estudio/tweepy_bot/history.txt','w') as filename:
+        filename.writelines(lines)
 
     # Tweet each line, then wait one minute and tweet another.
     # Note: this design means the bot runs continuously

@@ -161,7 +161,6 @@ VIH/sida (1920-1981).
 2000-2008: Vladímir Putin, presidente de Rusia.
 2000: Vicente Fox se convierte en presidente de México tras 72 años de dominio del Partido Revolucionario Institucional (PRI).
 2000-2005: Segunda Intifada palestina contra Israel.
-2000: Caída del régimen de Slobodan Milošević en Yugoslavia.
 1700-1721 Comienza la Gran Guerra del Norte entre la Rusia zarista y el Imperio sueco por la supremacía en el mar Báltico.
 1701 Federico I se convierte en rey del Reino de Prusia.
 1701 Osei Kofi Tutu I forma el Imperio asante.
@@ -173,7 +172,6 @@ VIH/sida (1920-1981).
 1702 Austria (partidaria del Archiduque Carlos), declara la guerra a Francia y España (partidarias de Felipe de Anjou). Comienza así la Guerra de Sucesión Española.
 1702 Muere Felipe de Lorena, amante más conocido de Felipe de Orleans, hermano menor de Luis XIV.
 1703 En Japón 47 rōnin atacan a Kira Yoshinaka y luego cometen harakiri.
-1703 En el norte de Europa se produce la Gran Tormenta de 1703 ―la más violenta registrada en la Historia de las Islas británicas―.
 1703 San Petersburgo es fundada por Pedro El Grande la cual sería la capital del Imperio ruso hasta 1918.
 1703-1711 La guerra de la Independencia de los Rákóczis contra la monarquía de los Habsburgo.
 1703 En Rusia se funda la aldea de San Petersburgo.
@@ -216,7 +214,6 @@ VIH/sida (1920-1981).
 1711 Fallece Luis de Francia, conocido como el Gran Delfín e hijo de Luis XIV, convirtiendo en heredero al nieto de este, Luis XV.
 1711 Nace Federico el Grande de Prusia
 1712 Durante la guerra de la sucesión española los franceses derrotan a una fuerza combinada holandesa-austriaca en la batalla de Denain.
-1712 Se crea la Máquina de Newcomen por Thomas Newcomen, asesorado por el físico Robert Hooke y por el mecánico John Calley.
 1712 Llega a Ámsterdam el primer envío de café de Java.
 1713 Se promulga la Ley Sálica que prohíbe el acceso de las mujeres al trono francés.
 1713 Se firma el Tratado de Utrecht con el cual finalizaría la guerra de la Sucesión española al año siguiente.
@@ -422,7 +419,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1754-1763 Guerra franco-india, el capítulo norteamericano de la Guerra de los Siete Años, se libra en América del Norte colonial, en su mayoría por los franceses y sus aliados contra los ingleses y sus aliados.
 1754 Comienzo de la guerra franco-india en las colonias de Norteamérica.
 1754 Fundación del Universidad de Columbia en la ciudad de Nueva York.
-1754 George Washington se rinde ante las tropas francesas en Fort Necessity.
 1754 Nace el futuro rey Luis XVI, nieto del rey Luis XV.
 1755 Ocurre el terremoto de Lisboa, uno de los terremotos más fuertes de la historia.
 1755-1763 La Expulsión de los Acadianos obliga a la transferencia de la población acadiana francesa desde Nueva Escocia y Nuevo Brunswick.
@@ -504,7 +500,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1775-1782 La primera guerra Anglo-Maratha.
 1775-1783 Se desarrolla la Guerra de Independencia de los Estados Unidos.
 1776 Adam Weishaupt funda a los Illuminati.
-1776 La Declaración de Independencia de los Estados Unidos es adoptada por el Congreso Continental en Filadelfia.
 1776 Adam Smith publica su obra La riqueza de las Naciones la cual trata sobre el liberalismo económico.
 1777 Comienza el estudio del comportamiento de los sólidos: rozamiento de Coulomb, teoría de choques de Carnot, criterio de fallo de Coulomb,...
 1778 La dinastía Tây Sơn se estableció en Vietnam.
@@ -557,7 +552,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1789 Antoine Lavoisier funda la Química moderna, y desmiente la teoría del flogisto. Se enuncia la ley de Lavoisier.
 1789 La revolución de Brabante.
 1790 Se obtiene el primer acero fundido.
-1790 Se funda la geodesia moderna.
 1790 Se impone la mecánica newtoniana y la teoría de la gravitación universal. A finales de siglo, Lagrange propone la síntesis lagrangiana de las ecuaciones de Newton.
 1790 Los Estados Unidos de Bélgica se proclaman después de la revolución de Brabante.
 1790 Perece Benjamin Franklin, padre fundador de los Estados Unidos.
@@ -1095,7 +1089,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 929: Abderramán III se proclama califa, nace el Califato de Córdoba.
 937: Batalla de Brunanburh en la que Æðelstān derrota a los vikingos de Dublín y a los celtas de Escocia y Strathclyde.
 939: La batalla de Simancas se convierte en una importante victoria de los cristianos contra los musulmanes.
-950: Se establece el Imperio Tuʻi Tonga en Oceanía.
 962: Nace el Sacro Imperio Romano-Germánico, primer Reich Alemán
 979: Reunificación de China bajo la Dinastía Song
 982: Una campaña militar de Otón II sobre Italia fracasa.
@@ -1652,7 +1645,6 @@ c. siglo VIII a. C.: se fabrica el spinning ("hilado") de mujer, en Susa (actual
 730 a. C.: Matán II sucede a Hiram II como rey de Tiro.
 730 a. C.: en la zona de Israel y Jordania sucede un terremoto que deja un saldo de «muchos muertos» (varios miles).4​
 727 a. C.: Babilonia se independiza de Asiria.
-724 a. C.: los asirios comienzan un sitio de cuatro años contra Tiro.
 722 a. C.: caída del Reino del Norte (o de Israel). El rey de Asiria se apodera de Samaria y parte de sus habitantes son deportados a Asiria.
 722 a. C.: comienza el Periodo primavera y otoño de la historia de China: el rey Ping de Zhou de la dinastía Zhou reina sólo de nombre.
 722 a. C.: el rey asirio Sargón II conquista el reino de Israel.
@@ -1671,8 +1663,6 @@ c. siglo VIII a. C.: se fabrica el spinning ("hilado") de mujer, en Susa (actual
 701 a. C.: el rey Ezequías de Judá, se rebela contra el rey Senaquerib de Asiria. Este saquea 46 ciudades sin llegar a tomar Jerusalén.
 700 a. C.: Tiro se rebela contra Asiria y forma un estado independiente.
 Siglo VIII a. C.: En la India se compone en este siglo (o en el siguiente) el texto de la Brijad-araniaka-upanishad (posiblemente la primera de las Upanishád, escrituras sagradas del hinduismo), que con su doctrina vedānta contradicen las doctrinas contenidas en el sagrado texto Rig-veda (de finales del segundo milenio a. C.), que viene siendo memorizado por varias escuelas sacerdotales (sakha: ‘ramas’) en comentarios bráhmana.
-900 a. C. aprox.: período protorientalizante en Tartessos (España). A partir de mediados del siglo comienza su expansión hacia Andalucía oriental.
-900-800 a. C.: en España depósito de la Ría de Huelva,1​ más de 400 piezas de metalurgia atlántica del Bronce final.2​
 900 a. C.: en la península italiana comienzan a desarrollarse los etruscos.
 892 a. C.: en la antigua Grecia, Megacles, rey de Atenas muere tras 30 años de reinado; lo sucede su hijo Diognetus.
 891 a. C.: en Asiria, Tukulti-Ninurta II sucede a su padre Adad-nirari II como rey.
@@ -1699,7 +1689,6 @@ Siglo VIII a. C.: En la India se compone en este siglo (o en el siguiente) el te
 850 a. C.: el comercio fenicio se interrumpe con el mar Rojo. Tiro funda su primera colonia de ultramar: Kition (en Chipre).
 850 a. C.: Takelot II sucede a Osorkon II como rey de Egipto.
 850 a. C.: los persas se establecen en el actual Irán.
-850 a. C.: en el actual Perú empieza a desarrollarse la cultura chavín.
 En la actual Roma (Italia) se establece un grupo de cabañas de manera permanente sobre el monte Palatino, una de las siete colinas de Roma.
 850-750 a. C.: en la península ibérica, Tartessos extiende su cultura por Andalucía oriental.3​
 842 a. C.: Salmanasar III arrasa el territorio de Damasco; el reino de Israel y las ciudades de Fenicia le envían tributo.
@@ -1716,7 +1705,6 @@ En la actual Roma (Italia) se establece un grupo de cabañas de manera permanent
 Siglo X a. C.: En la península ibérica, los fenicios realizan sus primeros viajes. Período inicial de Tartessos (hasta el 750 a. C.). En este período se forma la cultura tartésica.
 1000 a. C.: en la India comienza la edad de hierro; se desarrollan los reinos de Panchala, Kuru, Kosala y Videja.
 1000 a. C.: en España se forma el "Depósito de la Ría de Huelva", con objetos de la edad de bronce (según datación actual).
-997 a. C. (fecha tradicional): en Canaán se produce una gran revuelta de las diez tribus septentrionales contra las otras dos, luego de la muerte del unificador Salomón.
 993 a. C.: en Egipto, el faraón Amenemope sucede a Psusenes I.
 993 a. C.: en Grecia, el rey de Atenas Arquipo fallece tras 19 años de reinado. Es sucedido por su hijo Thersipo.
 984 a. C.: en Egipto, Osocor el Mayor sucede a Amenemope como rey.
@@ -1759,14 +1747,12 @@ Años 1090 a. C.: en Egipto, bajo el reinado de Ramsés XI, la crisis en ese pa�
 1064 a. C.: en China se registra la primera ballesta cho-ko-nu (ballesta de repetición), que data la dinastía Chou en este año, documento en el que se refieren al invento de una ballesta automática durante la dinastía Han (c. 200-220 a. C.).[cita requerida]
 Años 1050 a. C.: en la península ibérica, los fenicios introducen el olivo.
 1051 o 1020 a. C. (fechas tradicionales): en Palestina, Saúl se convierte en el primer rey de Israel.
-1050 a. C.: en Israel, los filisteos se apoderan del Arca de la Alianza de los israelitas.
 1048 a. C.: en Atenas muere el rey Medonte, después de un reinado de 20 años. Es sucedido por su hijo Acastus.
 1046 a. C.: en China, tras la batalla de Muye, Wuwang depone al rey Di Xin (la dinastía Shang), y funda la dinastía Zhou (1046-249 a. C.), como el «rey Wu de Zhou».
 1044 a. C.: muere el faraón Esmendes I; es sucedido por dos corregentes: Psusenes I y Neferjeres.
 1039 a. C.: en Egipto muere el rey Neferjeres.
 1027 a. C.: fecha tradicional del final de la dinastía Shang.
 1022 a. C.: en China se crea la dinastía Zhou, que terminará en el 256 a. C.
-1020 a. C.: se destruye la aldea Troya VIIb2.
 1012 a. C.: en Atenas (Grecia) muere el rey Acastus después de un reinado de 36 años y es sucedido por su hijo Archippus.
 1006 a. C. (fecha tradicional): en Israel, David sucede al rey Saúl.
 1004 a. C. (fecha tradicional): el rey David de Israel y de Judá conquista la villa jebusea de Jerusalén por medio de un contingente enviado a través de un manantial subterráneo, y la convierte en capital de su reino unificado.
@@ -1839,7 +1825,6 @@ Años 1120 a. C.: Ramsés IX, octavo faraón de la XX Dinastía de Egipto.
 Años 1100 a. C.: Llegan los dorios a la isla de Rodas.
 1100 a. C.: termina el Imperio Nuevo de Egipto.
 1100 a. C.: los fenicios desarrollan su alfabeto.
-Siglo XII a. C.: Invasores elamitas roban tesoros artísticos de Irak y los llevan a Susa.
 1300 a. C.: el rey chino Pán Gēng mueve la capital de la dinastía Shang a Yin.
 1300 a. C.: surge la cultura de los campos de urnas
 1300 a. C.: en Poverty Point (Luisiana) los lugareños empiezan a construir enormes trabajos en tierra y montañas de piedra.
@@ -1944,7 +1929,6 @@ H. 1492 a. C. (puede ser 1493 a. C.): muere Tutmosis I (Dinastía XVIII de Egipt
 1450 a. C.: en el mar Mediterráneo erupciona el volcán de la isla Santorini. Arrasa la isla de Creta.
 1450 a. C.: en los montes Ciminos (a unos 60 km al noroeste de la actual Roma) 35.5, 35.3, un terremoto de X grados (del I al XII) en la escala de Mercalli «traga» una aldea etrusca, y aumenta el tamaño del Lago de Vico. Se desconoce la cantidad de muertos.3​
 Siglo XV a. C.: En Egipto reina Amenhotep II.
-1420 a. C.: Creta es conquistada por Micenas; comienza el período micénico.
 1410 a. C.: en el mar Mediterráneo, la isla de Creta es arrasada por la erupción del volcán de la isla Santorini.
 1408 a. C.: en Egipto, probable inicio del reinado del faraón Amenofis II.
 1400 a. C.: en Creta, el Palacio de Minos es destruido por un incendio.
@@ -2304,8 +2288,6 @@ Siglo XXXV a. C.: En el Antiguo Egipto empieza a desarrollarse la escritura jero
 3350 a. C.: en el final del periodo Uruk (actual Irak) aparecen las formas más arcaicas de la escritura cuneiforme.
 3322 a. C.: nacimiento de Fu Xi, legendario rey de China (de acuerdo con el historiador James Legge).
 Siglo XXXIV a. C.: En Uruk (Sumeria, actual Iraq) aparece la escritura pictográfica. Tablillas de arcilla cocida procedentes de la antigua ciudad mesopotámica de Kish, son los documentos escritos más antiguos conocidos hasta el momento.
-3300 a 2900 a. C.: en Irlanda se construye el observatorio solar de Newgrange.
-3270 a. C.: en la I Región (Chile) comienza la ocupación de Pisagua Viejo.
 3255 a. C.: en un valle de los Alpes italianos es asesinado el cazador Otzi (46).3​
 3250-3000 a. C.: en Tarxien (Malta) se construyen tres templos megalíticos.
 3200 a. C.: en el Antiguo Egipto se escriben los primeros documentos en escritura jeroglífica.
@@ -2350,7 +2332,6 @@ Siglo XXXI a. C.: Cerca de Ur (Caldea) se erigen el templo de Al-Ubaid y la tumb
 Siglo XLIX a. C.: En la Europa Central se construyen pozos circulares (hasta el 4600 a. C.).
 4860 a. C.: en Oregón (EE. UU) se derrumba el monte Mazama, formando una caldera que más tarde se llenará de agua y se convertirá en el Lago del Cráter, el más profundo de esa región. Se considera que fue la erupción en el Holoceno más grande (de fuerza 7) en esta cordillera.
 Siglo XLIX a. C.: En Tesalia y el oeste y centro de Macedonia se difunde la cultura Dímini (hasta el 4000 a. C.), que gradualmente reemplaza a la cultura Sesklo.
-Siglo XLIX a. C.: En la parte meridional del actual Irak se funda Eridu.
 4700: en Bretaña (Francia), Gran Bretaña e Irlanda comienza la cultura de las piedras de Stonehenge (hasta el 2000 a. C.).
 4570 a. C.: en el Nilo (Egipto) empieza la cultura Merimde (hasta el 4250 a. C.).
 Siglo XLVI a. C.: En Europa se introduce (o inventa) el arado.
