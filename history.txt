@@ -1164,7 +1164,6 @@ Siglo VIII: Primer registro de la poesía japonesa del estilo Haiku.
 627: El emperador Heraclio derrota a los persas-sasánidas poniendo fin a las Guerras Romano-Sasánidas.
 632: Comienza la denominada expansión musulmana.
 634: Comienzan las Guerras arabo-bizantinas, muchos territorios bizantinos serán conquistados por los árabes.
-636: En la Batalla de al-Qadisiyya, los árabes vencen de manera decisiva a los Sasánidas.
 637: Los árabes conquistan Jerusalén y, al año siguiente, toda Palestina.
 642: Los árabes conquistan la provincia romana de Egipto, terminando con casi 1000 años de dominación greco-romana (desde la conquista del Egipto persa a manos de Alejandro Magno en el año 332 a.C.)
 651: Desaparece el Imperio Sasánida tras el asesinato de Yazdgerd III y la toma de Ctesifonte por los árabes. La región de Irán será gobernada por fuerzas extranjeras hasta el auge del Imperio Gaznávida en el Siglo XVI.
@@ -2400,7 +2399,6 @@ Siglo XLI a. C.: Los indoeuropeos de Rusia se difunden hacia el oeste a (Europa)
 Siglo XLI a. C.: Irak es invadida y poblada por los sumerios. Estos fundan ciudades que se constituyen en Estados independientes. La principal de ellas fue Ur.
 Siglo XLI a. C.: En Irak se crea el telar, una herramienta que permite ampliar el tamaño de los tejidos.
 Siglo XLI a. C.: En Egipto se fabrican los artefactos de metal más antiguos conocidos: agujas de cobre martillado.
-6000 a. C.: En el valle del Nilo (Egipto), en la India y en el sur de Europa aparece la agricultura: los humanos empiezan a desarrollar las primeras granjas estables del mundo.
 6000 a. C.: En Mesopotamia se inventa la rueda, el arado y el trillo.
 6000 a. C.: En Baluchistán (Pakistán) alcanza su máximo desarrollo el primer periodo de la cultura de Mehrgarh.
 6000 a. C.: En el noreste de la actual Siria comienza la cultura halafiense.
