@@ -192,7 +192,6 @@ VIH/sida (1920-1981).
 1704 Ocurre la Batalla de Málaga en el marco de la Guerra de sucesión española.
 1704 El peñón de Gibraltar pasa a ser parte del Reino Unido gracias a George Rooke, durante la Guerra de Sucesión Española.
 1704 Se libra la primera guerra de sucesión javanesa.
-1704 La Guerra de Sucesión Española, el conflicto bélico más importante de la década.
 1705 Almira la primera ópera de George Frideric Handel, se estrena.
 1705 Luis XIV de Francia asedia Niza para posteriormente conquistarla.
 1705 La Corona inglesa otorga a Isaac Newton el título de Sir.
@@ -738,7 +737,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1556: Mir Chakar Khan Rind capturado Delhi con el Emperador Humayun.
 1558: el reino de Inglaterra pierde la ciudad de Calais a manos de Francia, que llevaba 200 años bajo su control.
 1558: Francia recupera la ciudad de Calais, que llevaba 200 años bajo el control de Inglaterra.
-1560: en la batalla de Los Gelves, una flota otomana vence a una flota hispano-veneciana.
 1560: en Japón, Oda Nobunaga se hace con el control de todo el país.
 1565: los caballeros Hospitalarios, apoyados por el Imperio español vencen a los otomanos en el Sitio de Malta
 1568-1648: en los Países Bajos se produce la Guerra de los Ochenta Años, donde las Provincias Unidas se independizarán del dominio español.
@@ -1506,7 +1504,6 @@ c. 600 a. C.: en Corinto, un alfarero realiza el vaso (olpe). Se exhibe en el Mu
 c. 600 a. C.: un artista ático realiza un kuros (estatua de joven) de 1,95 m, que se encuentra actualmente en el Museo Metropolitano de Arte (en Nueva York). (Ver foto y datos)
 c. 600 a 580 a. C.: se construye el templo de Artemisa en Korkyra (Corfú).
 600 a. C.: fundación de Capua (25 km al norte de Nápoles).
-600 a. C.: los celtas fundan Milán (fecha aproximada).
 c. 600 a. C.: fundación de Pompeya.
 673 a. C.: Tras la muerte de Numa Pompilio, el tercer rey de Roma es Tulo Hostilio.
 667 a. C.: Combate entre Horacios y Curiacios.
@@ -1720,7 +1717,6 @@ Siglo X a. C.: En la península ibérica, los fenicios realizan sus primeros via
 922 a. C.: en China fallece el rey Mu de Zhou, de la dinastía Zhou.
 922 a. C.: en China, Zhou Gongwang se convierte en rey de la dinastía Zhou.
 909 a. C.: en Israel muere Jeroboam, el primer rey de la tribu hebrea del norte; es sucedido por su hijo Nadab.
-900 a. C.: en China muere el Zhou Gongwang, rey de la dinastía Zhou.
 900 a. C.: en la India, el pensador religioso Iagñavalkia compone (sin escribir, ya que todavía faltaban varios siglos para que los indios descubrieran la escritura) el Shatápata-bráhmana, donde describe el movimiento del Sol alrededor de la Tierra.
 c. 900 a. C.: en el norte de Italia surge la cultura de Villanova.
 c. 900 a. C.: Urartu se unifica en torno a una autoridad central.
@@ -1843,7 +1839,6 @@ h. 1279 − 1213 a. C.: en Tebas (Egipto) se construye el templo de Amón, Mut y
 1250 a. C.: en Micenas se construye la famosa Puerta de los Leones.
 1250 a. C.: en la península ibérica comienza el final de la Edad de Bronce en esa región. Cultura autóctona Cogotas I.1
 1250 a. C.: en México comienza la civilización olmeca.
-1250 a. C.: en Jericó (Palestina) (32.0, 35.5) se registra un terremoto de magnitud 6,5 en la escala sismológica de Richter.
 1235 a.c.: en Frigia Muere el rey Tungot
 1223 a. C.: en Ugarit (actual Siria) un astrólogo escribe la fecha de un eclipse total. La tableta de arcilla con la inscripción será encontrada en 1948.2​
 1213/1212 a. C.: en Egipto muere el faraón Ramsés II.
@@ -2348,7 +2343,6 @@ Siglo XLI a. C.: Los indoeuropeos de Rusia se difunden hacia el oeste a (Europa)
 4000 a. C.: los agricultores llegan a Britania.
 Siglo XLI a. C.: Irak es invadida y poblada por los sumerios. Estos fundan ciudades que se constituyen en Estados independientes. La principal de ellas fue Ur.
 Siglo XLI a. C.: En Irak se crea el telar, una herramienta que permite ampliar el tamaño de los tejidos.
-Siglo XLI a. C.: En Egipto se fabrican los artefactos de metal más antiguos conocidos: agujas de cobre martillado.
 5000-4900 a. C.: grupos nómadas se establecen en el valle del río Nilo (río de África que nace en el lago Victoria y desemboca en el mar Mediterráneo). Se agruparon en tribus y posteriormente en aldeas.
 5000-4900 a. C.: En la actual Irak se desarrolla un sistema de escritura, posiblemente ideográfico.
 5000-4900 a. C.: En la cultura Vincha (Serbia) se desarrolla la «escritura Vinča» y se escriben las tablas de Tartaria (Rumanía).
