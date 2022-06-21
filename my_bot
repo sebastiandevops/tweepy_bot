@@ -2,10 +2,9 @@
 from hello_tweepy import tweet_job
 import time
 
-maxtries=8    # 8 * 15 minutes = about 2 hours total of waiting,
-              # not counting running and failing.
+maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
 
-for i in range (maxtries):
+for i in range(maxtries):
     try:
         tweet_job()
         break

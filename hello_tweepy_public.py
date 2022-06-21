@@ -14,8 +14,9 @@ def tweet_job():
     try:
         api.verify_credentials()
         print("Authentication OK")
-    except:
+    except SystemExit:
         print("Error during authentication")
+        raise
     # Create a tweet
     # open Robin's Edgar Allen Poe data file and read every line into memory
     with open('/home/sebastian/estudio/tweepy_bot/history.txt', 'r') as filename:
@@ -23,14 +24,14 @@ def tweet_job():
 
     myline = random.choice(lines)
 
-    deleted_line = lines.pop(lines.index(myline))
+    lines.pop(lines.index(myline))
 
     with open('/home/sebastian/estudio/tweepy_bot/history.txt', 'w') as filename:
         filename.writelines(lines)
 
     # Tweet each line, then wait one minute and tweet another.
     # Note: this design means the bot runs continuously
-    myline = myline
+    #myline = myline
     mystr = myline.replace("\n", " ")
     api.update_status(status=mystr)
     print(mystr)
