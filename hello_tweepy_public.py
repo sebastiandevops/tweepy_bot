@@ -16,20 +16,21 @@ def tweet_job():
     except:
         print("Error during authentication")
     # Create a tweet
-    # open data file and read every line into memory
-    with open('/path/to/file.txt','r') as filename:
+    # open Robin's Edgar Allen Poe data file and read every line into memory
+    with open('/home/sebastian/estudio/tweepy_bot/history.txt','r') as filename:
         lines = filename.readlines()
-    #select random line from lines
-    myline =random.choice(lines)
 
-    # Tweet my line
-    # Yoy have to add this script to crontab -e to automatically runs.
-    # For example, if you add this line to crontab
-    # 0 9 * * * /full/path/to/script/hello_tweepy.py
-    # The script will execute every day at 9am.
-    myline = myline + '#thingsthathappened'
-    mystr = myline.replace("\n"," ")
+    myline = random.choice(lines)
+
+    deleted_line = lines.pop(lines.index(myline))
+
+    with open('/home/sebastian/estudio/tweepy_bot/history.txt','w') as filename:
+        filename.writelines(lines)
+
+    # Tweet each line, then wait one minute and tweet another.
+    # Note: this design means the bot runs continuously
+    myline = myline
+    mystr = myline.replace("\n", " ")
     api.update_status(status=mystr)
     print(mystr)
 
-tweet_job()
