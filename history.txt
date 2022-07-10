@@ -115,7 +115,6 @@ VIH/sida (1920-1981).
 1973-1990: Las Fuerzas Armadas dan un golpe de Estado cívico-militar en Chile, imponiendo un régimen militar en todo el país que se caracterizará por su violenta represión hacia dirigentes sociales y al marxismo.
 1974: Richard Nixon se convierte en el primer presidente de Estados Unidos en dimitir del cargo.
 1974: Revolución de los Claveles. Portugal se une al club democrático mundial.
-1975: Caída de Saigón.
 1975: Fallece Francisco Franco, Juan Carlos I, rey de España (1975-2014). En 1977, se celebraron en esa nación las primeras elecciones democráticas desde 1936.
 1976: Jorge Rafael Videla da el golpe de Estado cívico-militar que marcó el inicio de la dictadura cívico-militar en Argentina.
 1977: El demócrata Jimmy Carter, toma posesión como presidente de los Estados Unidos.
@@ -481,7 +480,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1770 Se realizan los primeros estudios modernos sobre meteorología. Amateurs de toda Europa comienzan a llevar registros sistemáticos sobre el clima.
 1770 Surgen las primeras escuelas de ingeniería.
 1770 James Cook reclama la costa este de Australia (Nueva Gales del Sur) para Gran Bretaña.
-1770 La masacre de Boston contra patriotas Norteamericanos.
 1770-1771 El hambre en tierras checas mata a cientos de miles.
 1770 James Cook se detiene en la isla Onrust en la bahía de Batavia para reparar su nave Endeavour en su viaje por el mundo.
 1770 Se desarrolla la mecánica de fluidos: los Bernoulli, D'Alembert,...
@@ -1093,7 +1091,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 909: Se funda el monasterio de Cluny.
 975: Se funda la universidad de al-Azhar en El Cairo, la más antigua del mundo.
 993: Un capitán de navío árabe llega al puerto de Guangzhou.
-802: Jayavarman II funda el Imperio jemer en Camboya.
 809-817: Guerra entre el Imperio bizantino y los búlgaros.
 811: El emperador bizantino Nicéforo I muere en la Batalla de Pliska, donde los bizantinos son derrotados.
 814: Carlomagno muere en Aquisgrán.
@@ -1298,7 +1295,6 @@ Años 0: Se construye el Santuario Shinto de Ise en Japón.
 30 a. C.: Fin del Antiguo Egipto. La muerte de Cleopatra marca el fin de más de 3000 años de historia egipcia, la cual desde este momento quedará bajo control completo de fuerzas e imperios extranjeros (hasta la fundación de la República Egipcia en el año 1953)
 27 a. C.: Nacimiento del Imperio romano. El Senado romano le concede a César Octaviano el título de Augusto.
 57 a. C.: en el sudeste de Corea se funda la aldea Silla (fecha con 50.000 años es tradicional de acuerdo con Samguk Sagi).
-36 a. C.: el Imperio Chino somete a los Xiongnu (proto-mongoles) tras la decisiva Batalla de Zhizhi.
 37 a. C.: en el sur de Manchuria se funda Goguryeo (fecha tradicional de acuerdo con Samguk Sagi).
 18 a. C.: en el sudoeste de Corea se funda la aldea de Baekje (fecha tradicional según Samguk Sagi).
 1 a. C.: el emperador Ai de Han fallece y es sucedido por su hijo de 9 años. Wang Mang inicia su complot en contra de los Han.
@@ -1540,7 +1536,6 @@ Siglo VII a. C.: En México se desarrolla la cultura Olmeca.
 Siglo VII a. C.: En la actual Oaxaca de Juárez (México), los zapotecos fundan la aldea de Monte Albán.
 El 6 de abril de 648 a. C. Se produce el eclipse solar más antiguo documentado por los griegos.2​
 Se forma la cultura griega.
-La civilización helénica coloniza el Mediterráneo y el Mar Negro.
 Constitución política de Esparta alrededor de los siglos VIII-VII a. C., atribuida a Licurgo.
 797 a. C.: Tespios, rey de Atenas, muere tras reinar 27 años. Le sucede su hijo Agamestor.
 778 a. C.: Agamestor, rey de Atenas, muere después de un reinado de 17 años y es sucedido por su hijo Esquilo de Atenas.
@@ -1636,7 +1631,6 @@ Siglo VIII a. C.: En la India se compone en este siglo (o en el siguiente) el te
 900 a. C.: en la península italiana comienzan a desarrollarse los etruscos.
 892 a. C.: en la antigua Grecia, Megacles, rey de Atenas muere tras 30 años de reinado; lo sucede su hijo Diognetus.
 891 a. C.: en Asiria, Tukulti-Ninurta II sucede a su padre Adad-nirari II como rey.
-889 a. C.: en Egipto, Takelot I sucede a su padre Osorkon I como rey.
 886 a. C.: en China muere Zhou Xiaowang, rey de la dinastía Zhou.
 885 a. C.: en China, Zhou Yiwang se convierte en rey de la dinastía Zhou.
 884 a. C.: en Asiria, Assurnasirpal II sucede a su padre Tukulti-ninurta II como rey.
@@ -1946,7 +1940,6 @@ Del 1700 al 1500 a. C.: conquistas hurritas.
 1690-1674 a. C.: Libaia es rey de Asiria.
 1680 a. C.: los hurritas conquisan el reino pre-asirio.
 1680 a. C.: en el antiguo Egipto comienza la Dinastía XVI.
-1680 a. C.: en el antiguo Egipto se comienza a usar el pan leudado (fecha aproximada).
 1686 a. C.: Hammurabi (según la cronología corta).
 1684 a. C.: Érimón, héroe legendario irlandés.
 1662 a. C (22 de mayo): comienza el eclipse lunar 33 del ciclo de Saros. [1]
@@ -2191,7 +2184,6 @@ Siglo XXIX a. C.: Creta: uso del bronce, arquitectura, culto a la Diosa madre.
 2900 a. C.: en Perú comienza a construirse la aldea de Caral, que será la primera ciudad en América.
 Siglo XXX a. C.: En Perú se empieza a cultivar el algodón (Gossypium barbadense).
 Siglo XXX a. C.: En Mesopotamia (actual Irak), los sumerios inventan la escritura por primera vez en la Humanidad.
-Siglo XXX a. C.: Hesi Re es conocido como primera referencia bibliográfica de un dentista en Egipto al servicio faraónico, en estudios radiográficos fueron encontrados diversos grados de daño periodontal en las momias egipcias faraónicas.
 Siglo XXX a. C.: Establecimiento del Imperio de Dawn (Dawn of Empire) del escritor Sam Barone (La saga Eskkar, libro 2).
 3079 a. C.: en Vietnam, según una leyenda no histórica, Hùng Vương establece la antigua nación de Văn Lang, y en el 2897 a. C. establece su dinastía Hong Bang (hasta 1258 a. C.). (En realidad solo se puede comprobar la presencia de una cultura desde el 700 a. C.).
 3037 a. C.: en Estados Unidos nace el pino Prometeo, el pino longevo más viejo del mundo. Será cortado el 6 de agosto de 1964 por un estudiante universitario estadounidense llamado Donald Currey.
