@@ -136,7 +136,6 @@ VIH/sida (1920-1981).
 1986: Última gira de Queen con Freddie Mercury: Magic Tour
 1989-1993: George Bush, presidente de los Estados Unidos.
 1989: Represión y matanza en la plaza de Tian'anmen de Pekín (China).
-1989: Cambios políticos en la Europa del Este: formación del gobiernos de entente nacional o de coalición en Polonia y en Checoslovaquia. Abolición del papel dirigente del Partido Comunista en Hungría, Polonia, República Democrática de Alemania (RDA) y Checoslovaquia.
 1989: Cae el Muro de Berlín: Final de la Guerra Fría.
 1989: Brutal ofensiva terrorista del cartel de Medellín en Colombia: Magnicidio del candidato presidencial, Luis Carlos Galán, asesinadas 107 personas en un atentado en un Boeing 727 de Avianca y les fue arrebatada la vida a 60 personas en un ataque terrorista al edificio del DAS en Bogotá.
 1990: Asume al gobierno de la república de Chile el presidente Patricio Aylwin, marcando el retorno a la democracia en el país después de 17 años de dictadura militar.
@@ -215,7 +214,6 @@ VIH/sida (1920-1981).
 1711-1715 Se libra la guerra de Tuscarora entre colonos británicos, holandeses y alemanes y el pueblo Tuscarora en Carolina del Norte.
 1711 Carlos VI de Alemania es proclamado Emperador del Sacro Imperio Romano-Germánico.
 1711 Fallece Luis de Francia, conocido como el Gran Delfín e hijo de Luis XIV, convirtiendo en heredero al nieto de este, Luis XV.
-1711 Nace Federico el Grande de Prusia
 1712 Durante la guerra de la sucesión española los franceses derrotan a una fuerza combinada holandesa-austriaca en la batalla de Denain.
 1712 Llega a Ámsterdam el primer envío de café de Java.
 1713 Se promulga la Ley Sálica que prohíbe el acceso de las mujeres al trono francés.
@@ -304,7 +302,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1730-1760 El primer gran despertar se lleva a cabo en Gran Bretaña y América del Norte.
 1730 Muerte del papa Benedicto XIII.
 1730 En Roma, el cardenal Corsini es elegido papa con el nombre de Clemente XII.
-1730 En la isla de Lanzarote (Islas Canarias) el volcán Timanfaya entra en erupción.
 1731 En Inglaterra John Hadley inventa el sextante.
 1731 Nace el astrónomo estadounidense Benjamin Banneker.
 1731 En Pekín (China) se registra un terremoto que deja más de 100 000 víctimas.
@@ -527,7 +524,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1787-1792 La guerra ruso-turca.
 1788 Primera comunidad cuáquera francesa establecida en Congénies.
 1788 Primer asentamiento europeo permanente establecido en Australia por Gran Bretaña en Sídney.
-1788-1790 La guerra Ruso-Sueca.
 1788-1789 Inconfidencia Minera, conspiración contra las autoridades coloniales en Brasil.
 1788 Comienza la hambruna del invierno de 1788 la cual afecta a varios países europeos pero principalmente a Francia en donde varios campesinos mueren.
 1789 George Washington es elegido el primer presidente de los Estados Unidos; El sirve hasta 1797.
@@ -655,7 +651,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1664: Las tropas británicas capturan Nueva Ámsterdam, renombrándola Nueva York.
 1665: Gran Plaga de Londres.
 1665: Portugal derrota al Reino del Congo.
-1666: El Gran Incendio de Londres.
 1667-99: La gran guerra turca detiene la expansión del Imperio otomano en Europa.
 1668: El Tratado de Paz de Lisboa entre España y Portugal reconoce a Portugal como país independiente.
 1670: La Compañía de la Bahía de Hudson es fundada en Canadá.
@@ -693,7 +688,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1520-1566: el Imperio otomano llega a su cénit.
 1521: Belgrado es capturada por los otomanos.
 1522: Rodas es capturada por los otomanos.
-1523: Suecia se establece como reino independiente tras la Unión de Kalmar.
 1525: el Imperio español y el Sacro Imperio Romano-Germánico vencen a Francia en la batalla de Pavía donde el propio rey Francisco I cae prisionero por Antonio de Leyva.
 1526: el Imperio otomano vence a Hungría en la batalla de Mohács donde fallece el propio rey Luis II de Hungría.
 1529: tropas austriacistas derrotan a las otomanas en el decisivo Sitio de Viena.
@@ -792,7 +786,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1414-1418: el Concilio de Costanza, convocado para poner término al Cisma de Occidente.
 1415: Enrique el Navegante lidera la conquista de Ceuta frente a los Benimerines que marca el comienzo del Imperio portugués.
 1415: la batalla de Agincourt entre el reino de Inglaterra y Francia, supone una inesperada victoria de Enrique V de Inglaterra frente a los franceses y recuperando de esta forma territorio sobre suelo francés.
-1415: Jan Hus, teólogo reformista, es quemado en la hoguera como hereje en el concilio de Constanza.
 1416: el teólogo y reformador checo Girolamo da Praga (c.1370-1416) es quemado en la estaca por herejía.
 1419: las Defenestraciiones de Praga y las consiguientes Guerras husitas en Bohemia.
 1419: el archipiélago de Madeira es descubierto por los portugueses Tristão Vaz Teixeira y João Gonçalves Zarco.
@@ -901,7 +894,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1385: Se produce la fusión de Polonia y Lituania bajo el reinado de Vladislao II.
 1389: Se produce la batalla de Kosovo entre otomanos y serbios.
 1396: En la batalla de Nicópolis, el sultán Bayaceto I vence a un ejército aliado de húngaros, franceses y valacos.
-1397: Suecia, Noruega y Dinamarca se reunifican en un solo reino mediante la Unión de Kalmar.
 1326: Se inventa el primer arma real de fuego en Florencia.
 1326: En Nueva Zelanda, se extinguen las moas por actividad humana, dando paso a la extinción conjunta del águila de Haast, la cual había sido cazada por los humanos y había perdido su principal fuente alimenticia.
 1305: El papa Clemente V traslada la sede papal de Roma hacia Papado de Aviñón.
@@ -984,7 +976,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1179: se firma el Tratado de Cazola entre los reyes Alfonso II de Aragón y Alfonso VIII de Castilla.
 1180-1185: se producen las Guerras Genpei en Japón.
 1182: se producen revueltas en Constantinopla que acaban en una masacre de latinos, se proclama a Andrónico I Comneno coemperador.
-1183: se establece la Paz de Constanza entre el emperador alemán Federico I Barbarroja y la Liga Lombarda.
 1185: el emperador bizantino Andrónico I Comneno es brutalmente ejecutado, siendo sucedido por Isaac II Ángelo, dando fin a la dinastía Comneno.
 1187: Saladino derrota de manera decisiva a los cruzados en la batalla de Hattin.
 1188: Alfonso IX de León convoca las Cortes de León con los representantes de las ciudades. Considerándose el testimonio documental más antiguo del parlamentarismo europeo.
@@ -1103,7 +1094,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 875: Se inventa la versión documentada más antigua conocida del ala delta, obra también de Armen Firman/Abbas Ibn Firnas.
 Siglo VIII: Inicia el colapso de la Civilización Maya
 Siglo VIII: Auge del Imperio de Ghana en África occidental.
-701: En Japón se publica el Código Taihō
 705: La Dinastía Tang es restaurada en China tras el derrocamiento de la Emperador Wu Zetian.
 711: Táriq ibn Ziyad desembarca cerca de Gibraltar, derrotando a los visigodos en la batalla de Guadalete y poniendo fin al reino visigodo de Toledo.
 717-718: los árabes inician el asedio sobre Constantinopla, la ciudad es liberada gracias a la ayuda de los búlgaros.
@@ -1166,7 +1156,6 @@ Siglo VI: La peste negra azota Asia.
 Siglo VI: El budismo Zen penetra en Vietnam y a través de China.
 529: Benito de Nursia funda la abadía de Monte Cassino, en Italia.
 529: El emperador Justiniano I clausura la Academia de Atenas, fundada por Platón en el 362 a. C.
-406: Las tribus germánicas cruzan el río Rin ante la pasividad del imperio romano de Occidente; dichas tribus se disgregan por la Galia e Hispania.
 407: El autoproclamado emperador Constantino III abandona la provincia de Britania, asentándose en Arlés; abandonándola a merced de los bárbaros.
 411: Los suevos se asientan en Gallaecia, donde forman un reino que durará más de 100 años.
 412: El rey alano Ataces conquista Augusta Emérita y la establece como capital de su corte.
@@ -1240,7 +1229,6 @@ Ptolomeo compila un catálogo de todas las estrellas visibles a ojo desnudo. Tam
 9: Tres legiones romanas dirigidas por el gobernador Publio Quintilio Varo son exterminadas por los germanos en la batalla del bosque de Teutoburgo.
 14: Muere Octavio Augusto, primer emperador de Roma, es sucedido por su hijastro, Tiberio.
 41: El emperador Calígula es asesinado, le sucede su tío Claudio.
-43: Los romanos conquistan la isla de Britania.
 44: Muere Herodes Agripa, rey de los judíos y amigo del emperador Claudio.
 60/61: cerca de Londres, donde un ejército romano dirigido por el gobernador Cayo Suetonio Paulino, derrota a la reina Boudica.
 66-73: Se produce la primera guerra judeo-romana, entre el Imperio romano y el pueblo judío.
@@ -1422,7 +1410,6 @@ Siglo VII a. C.: En la península ibérica se produce el florecimiento de Tartes
 520 a. C.: el Zhou Daowang se convierte en rey de la dinastía Zhou de China, pero muere antes de final de año.
 520 a. C.: Cleómenes I sucede a Anaxandridas como rey de Esparta (fecha aproximada).
 519 a. C.: el Zhou Jingwang se convierte en rey de la dinastía Zhou de China.
-514 a. C.: el rey Helu de Wu establece la Gran ciudad de Helu (antiguo nombre de Suzhou) como su capital en China.
 510 a. C.: Hipias, hijo de Pisístrato y tirano de Atenas, es expulsado por una revuelta popular apoyada por Cleómenes I, rey de Esparta y sus fuerzas.
 510 a. C.: fin del reinado de Lucio Tarquinio el Soberbio, último rey de los tradicionales siete reyes de Roma. Roma se convierte en República. Derrocados los Tarquinios, los nobles asumen el mando bajo a través del Senado.
 510 a. C.: en Italia se establece la República romana.
@@ -1544,13 +1531,11 @@ Etapa precolonización griega, que llega hasta el siglo VII a. C., con testimoni
 Finales del siglo VIII − principios del VII a. C.: en Málaga se crean los yacimientos de la Necrópolis de Trayamar.
 Hacia el 700 a. C.: en Galicia y el norte de Portugal se desarrolla la cultura castreña (castros: fortificaciones). Aparición del hierro.
 En la actual Málaga (en el sur de España) los fenicios fundan Málaka.
-Siglo VIII a. C.:  Influencia traco-cimeria, cimerios, en Europa Central.
 700 a. C.: los escitas empiezan a ocupar las áreas de Cimeria, desplazando gradualmente a los habitantes previos.
 773 a. C.: en Egipto muere el faraón Sheshonq III.
 750 a. C.: comienza la dinastía XXV de Egipto, que durará hasta el 656 a. C.
 730 a. C.: finalizan las dinastías XXII y XXIII de Egipto; comienza la XXIV, que durará hasta el 715 a. C.
 730 a. C.: Piye sucede a su padre Kashta como rey del reino nubio de Napata.
-730 a. C.: Osorkon IV sucede a Sheshonq IV como rey de dinastía XXII de Egipto.
 728 a. C.: Piye invade Egipto, conquista Menfis, y recibe la sumisión de los líderes del Delta del Nilo. Él funda la dinastía XXV de Egipto.
 Fines del siglo VIII a. C. (710 a. C. aproximadamente): en Kalhu (actual Nimrud, en Irak) se fabrican los aretes, las coronas y las rosetas (que se encontraron en 1988 en la tumba de la reina Yabay. Fueron destruidas o robadas del museo de Irak (Bagdad) por el ejército estadounidense.
 c. siglo VIII a. C.: se fabrica el spinning ("hilado") de mujer, en Susa (actual Shush, en Irán). Actualmente se encuentra representación en el museo del Louvre (París).
@@ -1632,7 +1617,6 @@ En la actual Roma (Italia) se establece un grupo de cabañas de manera permanent
 825 a 820 a. C.: en el norte de África, los fenicios fundan Cartago. Según la mitología griega, la princesa Dido la fundó en el 813 a. C.
 817 a. C.: en Egipto comienza la dinastía XXIII, que durará hasta el año 730 a. C.
 817 a. C.: en Egipto, Padibastet se autoproclama rey.
-814 a. C. (fecha tradicional): en el norte de África, Dido funda Cartago. Es más posible que haya sido fundada por los fenicios aproximadamente una década antes.
 811 a. C.: en Asiria, Adad-nirari III sucede a su padre Shamshi-Adad V como rey.
 800 a. C. en México comienza el período de la mayor expansión de la cultura olmeca, que abarca hasta el año 400 a. C.
 800 a. C.: llegan a la península ibérica los primeros colonos fenicios.4​
@@ -1685,7 +1669,6 @@ Años 1050 a. C.: en la península ibérica, los fenicios introducen el olivo.
 1039 a. C.: en Egipto muere el rey Neferjeres.
 1027 a. C.: fecha tradicional del final de la dinastía Shang.
 1022 a. C.: en China se crea la dinastía Zhou, que terminará en el 256 a. C.
-1012 a. C.: en Atenas (Grecia) muere el rey Acastus después de un reinado de 36 años y es sucedido por su hijo Archippus.
 1006 a. C. (fecha tradicional): en Israel, David sucede al rey Saúl.
 1004 a. C. (fecha tradicional): el rey David de Israel y de Judá conquista la villa jebusea de Jerusalén por medio de un contingente enviado a través de un manantial subterráneo, y la convierte en capital de su reino unificado.
 1002 a. C.: en China muere Zhou Zhao Wang, rey de la dinastía Zhou.
@@ -1721,7 +1704,6 @@ Entre el 1000 y el 600 a. C.: en Irán, el profeta Zoroastro difunde su religió
 1186 a. C.: en Egipto finaliza la Dinastía XIX y comienza la Dinastía XX.
 1184 a. C.: supuesto inicio del reinado del faraón egipcio Ramsés III, que duró 31 años.
 1184 a. C. (24 de abril): según cálculos de Eratóstenes, fecha tradicional del final de la Guerra de Troya (los aqueos y sus aliados toman la ciudad de Troya).
-1181 a. C.: Menesteo —legendario rey de Atenas y veterano de la Guerra de Troya— muere después de un reinado de 23 años; le sucede su sobrino Demofonte, hijo de Teseo. Según otros falleció diez años antes en la Guerra de Troya.
 1180 a.C.: el pueblo hebreo cruza el Río Jordán y llega a Canaán.
 1180 a. C.: los elamitas derrotan al último rey casita, Anllil-Nadin-Akhe.
 1180 a. C.: en Anatolia (actual Turquía), los Pueblos del Mar destruyen la ciudad de Hattusa, capital de los hititas. Finaliza el Imperio hitita.
@@ -1795,7 +1777,6 @@ Siglo XIII a. C.: En Grecia muere Cécrope II, legendario rey de Atenas, despué
 Siglo XIII a. C.: En la India, asciende al trono el legendario rey Subrata de la dinastía BrijadRata.
 Siglo XIII a. C.: En la actual Jordania aparecen los madianitas.
 Siglo XIII a. C.: Siglo en que la tradición dice que Moisés habría escrito los Diez Mandamientos del pueblo hebreo.
-Siglo XIII a. C.: En la antigua Grecia aparecen los dorios.
 Siglo XIII a. C.: En Fenicia aparecen los filisteos
 Siglo XIII a. C.: En Pilos (puerto griego) se construye el Palacio de Néstor (un mítico rey que forma parte de los argonautas, y que participó en la mítica guerra de Troya). En 1939 se descubrieron sus ruinas, y se hallaron alrededor de mil tablillas de arcilla escritas en escritura griega lineal B: no había ninguna mención del rey Néstor.
 Hacia 1400 a. C.: en Creta la cultura micénica llega a su apogeo. Se abandona el palacio de Cnosos.
@@ -1904,7 +1885,6 @@ Del 1700 al 1500 a. C.: conquistas hurritas.
 1680 a. C.: los hurritas conquisan el reino pre-asirio.
 1680 a. C.: en el antiguo Egipto comienza la Dinastía XVI.
 1686 a. C.: Hammurabi (según la cronología corta).
-1684 a. C.: Érimón, héroe legendario irlandés.
 1662 a. C (22 de mayo): comienza el eclipse lunar 33 del ciclo de Saros. [1]
 1655 a. C.: muere Tan-Uli, el rey del Imperio elamita.
 1650 a. C.: en Anatolia se desarrollan ciudades estado, entre ellas Hattusa.
@@ -1940,7 +1920,6 @@ Siglo XVIII a. C.: En Aleppo (Siria) es derrocada la dinastía amorrea.
 1800 a. C.: en el centro de Ecuador nace la cultura machalilla.
 1800 a. C.: en Guatemala se establecen comunidades sedentarias mayas.
 1800 a. C.: en el delta del río Nilo se establecen los hicsos, con capital en la villa de Avaris.
-1797 a. C.: en Egipto gobierna la reina Neferusobek hasta el 1794 a. C. (aprox.) último gobernante de la dinastía XII.
 1793 a. C.: muere Sîn-Muballit, quinto rey de la primera dinastía de Babilonia. Su sucesor será su hijo Hammurabi, quien iniciará su reinado en 1792 a. C.
 1792 a. C.: en Mesopotamia inicia el reinado de Hammurabi, al suceder en el trono a su padre Sîn-Muballit, convirtiéndose en el sexto soberano de la dinastía de los amorreos de Babilonia.
 1780 a. C.: en Egipto, concluye la XII dinastía y con ella el Imperio Medio, comenzando el Segundo periodo intermedio.
