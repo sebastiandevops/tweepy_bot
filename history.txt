@@ -138,7 +138,6 @@ VIH/sida (1920-1981).
 1989: Represión y matanza en la plaza de Tian'anmen de Pekín (China).
 1989: Cae el Muro de Berlín: Final de la Guerra Fría.
 1989: Brutal ofensiva terrorista del cartel de Medellín en Colombia: Magnicidio del candidato presidencial, Luis Carlos Galán, asesinadas 107 personas en un atentado en un Boeing 727 de Avianca y les fue arrebatada la vida a 60 personas en un ataque terrorista al edificio del DAS en Bogotá.
-1990: Asume al gobierno de la república de Chile el presidente Patricio Aylwin, marcando el retorno a la democracia en el país después de 17 años de dictadura militar.
 1991: Boris Yeltsin es proclamado presidente de Rusia. Fracasa un intento de golpe de Estado contra Gorbachov; se disuelve el COMECON y el pacto de Varsovia; dimisión de Gorbachov; final de la Unión Soviética; nacimiento de la CEI (Comunidad de Estados Independientes), que integran 15 nuevos Estados.
 1991: Los doce Estados miembros de la Comunidad Económica Europea (CEE) firman el tratado de Maastricht y crean la Unión Europea.
 1991: Fallece Freddie Mercury, debido al sida.
@@ -168,7 +167,6 @@ VIH/sida (1920-1981).
 2000-2005: Segunda Intifada palestina contra Israel.
 1700-1721 Comienza la Gran Guerra del Norte entre la Rusia zarista y el Imperio sueco por la supremacía en el mar Báltico.
 1701 Federico I se convierte en rey del Reino de Prusia.
-1701 Osei Kofi Tutu I forma el Imperio asante.
 1701 Fallece el hermano menor de Luis XIV, Felipe I de Orleans.
 1701 Felipe de Anjou llega a España, y es coronado como Felipe V de España, tras la muerte de Carlos II.
 1701 Los franceses fundan la ciudad de Detroit en la actual Estados Unidos.
@@ -181,7 +179,6 @@ VIH/sida (1920-1981).
 1703-1711 La guerra de la Independencia de los Rákóczis contra la monarquía de los Habsburgo.
 1703 En Rusia se funda la aldea de San Petersburgo.
 1703 En Italia, el músico Antonio Vivaldi es ordenado sacerdote.
-1703 Se encarga a Isaac Newton la custodia de la Casa de la Moneda y se le elige por vez primera presidente de la Real Sociedad de Londres.
 1703 Publicación póstuma de la Dióptrica de Christian Huygens.
 1704 Finaliza el periodo Genroku en Japón.
 1704 Fallece el filósofo británico John Locke.
@@ -242,7 +239,6 @@ VIH/sida (1920-1981).
 1718 La ciudad de Nueva Orleans es fundada por los franceses en América del Norte.
 1718 El teniente Robert Maynard de la Marina Real británica asesina al pirata Barbanegra en una batalla naval sobre su barco la Venganza de la Reina Ana cerca del sur de las islas Ocracoke.
 1718-1730 período de tulipanes del Imperio otomano.
-1718 En la provincia Gansu (China), un terremoto de 7,5 grados en la escala de Richter deja un saldo de 75 000 víctimas.
 1718 Carlos XII de Suecia moriría asesinado tras recibir un disparo en la cabeza durante una inspección nocturna en las trincheras.
 1719 El intento español de reiniciar la rebelión jacobita fracasa.
 1719 Se libra la Segunda guerra de sucesión de Java.
@@ -388,7 +384,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1747 Cerca de Maastricht (Bélgica), 80 000 franceses vencen a 60 000 sajones en la batalla de Lafelt.
 1748 El Tratado de Aix-La-Chapelle finaliza la Guerra de la Sucesión Austriaca y La Primera Guerra Carnática.
 1748 Montesquieu publica su obra El espíritu de las leyes, en el cual fomenta la separación de poderes del estado.
-1748-1754 la Segunda Guerra Carnática se libra entre los británicos, los franceses, los Marathas y Mysore en la India.
 1749 En Dinamarca sale a la calle el periódico danés Berlingske Tidende, decano de la prensa diaria universal.
 1749 En España tiene lugar la Gran Redada.
 1750 Comienza el estudio sistemático de los fenómenos eléctricos: experimentos de Cavendish, el pararrayos de Franklin, teoría de Galvani, experiencias de Davy, ecuaciones de Coulomb...
@@ -422,14 +417,12 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1756-1763 La guerra de los Siete Años se libra entre las potencias europeas en varios teatros de todo el mundo.
 1756-1763 La Tercera Guerra Carnática se libra entre los británicos, los franceses, los Marathas y Mysore en la India.
 1756 En el Palacio de Versalles, Francia y Austria firman el primer Tratado de Versalles.
-1756 Federico II el Grande invade Sajonia, comenzando la guerra en el continente.
 1757 Nace Alexander Hamilton padre fundador de los Estados Unidos.
 1757 La batalla de Plassey señala el comienzo del dominio británico formal en la India después de años de actividad comercial bajo los auspicios de Compañía Británica de las Indias Orientales.
 1757 Se firma el tratado de Salatiga entre el príncipe Sambernyawa con Pakubuwono III y Hamengkubuwono participó más el remanente del sultanato de Mataram; se establece el Gran Ducado de Mangkunegaran.
 1758 el coronel británico James Wolfe emite el Manifiesto de Wolfe.
 1758 Nace el presidente James Monroe.
 1758 Nace Maximiliem Robespierre.
-1758 Linneo comienza la catalogación sistemática de las especies naturales.
 1759 Carlos III se convierte en rey de España y sería el máximo impulsor de las Reformas borbónicas.
 1759 El cometa Halley hace su única aparición en el siglo XVIII.
 1759 Fallece el compositor alemán Georg Friedrich Händel.
@@ -446,7 +439,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1763 El Tratado de París finaliza la guerra de los Siete Años y la tercera guerra Carnática.
 1763 El reino de Mysore conquista el reino de Keladi.
 1763 Federico II de Prusia inventa la Formación Echelon.
-1765 El Acta del Sello se introduce en las colonias americanas por el Parlamento británico.
 1765 Nace el que será rey de Gran Bretaña Guillermo IV.
 1766 Christian VII se convierte en rey de Dinamarca.
 1766-1799 Se libran las Guerras Anglo-Mysores.
@@ -713,7 +705,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1565: los caballeros Hospitalarios, apoyados por el Imperio español vencen a los otomanos en el Sitio de Malta
 1568-1648: en los Países Bajos se produce la Guerra de los Ochenta Años, donde las Provincias Unidas se independizarán del dominio español.
 1569: se crea la República de las Dos Naciones con la Unión de Lublin.
-1571: la flota de la Liga «Santa» vence a la flota otomana en la batalla de Lepanto.
 1571: los tártaros de Crimea toman y saquean Moscú, quemando todo excepto el Kremlin.
 1572: Francisco de Toledo finaliza la conquista del Imperio inca con el asesinato de Túpac Amaru ID
 1573: finaliza el asedio de Haarlem con victoria española.
@@ -838,7 +829,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1456: Girishawardhana, llamado Brawijaya III, se convierte en gobernante de Majapahit.8​
 1461: la Liga de Mayapán se desintegra.
 1461: fin del Imperio de Trebisonda
-1462: Sonni Ali Ber, el gobernante del Imperio Songhai, a lo largo del río Níger, conquista Mali en Sudan central derrotando al contingente tuareg en Tombuctú (o Timbuktu) y capturando la ciudad. Desarrolla tanto su propia capital, Gao, como los principales centros de Mali, Timbuktu y Djenné, en las principales ciudades. Ali Ber controla el comercio a lo largo del río Níger con una armada de buques de guerra.
 1462: Mehmed el Conquistador es rechazado por el príncipe de Valaquia Vlad III Dracula en el ataque nocturno.
 1464: Eduardo IV de Inglaterra se casa en secreto con Elizabeth Woodville.
 1465: la revuelta marroquí de 1465 termina con el asesinato del último sultán mariní de Marruecos Abd al-Haqq II.
@@ -981,7 +971,6 @@ Peste de Marsella, último brote de la peste bubónica en Europa.
 1192: Las Cortes Catalanas son convocadas con participación de representantes civiles.
 1192: Conrado de Montferrato es elegido rey de Jerusalén, solo para ser asesinado pocos días después.
 1192: los cruzados del rey Ricardo I toman la ciudad de Jaffa.
-1192: se firma el Tratado de Ramla entre Ricardo y Saladino; Jerusalén permanece bajo control musulmán pero se permite el acceso a peregrinos cristianos.
 1200: colapsa la cultura tolteca.
 1138: se produce un terremoto en la ciudad de Alepo que devasta el norte de Siria.
 1103: el rey David IV de Georgia convoca un concilio para organizar la Iglesia ortodoxa y apostólica georgiana.
@@ -1096,7 +1085,6 @@ Siglo VIII: Auge del Imperio de Ghana en África occidental.
 717-718: los árabes inician el asedio sobre Constantinopla, la ciudad es liberada gracias a la ayuda de los búlgaros.
 732: Carlos Martel derrota a los musulmanes en la batalla de Poitiers, frenando el avance musulmán de manera definitiva.
 751: En la batalla del Talas, un ejército árabe-turco derrota a un ejército chino de la dinastía Tang en el actual Kirguistán. Tras esto, los árabes logran conquistar toda Asia Central.
-754: Carlomagno conquista Italia y crea los Estados Pontificios, que serán gobernados por el papa. Dichos Estados sobrevivirán más de 1000 años hasta la Unificación italiana del Siglo XIX.
 756: Abderramán I el último miembro de los Omeyas toma Córdoba fundando el emirato de Córdoba separándose del califato de Bagdad.
 755-763: La Rebelión de An Lushan devasta los territorios de China durante el período de gobierno de la dinastía Tang, la cual queda sumamente debilitada.
 772-804: Carlomagno invade el noroeste de Alemania, anexionando el Ducado de Sajonia al Imperio Carolingio tras 30 años de luchas.
@@ -1177,7 +1165,6 @@ Siglo VI: El budismo Zen penetra en Vietnam y a través de China.
 415/416: Es asesinada la filósofa y científica Hipatia, a manos de una turba de cristianos.
 440: Los últimos registros históricos que mencionan la Biblioteca de Alejandría
 455: Se funda la ciudad de Chichen Itzá, en el actual México.
-461/493: Muere Patricio de Irlanda, conocido por cristianizar Irlanda.
 Siglo V: Nacen las primeras escuelas monásticas.
 306-337: Constantino I el Grande, finaliza la persecución de los cristianos y establece Bizancio como nueva capital del imperio.
 312: se produce la batalla del Puente Milvio donde el emperador Constantino derrota a Majencio y establece el fin de la tetrarquía.
@@ -1202,7 +1189,6 @@ Siglo IV: En el norte de la India, Vatsiaiana escribe el Kama-sutra.
 266 : Fundación de la Dinastía Jin de China. 14 años después, en el 280, reunifica a toda China.
 Siglo III: Los godos se desplazan desde el río Vístula (en la actual Polonia) hacia la costa del mar Negro creando un reino en las tierras de la actual Ucrania.
 Siglo III: A comienzos del siglo, el emperador Septimio Severo ordena el cierre de la tumba de Alejandro Magno.[1]
-212-216: Se construyen en Roma las termas de Caracalla, por orden del emperador Caracalla.
 Siglo III: El matemático chino Liu Hui calcula una aproximación al número π, dándole un valor de 3,141014.
 96-180: en Roma se suceden en el Gobierno los conocidos como los Cinco Emperadores Buenos: Nerva, Trajano (98-117), Adriano, Antonino Pío y Marco Aurelio. Tradicionalmente se les ha considerado como parte de la dinastía de los Antoninos (96-192), sin embargo, en la actualidad, se ha propuesto una nueva denominación, la de dinastía Ulpio-Aelia.
 Siglo II: En la región de Etiopía se crea el reino de Aksum.
@@ -1230,7 +1216,6 @@ Ptolomeo compila un catálogo de todas las estrellas visibles a ojo desnudo. Tam
 60/61: cerca de Londres, donde un ejército romano dirigido por el gobernador Cayo Suetonio Paulino, derrota a la reina Boudica.
 66-73: Se produce la primera guerra judeo-romana, entre el Imperio romano y el pueblo judío.
 69: Vespasiano es proclamado emperador, instaurando la dinastía Flavia.
-70: Los romanos capturan Jerusalén y destruyen el Templo de Jerusalén.
 87: Los romanos son derrotados por los desacios del rey Decébalo en la Primera Batalla de Tapae.
 96: El emperador Domiciano es asesinado, el Senado romano instaura al venerable Nerva como emperador ese mismo día.
 Siglo I: Aparece el códice, por primera vez en el Imperio romano.
@@ -1342,7 +1327,6 @@ Siglo V a. C.: Realizan sus obras los escultores de la Grecia clásica: Mirón, 
 550 a. C.: a 20 km al sur de Esparta (Grecia) un terremoto de grado X (en la escala sismológica de Mercalli, de I a XII) 37.0, 22.5. Hunde una porción del monte Taigeto.1​
 519 a. C. (8 o quizá 2 de agosto): en Henan (China) un terremoto de magnitud 5,5 en la escala sismológica de Richter (intensidad VII) deja «algunos» muertos.
 16 de marzo del 597 a. C.: en el Reino de Juda, los babilonios toman Jerusalén, reemplazan al rey Jeconías por el rey Sedecías.
-590 a. C.: en Egipto, el ejército saquea Napata, obligando a la corte cushita a trasladarse a un lugar más seguro en Meroe cerca de la sexta catarata.2​
 15 de enero del 588 a. C.: en la capital del Reino de Juda,(actual Israel), el rey Nabucodonosor II de Babilonia comienza el asedio de la capital de dicho reino, Jerusalén; algunas fuentes señalan como fecha el año 587 a. C.
 14-16 de julio del 586 a. C.: Jerusalén cae en manos de los babilonios, acabando así el reino de Judá. Los conquistadores destruyen el Templo de Salomón en Jerusalén y envían al exilio a los habitantes de Judá, también como a los habitantes de Mashaj. Comienza el cautiverio de Babilonia de los judíos.
 15-18 de agosto del 586 a. C.: Jerusalén y sus edificios arden durante tres días luego de ser arrasada por el imperio neobabilonico.
@@ -1494,7 +1478,6 @@ El 6 de abril de 648 a. C. Se produce el eclipse solar más antiguo documentado 
 Se forma la cultura griega.
 Constitución política de Esparta alrededor de los siglos VIII-VII a. C., atribuida a Licurgo.
 797 a. C.: Tespios, rey de Atenas, muere tras reinar 27 años. Le sucede su hijo Agamestor.
-Época Arcaica en Grecia (776-500 a. C.)
 776 a. C.: fecha en que Diodoro Sículo (del siglo I a. C.) fijó retrospectivamente los primeros Juegos Olímpicos.
 755 a. C.: Esquilo, rey de Atenas, muere tras reinar 23 años. Le sucede Alcmeón.
 753 a. C.: el rey de Atenas Alcmeón muere después de un reino de dos años. Es reemplazado por Harops, elegido por un mandato de diez años.
@@ -1647,7 +1630,6 @@ Fines del siglo X a. C.: en Lefkandi (isla de Eubea) un artesano hace una estatu
 Siglo X a. C.: En Perú se desarrolla la cultura chavín.
 Siglo X a. C.: En Grecia termina la Edad Oscura e inicia el período geométrico.
 1100 a. C. aprox.: en Celtiberia penetra la cultura de los campos de urnas.1​
-1100 a. C.: en la isla Mallorca se funda la aldea talayótica de Ses Païsses de Artà.
 Años 1090 a. C.: en Egipto, bajo el reinado de Ramsés XI, la crisis en ese país hace que aumente el número de ladrones de tumbas, lo cual provocará que se abandone el Valle de los Reyes como lugar de enterramiento de faraones.
 1089 a. C.: en Grecia, Melanto ―legendario rey de Atenas― muere tras un reinado de 37 años; le sucede su hijo Codrus.
 1079 a. C.: en China muere Cheng, rey de la dinastía Zhou.
@@ -1675,7 +1657,6 @@ Años 1050 a. C.: en la península ibérica, los fenicios introducen el olivo.
 1000 a. C.: en la actual ciudad de Amersfoort (Países Bajos) suceden los primeros asentamientos.
 1000 a. C.: en la actual ciudad de Locarno (Suiza) suceden los primeros asentamentos.
 1000 a. C.: en el sur de Italia suceden los primeros asentamentos en la actual ciudad de Bari.
-1000 a. C.: primeros asentamientos en la actual ciudad de Cordenons (Italia).
 1000 a. C. aprox.: en el oeste de Turquía se funda Priene.
 1000 a. C. aprox.: en la península ibérica, los fenicios fundan la aldea de Tartessos.
 1000 a. C. aprox.: en la península ibérica, los fenicios fundan la aldea de Gades (Cádiz) en el reino de Tartessos (tráfico de minerales); según Diodoro de Sicilia.
@@ -1838,7 +1819,6 @@ Siglo XV a. C.: Tebas, capital de Egipto llega a ser la mayor ciudad del mundo, 
 1600 a. C.: en el mar Egeo termina la civilización de las islas Cícladas.
 1600-1200 a. C.: en Anatolia (actual Turquía) los hitita realizan herramientas y armas de hierro.
 1600-1200 a. C.: en la antigua Grecia, comienza a ser habitada la aldea Tirinto.
-1600 a. C.: cerca de la actual Bogazköy, a unos 250 km al sur del mar Negro (en Turquía), los hititas establecen su capital en Hattusa.
 1595 a. C.: en Mesopotamia, los casitas toman finalmente la ciudad de Babilonia.
 1566 a. C.: en Jericó (Israel) sucede un terremoto de X grados en la escala sismológica de Mercalli (del I al XII). Se desconoce la cantidad de muertos.1​
 1550 a. C.: el país de Egipto se expande hacia la tierra de Canaán.
@@ -1861,7 +1841,6 @@ h. 1506 a. C.: Tutmosis I (Dinastía XVIII de Egipto) comienza a gobernar. Alter
 Siglo XVI a. C.: En Pakistán comienza la composición ―de manera oral, ya que hasta ese momento en Asia solo los sumerios habían inventado la escritura― del Rig-veda (el texto más antiguo de la India). El texto quedará fijado varios siglos después.
 Siglo XVI a. C.: El pueblo nómada ario ―cuyo idioma ha dejado de ser el indoiranio (un idioma indoeuropeo) y se ha convertido en sánscrito― comienzan a invadir la India desde Pakistán, de manera posiblemente no violenta.
 Siglo XVI a. C.: En la región de la actual Jordania, empieza a desarrollarse el pueblo amonita.
-Siglo XVI a. C.: Los más antiguos restos de hurón domesticado datan de esta época.3​
 Siglo XVI a. C.: En Europa aparecen los celtas, hablantes de un idioma indoeuropeo proveniente de Ucrania.
 Siglo XVI a. C.: En Europa se empieza domesticar el buey.
 Siglo XVI a. C.: En la antigua Grecia comienza la celebración de los misterios eleusinos ―rito de iniciación posiblemente con pan y vino contaminados con el hongo cornezuelo del centeno―.
@@ -1980,11 +1959,9 @@ Siglo XXI a. C.: en el Oeste de Sumeria (sudoeste de Irak): Shu-Sin (2037-2026),
 2200 a. C.: en México se desarrollan pueblos agrícolas.
 2200 a. C.: entre Mari y Ur surge Urkesh.
 2200 a. C.: aparecen los minoicos.
-2200 a. C.: aparece la cultura del vaso campaniforme.
 2150 a. C.: en Irak comienza el renacimiento sumerio.
 2150 a. C. (±100 años): cerca de Al Karak (Jordania), a pocos kilómetros al este del mar Muerto, sucede un terremoto de 7,3 grados en la escala sismológica de Richter.
 2120 a. C.: los gutis son expulsados definitivamente de Mesopotamia por una coalición de ciudades sumerias, liderada por Utu-hegal, rey de la quinta dinastía de Uruk.
-2110 a. C.: Ur-Nammu acaba con la dinastía de Lagash, y derrota a Nammakhani en 2110 a. C., casi al tiempo que a Utukhengal.
 2200 a. C: se desarrola la edad del bronce.
 2200 a. C.: el suceso del kiloaño 4,2, un episodio de cambio climático severo, con inundaciones y sequías afectando a distintas zonas, que dura todo el siglo.
 2200 a. C.: en China, el emperador Yu crea diques en los ríos.
@@ -2017,7 +1994,6 @@ Siglo XXV a. C.: Aparición de los púnicos o fenicios, que se habían estableci
 Siglo XXV a. C.: El pueblo asirio se asienta en la Alta Mesopotamia (norte de la Mesopotamia y establece un reino cuyas principales ciudades fueron Assur (ciudad capital durante el Reino Antiguo) y Nínive (capital durante el Reino Nuevo o Imperio asirio).
 Siglo XXV a. C.: Comienzo del Período Preclásico en Mesoamérica a partir del surgimiento de la cerámica. Este hecho, pone fin a la Prehistoria en Mesoamérica.
 Siglo XXV a. C.: En Pakistán se desarrolla la civilización del Valle del Indo.
-Siglo XXV a. C.: En Sumeria, cuyo centro es la ciudad de Uruk, se desarrolla una rica y compleja civilización, la cultura Uruk. A sus funcionarios y sacerdotes se les atribuye el nacimiento de la escritura fonética cuneiforme (una de las más antiguas), que pronto sería adoptada por otros pueblos.
 Siglo XXV a. C.: en el Perú, domesticación del algodón Gossypium barbadense, atestiguado en el yacimiento arqueológico de Huaca Prieta.
 Siglo XXV a. C.: Invención de la cerámica en Mesoamérica, cuya evidencia es la cerámica Pox de Puerto Marqués (México).
 Siglo XXV a. C.: Posible fecha de construcción de Stonehenge.
@@ -2052,14 +2028,12 @@ Siglo XXVII a. C.: Gran desarrollo de la joyería en Egipto.
 2775-2650: Guerra de la segunda dinastía en Egipto
 2773: Egipto adopta un calendario de 365 días
 2715: Inicia el Imperio Antiguo de Egipto
-2800 a. C.: en la Amazonía (Brasil-Perú), se desarrollan comunidades aldeanas basadas en la horticultura. Producen cerámica con motivos zoomorfos y decoraciones con animales modelados.
 2750 a. C.: en el Valle del río Supe - (Perú) se construye la ciudad de (Caral), uno de los primeros ejemplos de pirámides y arquitectura monumental americana.
 2800 a. C.: en la isla de Creta se desarrolla (hasta el 1150 a. C.) la gran civilización minoica, que erigirá ciudades y palacios, como los célebres complejos palaciegos de Cnossos, Fastos, Malia y Zakros.
 2800 a. C. a 1075 a. C.: construcción del monumento megalítico de Stonehenge, en Inglaterra. Para su construcción se requirieron unas 30 millones de horas de mano de obra (que equivalen a 60 años de trabajo diario, de 200 hombres).
 2750 a. C.: comienza la colina Silbury.
 2750 a. C.: En Austria y Suiza se difunden las técnicas de la metalurgia del cobre (ya inventada en Irak pocos siglos atrás).
 2750 a. C.: En los turbales de los Países Bajos y Dinamarca se inventa la rueda de madera maciza (ya inventada en Irak varios siglos atrás).
-2750 a. C.: en Sanhile (Shandong, China) se realizan trabajos de cobre.
 2800 a 2600 a. C.: en algún momento durante este lapso sucede la inundación de Shuruppak. Esta catástrofe coincide con el fin de la supremacía de este pueblo sobre Ur y Kish. Se lo considera una de las fuentes del mito babilónico del diluvio universal.
 2750 a. C.: fin del periodo dinástico arcaico I.
 2750 a 2600 a. C.: periodo dinástico arcaico II.
@@ -2380,7 +2354,6 @@ IX milenio a. C.: En los montes Zagros (de 1500 kilómetros, entre el Kurdistán
 IX milenio a. C.: Göbekli Tepe (en el sureste de Turquía), posiblemente uno de los primeros lugares creados para el culto de los muertos; comienza el neolítico.
 IX milenio a. C.: Mientras Europa Occidental y especialmente la Europa Nórdica todavía están afectadas por las secuelas del deshielo de los glaciares, Asia (que se encuentra en un periodo preneolítico) y sobre todo el Oriente Próximo entran en la revolución neolítica: agricultura, ganadería, alfarería.
 IX milenio a. C.: En Irak comienza la agricultura (cultivos de cebada).
-IX milenio a. C.: Invención del arco y la flecha.
 IX milenio a. C.: En el valle de Tehuacán (en la actual México), pequeños grupos humanos se dedican a la caza y la recolección.
 IX milenio a. C.: En Tierra del Fuego (Argentina) comienzan los primeros asentamientos de cazadores y recolectores nómadas que vienen del norte.
 8800 a. C.: entre Canadá y Estados Unidos, posiblemente explota un cometa (llamado Clovis), que en los siguientes siglos extinguirá los grandes mamíferos del continente, y en Nuevo México (sur del actual Estados Unidos) extingue la cultura clovis, que cazaba grandes mamíferos en esta zona desde el 9050 a. C.
