@@ -1095,7 +1095,6 @@ Siglo VIII: Primer registro de la poesía japonesa del estilo Haiku.
 603: Última mención del Senado romano.
 618: La dinastía Tang se hace con el poder en China.
 622: Hégira de los musulmanes de la Meca hacia Medina. Esta fecha es el inicio del calendario lunar musulmán.
-626: Los ávaros, los eslavos y el Imperio Sasánida se unen en un intento de tomar Constantinopla, pero fracasan estrepitosamente.
 627: El emperador Heraclio derrota a los persas-sasánidas poniendo fin a las Guerras Romano-Sasánidas.
 632: Comienza la denominada expansión musulmana.
 634: Comienzan las Guerras arabo-bizantinas, muchos territorios bizantinos serán conquistados por los árabes.
