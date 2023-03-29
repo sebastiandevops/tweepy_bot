@@ -1062,7 +1062,6 @@ Años 0: Se construye el Santuario Shinto de Ise en Japón.
 20: Se construye la famosa estatua de Augusto de Prima Porta.
 50: Se construye, en La Coruña, la Torre de Hércules
 80: Se finaliza la construcción del Coliseo de Roma, bajo el reinado del emperador Tito.
-88 a. C.: Inician las Guerras mitridáticas, con las cuales los romanos inician la conquista de Anatolia.
 86 a. C.: Conquista romana de Atenas.
 81 a. C.: Lucio Cornelio Sila es proclamado dictador de Roma, estableciendo nuevas reformas y persecuciones sobre sus enemigos políticos.
 73 a. C.: Una rebelión de esclavos dirigida por el gladiador rebelde Espartaco desencadena la tercera guerra servil en la península italiana.
