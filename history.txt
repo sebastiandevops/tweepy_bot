@@ -988,7 +988,6 @@ Siglo V: Nacen las primeras escuelas monásticas.
 312: se produce la batalla del Puente Milvio donde el emperador Constantino derrota a Majencio y establece el fin de la tetrarquía.
 350: los hunos invaden el Imperio sasánida.
 376: los visigodos cruzan el Danubio adentrándose en territorio del Imperio romano ante la presión de los hunos.
-378: en la batalla de Adrianópolis el emperador Valente es derrotado y asesinado, esta batalla cambió la estrategia de batalla romana.
 301: Armenia es la primera nación en la historia en adoptar el cristianismo como religión oficial.
 313: el Edicto de Milán, también llamado Edicto de tolerancia, promulgado por Constantino I, da fin a las persecuciones contra los cristianos en el Imperio romano.
 325: Constantino I llama al Primer Concilio de Nicea para establecer la nueva religión del imperio y reunificar a la Iglesia católica.
