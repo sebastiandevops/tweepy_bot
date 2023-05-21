@@ -869,12 +869,10 @@ VIH/sida (1920-1981).
 856: Inicia la construcción del templo budista de Prambanan en Indonesia.
 859: Fundación de la Universidad de Qarawiyyin, la más antigua del mundo (todavía en funcionamiento).
 864: Bulgaria es cristianizada por el rey Boris I.
-868: Se imprime el primer libro en China: Sutra del diamante.
 870: Se construye el castillo de Praga.
 870: Cristianización de Serbia
 875: Se inventa la versión documentada más antigua conocida del ala delta, obra también de Armen Firman/Abbas Ibn Firnas.
 Siglo VIII: Inicia el colapso de la Civilización Maya
-Siglo VIII: Auge del Imperio de Ghana en África occidental.
 711: Táriq ibn Ziyad desembarca cerca de Gibraltar, derrotando a los visigodos en la batalla de Guadalete y poniendo fin al reino visigodo de Toledo.
 717-718: los árabes inician el asedio sobre Constantinopla, la ciudad es liberada gracias a la ayuda de los búlgaros.
 732: Carlos Martel derrota a los musulmanes en la batalla de Poitiers, frenando el avance musulmán de manera definitiva.
@@ -1038,7 +1036,6 @@ Teatro romano de Mérida (año 18 a. C.).
 129 a. C.: los partos arrebatan Babilonia a los seléucidas.
 264-241 a. C.: primera guerra púnica. Como resultado de la misma, los cartagineses pierden las islas de Sicilia, Cerdeña y Córcega.
 218-202 a. C.: segunda guerra púnica. Como resultado de la misma, los cartagineses pierden la península ibérica.
-214-205 a. C.: primera guerra macedónica. Primer conflicto entre el Reino de Macedonia y la República romana.
 206 a. C.: en China se desarrolla la dinastía Han occidental.
 206 a. C.: en Alejandría (Egipto) se traduce la Biblia original hebrea (actualmente perdida) al griego. Las Biblias hebreas actuales son traducciones de esa traducción griega.
 Siglo III a. C.: Se funda en Alejandría, la célebre Biblioteca de Alejandría
@@ -1344,7 +1341,6 @@ Años 1090 a. C.: en Egipto, bajo el reinado de Ramsés XI, la crisis en ese pa�
 1000 a. C.: desde la región del río Danubio ingresan a Italia las primeras tribus de latinos.
 1000 a. C. aprox.: el idioma húngaro se separa de sus parientes lingüísticos más cercanos, los idiomas ob-úgricos.
 1000 a. C.: en la actual ciudad de Amersfoort (Países Bajos) suceden los primeros asentamientos.
-1000 a. C.: en la actual ciudad de Locarno (Suiza) suceden los primeros asentamentos.
 1000 a. C.: en el sur de Italia suceden los primeros asentamentos en la actual ciudad de Bari.
 1000 a. C. aprox.: en el oeste de Turquía se funda Priene.
 1000 a. C. aprox.: en la península ibérica, los fenicios fundan la aldea de Tartessos.
