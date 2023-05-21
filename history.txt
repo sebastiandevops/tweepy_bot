@@ -144,7 +144,6 @@ VIH/sida (1920-1981).
 1702-1715 En Francia se libra la Rebellion Camisard.
 1702 Austria (partidaria del Archiduque Carlos), declara la guerra a Francia y España (partidarias de Felipe de Anjou). Comienza así la Guerra de Sucesión Española.
 1702 Muere Felipe de Lorena, amante más conocido de Felipe de Orleans, hermano menor de Luis XIV.
-1703 En Japón 47 rōnin atacan a Kira Yoshinaka y luego cometen harakiri.
 1703 San Petersburgo es fundada por Pedro El Grande la cual sería la capital del Imperio ruso hasta 1918.
 1703-1711 La guerra de la Independencia de los Rákóczis contra la monarquía de los Habsburgo.
 1703 En Rusia se funda la aldea de San Petersburgo.
@@ -189,7 +188,6 @@ VIH/sida (1920-1981).
 1715 Luis XIV, el Rey Sol, muere, dejando a Francia expandida pero profundamente endeudada. La regencia toma el poder bajo Felipe II de Orleans.
 1715 Luis XV accede al trono francés, no se cambiaba de monarca en Francia desde hace casi ochenta años.
 1715 El papa Clemente XI declara incompatible el catolicismo y el confucianismo.
-1716 Aplicación de los Decretos de Nueva Planta en Cataluña, concluyendo la unificación de España bajo Felipe V.
 1716 Nace Carlos III de España, el alcalde de Madrid.
 1717 Países Bajos, Gran Bretaña y Francia firman la Triple Alianza.
 1717 En el Mar del Norte, una marea ciclónica afecta las costas de Alemania, Escandinavia y los Países Bajos. Mueren unas 14 000 personas.
@@ -207,7 +205,6 @@ VIH/sida (1920-1981).
 1721 En Roma, el cardenal Conti es elegido papa con el nombre de Inocencio XIII.
 1721 Nace Jeanne Antoinette Poisson, mejor conocida como Madame de Pompadour y amante preferida de Luis XV.
 1721 Robert Walpole se convierte en el primer primer ministro de Gran Bretaña.
-1721 Se firma el Tratado de Nstad el cual termina con la Gran Guerra del Norte.
 1721 Fallece el pintor francés Antoine Watteau.
 1721 El emperador Kangxi prohíbe a los misioneros cristianos a causa del decreto del papa Clemente XI.
 1721 Pedro I Reforma a la Iglesia Ortodoxa Rusa.
@@ -254,9 +251,7 @@ VIH/sida (1920-1981).
 1732-1734 Incursiones tártaras de Crimea en Rusia.
 1732 Primera actuación de la obra Orlando de Georg Friedrich Händel en Londres.
 1732 Se instituye la Gobernación de Sonora y Sinaloa en México por Real Cédula.
-1732 Carlos Linneo viaja a Laponia.
 1732 Nace Joseph Haydn, compositor austriaco clásico
-1733-1738 Guerra de la sucesión polaca.
 1733 John Kay inventa la lanzadera volante.
 1733 Se estrena en Leipzig el Magnificat en Re mayor BWV 243 de Johann Sebastian Bach.
 1733 Firmado el primer pacto de familia entre España y Francia
@@ -301,7 +296,6 @@ VIH/sida (1920-1981).
 1741 Retirada de la flota del almirante inglés Edward Vernon, tras la desastrosa derrota en el sitio de Cartagena de Indias, que supuso el final de la Guerra del Asiento, confirmando la supremacía naval española.
 1741 Fallece el compositor Antonio Lucio Vivaldi.
 1741 el papa Benedicto XIV emite Inmensa Principios contra la esclavitud.
-1742 Carlos VII se convierte en emperador del Sacro Imperio Romano.
 1742 Marvel's Mill, el primer molino de algodón alimentado por agua, comienza a funcionar en Inglaterra.
 1742 La rebelión de Juan Santos Atahualpa contra los españoles.
 1742 Muere Edmund Halley, conocido por calcular la órbita del célebre cometa Halley.
@@ -421,7 +415,6 @@ VIH/sida (1920-1981).
 1781 En la Plaza de Armas del Cuzco (Virreinato del Perú), los españoles ejecutan por descuartizamiento a Tupac Amaru II, líder de la mayor rebelión indígena anticolonial que se dio en América durante el siglo XVIII.
 1781 Estreno de la ópera Idomeneo, rey de Creta (KV 366) de Wolfgang Amadeus Mozart.
 1782 Muere Anne Bonny, una de las piratas más conocidas de la historia.
-1782 En Estados Unidos, el Congreso aprueba el diseño del emblema de la nación: el sello de Estados Unidos
 1782 Carlos III de España, recupera Menorca de manos de los británicos, pero fracasa frente a Gibraltar.
 1783 Hambruna en Islandia, causada por la erupción del volcán Laki.
 1783 Nace el libertador Simón Bolívar.
@@ -546,7 +539,6 @@ VIH/sida (1920-1981).
 1682: La Salle explora la longitud del río Misisipi y reclama Luisiana para Francia.
 1683: China conquista el Reino de Tungning y anexiona Taiwán.
 1683: La batalla de Viena termina la hegemonía del Imperio otomano en el sudeste de Europa.
-1685: El Edicto de Fontainebleau persigue al Protestantismo en Francia.
 1687: Isaac Newton publica Philosophiae Naturalis Principia Mathematica.
 1688-89: Después de la Gloriosa Revolución, Inglaterra se convierte en una monarquía constitucional y la República Holandesa entra en declive.
 1695-97: La Gran Alianza trata de detener la expansión francesa durante la guerra de los Nueve Años.
@@ -759,7 +751,6 @@ VIH/sida (1920-1981).
 1202: Leonardo de Pisa (más conocido como Fibonacci) publica el Liber abaci (Libro del ábaco o Libro de los cálculos) difundiendo en Europa la numeración arábiga.
 1280: Se inventan las gafas en Italia.
 1209: Se funda la Universidad de Cambridge.
-1218: Se funda la Universidad de Salamanca.
 1300: Se funda la ciudad de Bilbao.
 1300+/- Fecha desconocida: desaparece el senado romano (senado bizantino)
 1300: Esplendor de la escolástica y sus grandes maestros.
@@ -794,7 +785,6 @@ VIH/sida (1920-1981).
 1187: Saladino derrota de manera decisiva a los cruzados en la batalla de Hattin.
 1188: Alfonso IX de León convoca las Cortes de León con los representantes de las ciudades. Considerándose el testimonio documental más antiguo del parlamentarismo europeo.
 1189-1192: estalla la Tercera Cruzada, en un nuevo intento de los reinos cristianos de recuperar Tierra Santa de manos de los musulmanes.
-1191: Ricardo Corazón de León vence a Saladino en la batalla de Arsuf.
 1192: Las Cortes Catalanas son convocadas con participación de representantes civiles.
 1192: los cruzados del rey Ricardo I toman la ciudad de Jaffa.
 1200: colapsa la cultura tolteca.
@@ -856,7 +846,6 @@ VIH/sida (1920-1981).
 962: Nace el Sacro Imperio Romano-Germánico, primer Reich Alemán
 979: Reunificación de China bajo la Dinastía Song
 982: Una campaña militar de Otón II sobre Italia fracasa.
-985: Groenlandia es descubierta por los vikingos.
 987: Es coronado Hugo Capeto como rey de Francia, iniciando la dinastía de los Capetos. Sus descendientes gobernarán Francia hasta la Revolución Francesa. Otras ramas de los Capetos sobreviven en forma de las monarquía de España y Luxemburgo.
 999: Los samánidas son conquistados por el Imperio gaznávida.
 919: Primer registro del uso de armas de fuego (Batalla Langshan Jiang, China)
@@ -1073,7 +1062,6 @@ Siglo IV a. C.: En el norte de la India, el religioso Baudhaiana escribe el Baud
 Siglo IV a. C.: Fijación del calendario babilónico.
 Siglo IV a. C.: En Mesoamérica se desarrolla la escritura zapoteca.
 Siglo IV a. C.: En la Antigua Grecia, desarrollan su obra los escultores Escopas, Praxíteles y Lisipo, así como el pintor Apeles.
-Siglo V a. C.: Península ibérica: Fin del reino de Tartessos. De 475 a. C. a 250 a. C., apogeo de la cultura turdetana.1​
 Siglo V a. C.: Guerras Médicas en las que los griegos derrotan por dos veces (490 y 480 a. C.) a los persas en batallas como la de Maratón, Las Termópilas, Salamina o Platea. Tebas, aliada de los invasores persas, fue objeto de graves sanciones. Poderío marítimo de Atenas; gobierno de Pericles. A finales de siglo estalló la Guerra del Peloponeso, entre Esparta y Atenas, que finaliza con la victoria de la primera de ellas.
 Siglo V a. C.: En el norte de África continúa la expansión comercial y territorial de Cartago, que controla el Mediterráneo Occidental. En Italia choca frecuentemente con Etruria y las colonias griegas.
 Siglo V a. C.: Egipto se subleva al morir Darío II, dando fin a la primera ocupación persa ―Dinastía XXVII (400-398 a. C.) y Dinastía XXVIII de Egipto―.
@@ -1317,7 +1305,6 @@ Siglo VIII a. C.: En la India se compone en este siglo (o en el siguiente) el te
 800 a. C. en México comienza el período de la mayor expansión de la cultura olmeca, que abarca hasta el año 400 a. C.
 800 a. C.: llegan a la península ibérica los primeros colonos fenicios.4​
 993 a. C.: en Grecia, el rey de Atenas Arquipo fallece tras 19 años de reinado. Es sucedido por su hijo Thersipo.
-984 a. C.: en Egipto, Osocor el Mayor sucede a Amenemope como rey.
 982 a. C.: termina el primer periodo (1197-982 a. C.) de acuerdo con el concepto de Sau Yung acerca del I Ching.
 978 a. C.: en Egipto, Siamón sucede a Osocor.
 967 a. C.: en Irak, Tiglatpileser II se convierte en rey de Asiria.
@@ -1418,7 +1405,6 @@ Años 1100 a. C.: Llegan los dorios a la isla de Rodas.
 1282 a. C.: en Megara (Grecia) muere Pandión II, legendario rey de Atenas tras 25 años de reinado. Fue forzado por Metión a exilarse de Atenas. Aegneo lo sucede en el trono mientras que sus otros hijos reconquistan el resto de Ática: Nissos reina en Megara, Lycos en Eubea y Pallas en el sur de Ática.
 h. 1279 a. C.: en Egipto, Ramsés II se convierte en faraón. Es el más influyente de la dinastía XIX.
 h. 1279 a. C.: es destruida la localidad de Troya VI (el sexto estrato encontrado en la colina donde la ciudad fue reconstruida varias veces); se especula que es el pueblo que ―según la Ilíada de Homero― fue destruido por los griegos tras un sitio de diez años.
-h. 1279 − 1213 a. C.: en Abu Simbel (Nubia) se construye el templo de Ramsés II (dinastía XIX). Se hizo una pintura mural de la reina Nefertari haciendo una ofrenda a la diosa Isis en la tumba de Nefertari. La tumba se encuentra en el Valle de las Reinas.
 h. 1279 − 1213 a. C.: en Tebas (Egipto) se construye el templo de Amón, Mut y Jonsu.
 1278 a. C.: en Egipto, Ramsés II derrota a los piratas marinos shardana.
 1274 a. C.: en el Imperio asirio, Salmanasar I se convierte en rey.
@@ -1448,7 +1434,6 @@ Siglo XIII a. C.: En Pilos (puerto griego) se construye el Palacio de Néstor (u
 1400 a. C.: en Hattusa ―cerca de la moderna aldea de Boghazköy (distrito de Çorum) (Turquía)― se construye la Puerta del León.
 1397 a. C.: Pandión I, legendario rey de Atenas, muere después de 40 años de reinado y lo sucede su hijo Erecteo II.
 1385 a. C.: en Egipto, el faraón Amenhotep III se casa con Tiy.
-1380 a. C.: el faraón Amenhotep II conecta el río Nilo y el mar Rojo mediante un canal.
 1372 a. C.: los hititas conquistan todo el reino de Mitani, a occidente del Éufrates.
 1365 a. C. (± 5 años): en Ugarit (Siria) sucede un terremoto (datado por las ruinas). El tsunami posterior y un incendio destruyen toda la ciudad.
 1365 a. C.: en Asiria, Ashur-uballit I se convierte en rey.
@@ -1477,7 +1462,6 @@ Hacia 1300 a 1200 a. C.: se construye el palacio de Pilos.
 Hacia 1300 a 1100 a. C: en Micenas (Grecia) un artesano realiza el Vaso del Guerrero. Actualmente se encuentra en el Museo Arqueológico Nacional de Atenas.
 Hacia el 1500 a. C.: en Afganistán y Pakistán, varios siglos después de la declinación de la cultura del valle del río Indo, los poetas de las tribus indoarias comienzan a componer el Rig-veda (el texto más antiguo de la India), que tomará su forma actual hacia el 1100 a. C.
 1504-1492 a. C.: Egipto conquista Nubia y el Levante.
-H. 1492 a. C. (puede ser 1493 a. C.): muere Tutmosis I (Dinastía XVIII de Egipto).
 1492 a. C. (3 de abril): sucede el saros lunar 37.2​
 1473 a. C.: en Egipto, inicia su mandato la faraona Maatkara-Hatshepsut (hasta el 1458 a. C.).
 1457 a. C. (9 de mayo): en Megido, las fuerzas del faraón egipcio Tutmosis III vencen a una coalición canaanita liderada por el rey de Kadesh, en la batalla de Megido. Es la primera batalla que ha sido registrada con detalles que se consideran confiables. (También puede haber sucedido en el 1479 a. C.).
@@ -1557,7 +1541,6 @@ Siglo XVIII a. C.: Un artesano crea las pelotas de goma más antiguas que se con
 1760 a. C (cronología media): Hammurabi redacta un importante conjunto de leyes destinadas a garantizar la equitatividad entre las sentencias de su época. Es el conocido como Código de Hammurabi.
 1753 a. C.: Hammurabi conquista Asiria y Ešnunna.
 1750 a. C.: en Mesopotamia termina reinado de Hammurabi inicia reinado de su hijo Samsu-iluna. Fue el séptimo rey de la primera dinastía de Babilonia, y culminará su reinado en 1712 a. C.
-1750 a. C.: en el centro de Creta, a 50 km al sur-suroeste de Iraklio, sucede un terremoto de X grados en la escala sismológica de Mercalli. Se desconoce la cantidad de muertos. Ver Terremotos anteriores al siglo XX.
 1712 a. C.: inicia el reinado de Abi-Eshuh, octavo rey de la primera dinastía.
 1708 a. C.: el rey babilónico Abi-Eshuh enfrenta a los nómadas casitas.
 1700 a. C. (aproximadamente): en la isla Vránguelia (140 km al norte de Siberia) se extingue la última población de mamuts lanudos.
@@ -1636,7 +1619,6 @@ c. 2600 a. C.: en la Sierra de los Cuchumatanes (Guatemala) se configura el idio
 c. 2600 a. C.: Aparecen civilizaciones megalíticas en el sureste y suroeste de la península ibérica, entre ellas Los Millares.
 c. 2600-2500 a. C.: en Dinamarca se realizan banquetes de caza, con caballos salvajes.4​
 c. 2550 a. C.: Mesannepada es rey de Ur (y será sucedido por su hijo), y funda la primera dinastía de Ur y derroca al último rey de Uruk, y al rey Mesalim de Kish.5​
-c. 2514 a. C.: en Egipto empieza a reinar Menkaura (Micerino).
 Siglo XXVII a. C.: Menfis es elegida como capital de la Tercera y la Cuarta Dinastía.
 2700-2500 a. C.: Primeras dinastías de Kish, de Uruk (Meskiangasher, Enmerkar, Lugalbanda, Dumuri, Gilgamesh), y de Ur dominan Sumeria.
 2630-2500 a. C.: comienza la Cuarta Dinastía.
@@ -1786,7 +1768,6 @@ Siglo XLIII a. C.: La estrella Theta Bootis se convierte en la estrella visible 
 Siglo XLIII a. C.: En la Europa Occidental se construyen las primeras tumbas megalíticas.
 4250-3750 a. C.: en Menec (Carnac, Francia) se construyen alineamientos de menhires.
 4220 a. C.: en Quiani, cerca de Arica (norte de Chile) comienza la primera ocupación humana.
-Siglo XLI a. C.: En las aldeas de Mesopotamia (actual Irak) se empiezan a formar por primera vez sociedades más complejas, con jerarquías de reyes y sacerdotes.
 4004 a. C. (22 de octubre): al anochecer ―de acuerdo con los cálculos (basados en el Génesis bíblico) del arzobispo norirlandés James Ussher (1581-1656)― el dios judeocristiano Yahvé crea el mundo.
 Siglo XLI a. C.: En Irak se crea el telar, una herramienta que permite ampliar el tamaño de los tejidos.
 5000-4900 a. C.: grupos nómadas se establecen en el valle del río Nilo (río de África que nace en el lago Victoria y desemboca en el mar Mediterráneo). Se agruparon en tribus y posteriormente en aldeas.
@@ -1800,7 +1781,6 @@ Siglo XLI a. C.: En Irak se crea el telar, una herramienta que permite ampliar e
 5000-4900 a. C.: En China comienza la cultura de Yangshao.
 5000-4900 a. C.: Los antepasados de los fenicios fundan Biblos (30 km al norte de la actual Beirut (Líbano).
 5000-4900 a. C.: Desarrollo de la rueda en Mesopotamia y la India.
-Siglo XLIX a. C.: En la Europa Central se construyen pozos circulares (hasta el 4600 a. C.).
 4860 a. C.: en Oregón (EE. UU) se derrumba el monte Mazama, formando una caldera que más tarde se llenará de agua y se convertirá en el Lago del Cráter, el más profundo de esa región. Se considera que fue la erupción en el Holoceno más grande (de fuerza 7) en esta cordillera.
 Siglo XLIX a. C.: En Tesalia y el oeste y centro de Macedonia se difunde la cultura Dímini (hasta el 4000 a. C.), que gradualmente reemplaza a la cultura Sesklo.
 Siglo XLIX a. C.: En la parte meridional del actual Irak se funda Eridu.
@@ -1846,7 +1826,6 @@ Siglo XLI a. C.: En Egipto se fabrican los artefactos de metal más antiguos con
 5500 a. C.: En Mehrgarh (al sur de Asia) se desarrolla la cerámica. Inicio del Segundo Periodo de esta cultura.
 5500 a. C.: En Europa se empieza a desarrollar el Neolítico cardial, con cerámicas impresas.2​
 5450 a. C.: el volcán Hekla entra en erupción
-5200 a. C.: En Malta llegan en bote los primeros habitantes.
 5200 a. C.: En el río Amarillo (China) se empiezan a domesticar pollos.
 5200 al 3400 a. C.: en el valle de Tehuacán surgen los primeros cultivos: calabaza, pimiento, maíz y frijoles. La caza deja de ser preponderante.
 5100 a. C.: En el sur de Mesopotamia se construyen templos.
