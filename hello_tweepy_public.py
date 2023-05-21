@@ -6,7 +6,7 @@ import random
 
 
 def tweet_job():
-    auth = tweepy.OAuthHandler("CONSUMER_KEY", "CONSUMER_SECRET")
+    auth = tweepy.OAuthHandler("API_KEY", "API_SECRET")
     auth.set_access_token("ACCESS_TOKEN", "ACCESS_TOKEN_SECRET")
 
     # Create API object
