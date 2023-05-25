@@ -31,8 +31,17 @@ def tweet_job():
 
     # Tweet each line, then wait one minute and tweet another.
     # Note: this design means the bot runs continuously
-    #myline = myline
-    mystr = myline.replace("\n", " ")
-    api.update_status(status=mystr)
-    print(mystr)
+    myline = myline
+    mystr = myline.strip()
+    mystr = "🤖 " + mystr
 
+    firstStr, secondStr = split_string(mystr)
+    if secondStr == "":
+        original_tweet = api.update_status(status=mystr)
+        print(mystr)
+    else:
+        original_tweet = api.update_status(status=firstStr)
+        reply1_tweet = api.update_status(status=secondStr,
+                                         in_reply_to_status_id=original_tweet.id,
+                                         auto_populate_reply_metadata=True)
+        print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}")

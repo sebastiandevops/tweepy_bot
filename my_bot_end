@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from hello_tweepy_v2_end import tweet_job
+from tweepy_modules.hello_tweepy_v2_end import tweet_job
 import time
 
 maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
