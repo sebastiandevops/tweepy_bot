@@ -11,7 +11,7 @@ if [ -f "$file_path" ]; then
 else
     echo "today_in_history does not exist. Executing tweepy_botV2 to scrape data and my_bot_start"
     # Place your commands to be executed if the file does not exist here
-    ./tweepy_botV2.sh
+    ./tweepy_botV2_britannica.sh
     python3 my_bot_start
 fi
 git add .
