@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 def split_string(string):
-    if len(string) > 240:
+    if len(string) > 234:
         # First 240 characters
-        first_string = string[:240]
+        first_string = string[:234]
         # Find the last space within the first 240 characters
         last_space_index = first_string.rfind(' ')
         if last_space_index != -1:
