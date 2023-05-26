@@ -20,7 +20,7 @@ com/on-this-day", "resourcesPrefixUrl": "https://cdn.
 britannica.
 com/mendel- resources/3-96/[url]?v=3.
 96.
-29", "userInfo": { "type": "ANONYMOUS" ,"currency": "USD" ,"country": "CO" ,"state": "ATL" ,"bcomId": "-1025013342205614772" ,"hasAds": true ,"testVersion": "D" ,"privacyInfo": {"consentLocation":false,"gdpr":false,"ccpa":false,"needConsent":false} ,"consumerId": "" ,"instId": "" ,"consumerUserName": "" ,"instUserName": "" ,"cognito": null }, "isLoggedInAsUser": false, "analytics": { "gaId": "UA-6636134-11" }, "isPhone": false, "isDesktop": true, "logoutUrl": "/auth2/logout", "selfServiceUrl": "https://myaccount.
+29", "userInfo": { "type": "ANONYMOUS" ,"currency": "USD" ,"country": "CO" ,"state": "ATL" ,"bcomId": "2402389210324534074" ,"hasAds": true ,"testVersion": "D" ,"privacyInfo": {"consentLocation":false,"gdpr":false,"ccpa":false,"needConsent":false} ,"consumerId": "" ,"instId": "" ,"consumerUserName": "" ,"instUserName": "" ,"cognito": null }, "isLoggedInAsUser": false, "analytics": { "gaId": "UA-6636134-11" }, "isPhone": false, "isDesktop": true, "logoutUrl": "/auth2/logout", "selfServiceUrl": "https://myaccount.
 britannica.
 com", "cdnUrl": "https://cdn.
 britannica.
@@ -84,6 +84,7 @@ txt processed.
 txt __pycache__ README.md test test.
 py today_in_history.
 txt tweepy_botV2_britannica.
+sh tweepy_botV2_onThisDay.
 sh tweepy_botV2.
 sh tweepy_modules tweet.
 sh tweet_v2.
@@ -274,9 +275,8 @@ com/Getty Images Plus
  Take our quiz about the lives and works of English authorsCourtesy of the National Portrait Gallery, London History at your fingertips Sign up here to see what happened On This Day, every day in your inbox! Email address By signing up, you agree to our Privacy Notice.
  Thank you for subscribing! Be on the lookout for your Britannica newsletter to get trusted stories delivered right to your inbox.
  TIME CAPSULE From Britannica Book Of The Year May 26, 
-1945 Disclosure that U.S. 8th air force would be transferred to Pacific theatre under command of Lt.
- Gen.
- James H. Doolittle is made by U.S. army air forces.
+1983 Steingrimur Hermannsson replaced Gunnar Thoroddsen as prime minister of Iceland and became the head of a coalition government that included the conservative Independent Party as well as his own Progressive Party.
+ Together the two parties controlled 37 of the 60 seats in the Althing (parliament).
  SHOW ANOTHER EVENT Connect with Britannica Facebook Twitter YouTube Instagram var IzWidget = IzWidget || {}; (function (d) { var scriptElement = d.
 createElement('script'); scriptElement.
 type = 'text/javascript'; scriptElement.
