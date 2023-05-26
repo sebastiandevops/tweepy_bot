@@ -34,13 +34,13 @@ def tweet_job():
     # Note: this design means the bot runs continuously
     myline = myline
     mystr = myline.strip()
-    mystr = "🤖 " + mystr + "#History"
+    mystr = "🤖 #History " + mystr
 
-    firstStr, secondStr = split_string(mystr)
-    if secondStr == "":
+    if len(mystr) <= 240:
         original_tweet = api.update_status(status=mystr)
         print(mystr)
     else:
+        firstStr, secondStr = split_string(mystr)
         firstStr = firstStr + " [1/2]"
         secondStr = secondStr + " [2/2]"
         original_tweet = api.update_status(status=firstStr)
