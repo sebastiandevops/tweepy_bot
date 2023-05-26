@@ -20,7 +20,7 @@ com/on-this-day", "resourcesPrefixUrl": "https://cdn.
 britannica.
 com/mendel- resources/3-96/[url]?v=3.
 96.
-29", "userInfo": { "type": "ANONYMOUS" ,"currency": "USD" ,"country": "CO" ,"state": "ATL" ,"bcomId": "5485573142547502594" ,"hasAds": true ,"testVersion": "D" ,"privacyInfo": {"consentLocation":false,"gdpr":false,"ccpa":false,"needConsent":false} ,"consumerId": "" ,"instId": "" ,"consumerUserName": "" ,"instUserName": "" ,"cognito": null }, "isLoggedInAsUser": false, "analytics": { "gaId": "UA-6636134-11" }, "isPhone": false, "isDesktop": true, "logoutUrl": "/auth2/logout", "selfServiceUrl": "https://myaccount.
+29", "userInfo": { "type": "ANONYMOUS" ,"currency": "USD" ,"country": "CO" ,"state": "ATL" ,"bcomId": "-1025013342205614772" ,"hasAds": true ,"testVersion": "D" ,"privacyInfo": {"consentLocation":false,"gdpr":false,"ccpa":false,"needConsent":false} ,"consumerId": "" ,"instId": "" ,"consumerUserName": "" ,"instUserName": "" ,"cognito": null }, "isLoggedInAsUser": false, "analytics": { "gaId": "UA-6636134-11" }, "isPhone": false, "isDesktop": true, "logoutUrl": "/auth2/logout", "selfServiceUrl": "https://myaccount.
 britannica.
 com", "cdnUrl": "https://cdn.
 britannica.
@@ -274,8 +274,9 @@ com/Getty Images Plus
  Take our quiz about the lives and works of English authorsCourtesy of the National Portrait Gallery, London History at your fingertips Sign up here to see what happened On This Day, every day in your inbox! Email address By signing up, you agree to our Privacy Notice.
  Thank you for subscribing! Be on the lookout for your Britannica newsletter to get trusted stories delivered right to your inbox.
  TIME CAPSULE From Britannica Book Of The Year May 26, 
-1941 A new draft of all men who reached 21 after the first registration is orders by Pres.
- Franklin D. Roosevelt; it is estimated 1,000,000 youths would be affected.
+1945 Disclosure that U.S. 8th air force would be transferred to Pacific theatre under command of Lt.
+ Gen.
+ James H. Doolittle is made by U.S. army air forces.
  SHOW ANOTHER EVENT Connect with Britannica Facebook Twitter YouTube Instagram var IzWidget = IzWidget || {}; (function (d) { var scriptElement = d.
 createElement('script'); scriptElement.
 type = 'text/javascript'; scriptElement.
