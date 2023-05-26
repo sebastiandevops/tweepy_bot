@@ -2,6 +2,7 @@
 import tweepy
 
 import random
+from utils.split_string import split_string
 # Authenticate to Twitter
 
 
@@ -33,13 +34,15 @@ def tweet_job():
     # Note: this design means the bot runs continuously
     myline = myline
     mystr = myline.strip()
-    mystr = "🤖 " + mystr
+    mystr = "🤖 " + mystr + "#History"
 
     firstStr, secondStr = split_string(mystr)
     if secondStr == "":
         original_tweet = api.update_status(status=mystr)
         print(mystr)
     else:
+        firstStr = firstStr + " [1/2]"
+        secondStr = secondStr + " [2/2]"
         original_tweet = api.update_status(status=firstStr)
         reply1_tweet = api.update_status(status=secondStr,
                                          in_reply_to_status_id=original_tweet.id,
