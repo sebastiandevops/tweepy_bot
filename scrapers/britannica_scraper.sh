@@ -8,3 +8,4 @@ sed -E 's/([0-9]{4}\s)/\n\1/' processed.txt > processed2.txt
 grep -E '[0-9]{4}\s' processed2.txt > processed3.txt
 grep -v -e 'See All' -e 'SHOW' -e 'Test your knowledge' processed3.txt | grep -vE '^.{,120}$' > processed4.txt
 sed -E 's/([0-9]{4}) /\1, /g' processed4.txt > today_in_history.txt
+rm -rf data.txt processed*

@@ -9,7 +9,7 @@ from utils.split_string import split_string
 
 
 def tweet_job(api):
-    data = '/home/sebastian/estudio/tweepy_bot/today_in_history.txt'
+    data = '/home/sebastian/estudio/tweepy_bot/scrapers/today_in_history.txt'
     with open(data, 'r') as filename:
         lines = filename.readlines()
 

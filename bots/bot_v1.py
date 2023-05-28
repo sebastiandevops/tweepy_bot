@@ -7,7 +7,7 @@ from utils.split_string import split_string
 
 
 def tweet_job(api):
-    data = '/home/sebastian/estudio/tweepy_bot/history.txt'
+    data = '/home/sebastian/estudio/tweepy_bot/scrapers/history.txt'
     with open(data, 'r') as filename:
         lines = filename.readlines()
 
