@@ -10,12 +10,15 @@ if [ -f "$file_path" ]; then
     # Place your commands to be executed if the file exists here
     python3 bot_end_runner.py
     rm -rf "$dir"/processed* "$dir"/data.txt "$dir"/today_in_history.txt
+    git add .
+    git commit -m "My_bot_end executed: $timestamp"
+    git push origin main
 else
     echo "today_in_history does not exist. Executing tweepy_botV2 to scrape data and my_bot_start"
     # Place your commands to be executed if the file does not exist here
     ./scrapers/britannica_scraper.sh "$url"
     python3 bot_start_runner.py
+    git add .
+    git commit -m "My_bot_start executed: $timestamp"
+    git push origin main
 fi
-git add .
-git commit -m "History update: $timestamp"
-git push origin main

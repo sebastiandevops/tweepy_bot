@@ -6,5 +6,5 @@ git pull origin main
 ./scrapers/hoy_en_la_historia_scraper.sh $url
 python3 bot_spanish_runner.py
 git add .
-git commit -m "History update: $timestamp"
+git commit -m "bot_spanish_runner executed: $timestamp"
 git push origin main
