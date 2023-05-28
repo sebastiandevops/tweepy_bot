@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from tweepy_modules.config import create_api
+from bots.config import create_api
 
 import random
 from utils.split_string import split_string

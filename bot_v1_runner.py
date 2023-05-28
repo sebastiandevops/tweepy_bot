@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from tweepy_modules.bot_v1 import main
+from bots.bot_v1 import main
 import time
 
 maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,

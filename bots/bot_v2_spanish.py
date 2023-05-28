@@ -1,15 +1,19 @@
 #!/usr/bin/python3
-from tweepy_modules.config import create_api
 import random
 
+from bots.config import create_api
+
 from datetime import datetime
+# import locale
+from babel.dates import format_date
+from babel.numbers import format_decimal
 
 from utils.split_string import split_string
 # Authenticate to Twitter
 
 
 def tweet_job(api):
-    data = '/home/sebastian/estudio/tweepy_bot/today_in_history.txt'
+    data = '/home/sebastian/estudio/tweepy_bot/hoy_en_la_historia.txt'
     with open(data, 'r') as filename:
         lines = filename.readlines()
 
@@ -18,14 +22,19 @@ def tweet_job(api):
     # Get the current date
     current_date = datetime.now()
 
+    # Format the date components separately
+    day = format_decimal(current_date.day, format='##')
+    month = format_date(current_date, format='MMMM', locale='es')
+
     # Format the date as "month day"
-    formatted_date = current_date.strftime("%B %d")
+    # Create the formatted date with "de" separator
+    formatted_date = f"{day} de {month}"
 
     # Tweet each line, then wait one minute and tweet another.
     # Note: this design means the bot runs continuously
     myline = myline
     mystr = myline.strip()
-    mystr = f"🤖 #OnThisDay, {formatted_date}, " + mystr
+    mystr = f"🤖 #HoyEnLaHistoria, {formatted_date}, " + mystr
 
     if len(mystr) <= 240:
         original_tweet = api.update_status(status=mystr)
