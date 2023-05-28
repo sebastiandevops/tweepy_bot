@@ -1,25 +1,13 @@
 #!/usr/bin/python3
 import tweepy
+from tweepy_modules.config import create_api
 
 import random
 from utils.split_string import split_string
 # Authenticate to Twitter
 
 
-def tweet_job():
-    auth = tweepy.OAuthHandler("API_KEY", "API_SECRET")
-    auth.set_access_token("ACCESS_TOKEN", "ACCESS_TOKEN_SECRET")
-
-    # Create API object
-    api = tweepy.API(auth)
-    try:
-        api.verify_credentials()
-        print("Authentication OK")
-    except SystemExit:
-        print("Error during authentication")
-        raise
-    # Create a tweet
-    # open Robin's Edgar Allen Poe data file and read every line into memory
+def tweet_job(api):
     with open('/home/sebastian/estudio/tweepy_bot/history.txt', 'r') as filename:
         lines = filename.readlines()
 
@@ -48,6 +36,11 @@ def tweet_job():
                                          in_reply_to_status_id=original_tweet.id,
                                          auto_populate_reply_metadata=True)
         print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}")
+
+
+def main():
+    api = create_api()
+    tweet_job(api)
 
 
 if __name__ == "__main__":
