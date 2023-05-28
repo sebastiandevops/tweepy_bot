@@ -5,6 +5,7 @@ ap_news="https://apnews.com/hub/today-in-history"
 on_this_day_url="https://www.onthisday.com/"
 britannica_url="https://www.britannica.com/on-this-day"
 dir=$HOME/estudio/tweepy_bot/scrapers
+rm -rf "$dir"/hoy_en_la_historia.txt
 echo $(curl --silent $hoy_en_la_historia | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/datos.txt
 sed -r 's/(.)([0-9]{4}\s)/\1\n\2/g' "$dir"/datos.txt > "$dir"/output.txt
 sed -E 's/([^A-Z])\.([^,])/\1.\n\2/g' "$dir"/output.txt > "$dir"/output2.txt
