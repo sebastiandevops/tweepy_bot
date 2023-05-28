@@ -6,13 +6,13 @@ git pull origin main
 if [ -f "$file_path" ]; then
     echo "today_in_history exists. Executing my_bot_end and data cleaner."
     # Place your commands to be executed if the file exists here
-    python3 my_bot_end
+    python3 bot_end_runner.py
     rm -rf processed* data.txt today_in_history.txt
 else
     echo "today_in_history does not exist. Executing tweepy_botV2 to scrape data and my_bot_start"
     # Place your commands to be executed if the file does not exist here
     ./tweepy_botV2_britannica.sh
-    python3 my_bot_start
+    python3 bot_start_runner.py
 fi
 git add .
 git commit -m "History update: $timestamp"
