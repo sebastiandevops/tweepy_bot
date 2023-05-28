@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import tweepy
 from tweepy_modules.config import create_api
 
 import random
@@ -8,14 +7,15 @@ from utils.split_string import split_string
 
 
 def tweet_job(api):
-    with open('/home/sebastian/estudio/tweepy_bot/history.txt', 'r') as filename:
+    data = '/home/sebastian/estudio/tweepy_bot/history.txt'
+    with open(data, 'r') as filename:
         lines = filename.readlines()
 
     myline = random.choice(lines)
 
     lines.pop(lines.index(myline))
 
-    with open('/home/sebastian/estudio/tweepy_bot/history.txt', 'w') as filename:
+    with open(data, 'w') as filename:
         filename.writelines(lines)
 
     # Tweet each line, then wait one minute and tweet another.
@@ -32,9 +32,9 @@ def tweet_job(api):
         firstStr = firstStr + " [1/2]"
         secondStr = secondStr + " [2/2]"
         original_tweet = api.update_status(status=firstStr)
-        reply1_tweet = api.update_status(status=secondStr,
-                                         in_reply_to_status_id=original_tweet.id,
-                                         auto_populate_reply_metadata=True)
+        api.update_status(status=secondStr,
+                          in_reply_to_status_id=original_tweet.id,
+                          auto_populate_reply_metadata=True)
         print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}")
 
 
