@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Secuence
-on_this_day_url="https://www.onthisday.com/"
+url=$1
 britannica_url="https://www.britannica.com/on-this-day"
-echo $(curl --silent $on_this_day_url | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > data.txt
+echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > data.txt
 sed -r 's/(.)([0-9]{4}\s)/\1\n\2/g' data.txt > processed.txt
 sed -E 's/([^A-Z])\.([^,])/\1.\n\2/g' processed.txt > processed2.txt
 grep -E '[0-9]{4}\s' processed2.txt > processed3.txt
