@@ -28,7 +28,7 @@ def tweet_job(api):
     # Note: this design means the bot runs continuously
     myline = myline
     mystr = myline.strip()
-    mystr = f"🤖 #OnThisDay, {formatted_date}, " + mystr
+    mystr = f"🤖 #OnThisDay, {formatted_date}, " + mystr + " [©2023 Encyclopædia Britannica, Inc.]"
 
     if len(mystr) <= 240:
         original_tweet = api.update_status(status=mystr)
