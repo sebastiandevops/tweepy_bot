@@ -21,23 +21,23 @@
 <p><b>Tweepy installation</b></p>
 <p>According to the official repository, the easiest way to install the latest Tweepy version is by using <a href="https://pip.pypa.io/en/stable/">pip</a></p>
 
-{% highlight text %}
+```
 pip install tweepy
-{% endhighlight %}
+```
 
 <p>You can also use Git to clone the repository and install the latest Tweepy development branch.</p>
 
-{% highlight text %}
+```
 git clone https://github.com/tweepy/tweepy.git
 cd tweepy
 pip install .
-{% endhighlight %}
+```
 
 <p>And finally, you can also install Tweepy directly from the GitHub repository.</p>
 
-{% highlight text %}
+```
 pip install git+https://github.com/tweepy/tweepy.git
-{% endhighlight %}
+```
 
 <p><b>Authentication Credentials for Twitter API</b></p>
 <p>First of all, you need to apply for a Twitter developer account. To do that you have to follow the next steps according to the <a href="https://developer.twitter.com/en/support/twitter-api/developer-account">Twitter developer account support.</a>
@@ -80,7 +80,7 @@ try:
 except Exception as e:
     print("Error during authentication")
     raise e
-{% endhighlight %}
+```
 
 <p>Make sure you replace the square bracket fields with your credentials. Once you're done we can continue with the next step.</p>
 
@@ -109,7 +109,7 @@ def create_api():
         print("Error during authentication")
         raise e
     return api
-{% endhighlight %}
+```
 
 <p>Here's an explanation of the authentication script:</p>
 
@@ -197,7 +197,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-{% endhighlight %}
+```
 
 <p>Let's go through the script step by step:</p>
 
@@ -247,7 +247,7 @@ def split_string(string):
         second_string = ""
 
     return first_string, second_string
-{% endhighlight %}
+```
 
 <p>The <code>split_string()</code> function takes a string as input and splits it into two parts while ensuring that the total length of the resulting strings does not exceed a certain limit. Here's a breakdown of the function's logic:</p>
 
@@ -263,7 +263,7 @@ def split_string(string):
 
 <p><b>Data scraper</b></p>
 
-{% highlight text %}
+```
 #!/usr/bin/env bash
 # Secuence
 url=$1
@@ -278,7 +278,7 @@ sed 's/ - /, /g' "$dir"/output2.txt > "$dir"/hoy_en_la_historia.txt
 
 # Workspace cleanup
 rm -rf "$dir"/output* "$dir"/datos*
-{% endhighlight %}
+```
 
 <p>Here's a brief summary of the functionality of the provided bash script</p>
 <p>The script takes a URL as an argument and assigns it to the <code>url</code> variable. It sets the directory path where the data will be stored in the <code>dir</code> variable. The script removes any existing <code>hoy_en_la_historia.txt</code> file in the specified directory. It retrieves data from the specified URL using <code>curl</code>, processes the HTML response using <a href="https://github.com/mgdm/htmlq">htmlq</a> and <a href="https://pypi.org/project/html2text/">html2text</a> (make sure you install first both packages, follow the hyperlinks to see the installation instructions), and stores the result in a temporary file called <code>datos.txt</code>.</p>
@@ -326,7 +326,7 @@ for i in range(maxtries):
     except:
         time.sleep(900)
         print("fail", i)
-{% endhighlight %}
+```
 
 <p>Here's the script explanation:</p>
 
@@ -342,14 +342,14 @@ for i in range(maxtries):
 
 <p><b>Cron Tweet script</b></p>
 
-{% highlight text %}
+```
 # cron_script.sh
 #!/usr/bin/env bash
 url="https://www.hoyenlahistoria.com/efemerides.php"
 cd $HOME/tweepy_bot || exit
 ./scrapers/scraper.sh $url
 python3 bot_runner.py
-{% endhighlight %}
+```
 
 <p><code>url="https://www.hoyenlahistoria.com/efemerides.php"</code>: This line assigns the <a href="https://www.hoyenlahistoria.com/efemerides.php">website url</a> to the variable <code>url</code>. It specifies the website from which the scraper will fetch data.</p>
 
@@ -371,14 +371,14 @@ python3 bot_runner.py
 
 <p><a href="https://phoenixnap.com/kb/set-up-cron-job-linux">Here</a> you can find a detail Cron Jobs in Linux explanation but for the porpuses of our lab, i just to that you keep in mind the file components, now let's check our cron file.</p>
 
-{% highlight text %}
+```
 API_KEY=[your api key]
 API_SECRET_KEY=[your api secret key]
 ACCESS_TOKEN=[your access token]
 ACCESS_TOKEN_SECRET=[your access token secret]
 # m h dom mon dow command
 0 6 * * * bash $HOME/tweepy_bot/cron_script.sh
-{% endhighlight %}
+```
 
 <p>To edit this file just type in your terminal <code>crontab -e</code> which will open an editor with the default configuration. Just copy and paste the content at the end of the file. Make sure to replace your keys within the fields.</p>
 
@@ -389,7 +389,7 @@ ACCESS_TOKEN_SECRET=[your access token secret]
 <p>In summary, the <code>crontab</code> file is configured to execute the cron_script.sh shell script at 6:00 AM every day, which in turn runs the necessary commands to automate the bot.</p>
 
 <p><b>This is how should look our project tree</b></p>
-{% highlight text %}
+```
 ~/tweepy_bot
 ❯ tree
 .
@@ -404,7 +404,7 @@ ACCESS_TOKEN_SECRET=[your access token secret]
     └── split_string.py
 
 4 directorie, 6 files
-{% endhighlight %}
+```
 
 <p>Now we're done with our first twitter bot!</p>
 
