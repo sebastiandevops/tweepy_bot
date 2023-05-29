@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Secuence
 url=$1
-britannica_url=
 dir=$HOME/estudio/tweepy_bot/scrapers
 echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/data.txt
 sed -E 's/([^A-Z])\.([^,])/\1.\n\2/g' "$dir"/data.txt > "$dir"/processed.txt
