@@ -62,7 +62,7 @@ pip install git+https://github.com/tweepy/tweepy.git
 
 <p>You may want to test your credentials using this python script:</p>
 
-{% highlight python3 %}
+```python
 #!/usr/bin/python3
 import tweepy
 
@@ -86,7 +86,7 @@ except Exception as e:
 
 <p><b>Create your configuration file to Authenticate our bot</b></p>
 
-{% highlight python3 %}
+```python
 #!/usr/bin/python3
 
 import tweepy
@@ -136,7 +136,7 @@ def create_api():
 <p><b>Create your bot</b></p>
 <p>Bot modules: <code>bot_v1.py</code> and <code>split_string.py</code></p>
 
-{% highlight python3 %}
+```python
 #!/usr/bin/python3
 # bot_v1.py
 import random
@@ -228,7 +228,8 @@ if __name__ == "__main__":
 <p>In summary, this script defines a function <code>tweet_job()</code> that reads lines from a file, selects a random line, formats the current date, and tweets the content. If the tweet exceeds the character limit, it splits the tweet into multiple parts. The script also defines a <code>main()</code> function that creates an authenticated API instance and calls <code>tweet_job()</code>. When executed as the main module, it sets everything in motion.</p>
 
 <p>Let's checkout the <code>split_string()</code> function</p>
-{% highlight python3 %}
+
+```python
 #!/usr/bin/env python3
 
 def split_string(string):
@@ -263,7 +264,7 @@ def split_string(string):
 
 <p><b>Data scraper</b></p>
 
-```
+```bash
 #!/usr/bin/env bash
 # Secuence
 url=$1
@@ -294,7 +295,7 @@ rm -rf "$dir"/output* "$dir"/datos*
 <p><code>echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/datos.txt</code>: This command retrieves the HTML content from the specified URL using <code>curl</code>, processes it using <code>htmlq</code> and <code>html2text</code>, and saves the result in a temporary file called <code>datos.txt</code>. The <code>echo</code> command and subsequent pipeline manipulate the text by removing excessive spaces and adding line breaks.</p>
 
 
-<p><code>sed -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/datos.txt > "$dir"/output.txt</code>: <code>([0-9]{3,4} -)</code> is the pattern that matches either a 3-digit or 4-digit sequence followed by a space and a dash. The captured group is then inserted into the replacement string <code>\n\1<code> to add a newline before the matched pattern.</p>
+<p><code>sed -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/datos.txt > "$dir"/output.txt</code>: <code>([0-9]{3,4} -)</code> is the pattern that matches either a 3-digit or 4-digit sequence followed by a space and a dash. The captured group is then inserted into the replacement string <code>\n\1</code> to add a newline before the matched pattern.</p>
 
 <p><code>sed -i '/^\s*$/d' "$dir"/output.txt</code>: This command is used to delete empty lines in the file. <code>/^\s*$/</code> is a regular expression pattern that matches empty lines. The <code>^</code> represents the start of a line, <code>\s*</code> matches zero or more whitespace characters, and <code>$</code> represents the end of a line. <code>/d</code> is the sed command to delete the matched lines.</p>
 
@@ -312,7 +313,7 @@ rm -rf "$dir"/output* "$dir"/datos*
 
 <p><b>Bot runner</b></p>
 
-{% highlight python3 %}
+```python
 #!/usr/bin/env python3
 from bots.bot_v1 import main
 import time
@@ -342,7 +343,7 @@ for i in range(maxtries):
 
 <p><b>Cron Tweet script</b></p>
 
-```
+```bash
 # cron_script.sh
 #!/usr/bin/env bash
 url="https://www.hoyenlahistoria.com/efemerides.php"
@@ -371,7 +372,7 @@ python3 bot_runner.py
 
 <p><a href="https://phoenixnap.com/kb/set-up-cron-job-linux">Here</a> you can find a detail Cron Jobs in Linux explanation but for the porpuses of our lab, i just to that you keep in mind the file components, now let's check our cron file.</p>
 
-```
+```bash
 API_KEY=[your api key]
 API_SECRET_KEY=[your api secret key]
 ACCESS_TOKEN=[your access token]
@@ -389,7 +390,8 @@ ACCESS_TOKEN_SECRET=[your access token secret]
 <p>In summary, the <code>crontab</code> file is configured to execute the cron_script.sh shell script at 6:00 AM every day, which in turn runs the necessary commands to automate the bot.</p>
 
 <p><b>This is how should look our project tree</b></p>
-```
+
+```bash
 ~/tweepy_bot
 ❯ tree
 .
