@@ -303,7 +303,7 @@ rm -rf "$dir"/output* "$dir"/datos*
 
 <p><code>grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/output.txt | grep -vE '^.{,60}$' > "$dir"/output2.txt</code>: This command filters out lines in <code>output3.txt</code> that contain certain keywords (See All, SHOW, Efemérides). It also removes lines that are shorter than or equal to 60 characters. The filtered lines are written to <code>output2.txt</code>.</p>
 
-<p><code>sed 's/ - /, /g' "$dir"/output2.txt > "$dir"/hoy_en_la_historia.txt</code>: This is a substitution command that searches for the pattern "space-dash-space" <code> - </code> and replaces it with a comma and a space <code>, <c/ode>.</p>
+<p><code>sed 's/ - /, /g' "$dir"/output2.txt > "$dir"/hoy_en_la_historia.txt</code>: This is a substitution command that searches for the pattern "space-dash-space" <code> - </code> and replaces it with a comma and a space <code>, </code>.</p>
 
 <p><code>rm -rf "$dir"/output* "$dir"/datos*</code>: This command removes all temporary files starting with <code>output</code> and <code>datos</code> in the specified directory <code>$dir</code> to clean our workspace.</p>
 
