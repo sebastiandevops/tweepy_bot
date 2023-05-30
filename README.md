@@ -41,7 +41,7 @@ pip install git+https://github.com/tweepy/tweepy.git
 
 <p align="justify"><b>Authentication Credentials for Twitter API</b></p>
 <p align="justify">First of all, you need to apply for a Twitter developer account. To do that you have to follow the next steps according to the <a href="https://developer.twitter.com/en/support/twitter-api/developer-account">Twitter developer account support.</a>
-    <ul>
+    <ul align="justify">
         <li>Log-in to Twitter and verify your email address. (Note that the email and phone number verification from your Twitter account may be needed to apply for a developer account, review on the Twitter help center: <a href="https://help.twitter.com/en/managing-your-account/cant-confirm-my-email-address">email address confirmation</a> or <a href="https://help.twitter.com/en/managing-your-account/how-to-add-a-phone-number-to-your-account">add phone number</a>.)</li>
         <li>Click <a href="https://developer.twitter.com/en/portal/dashboard">sign up</a> at developer.twitter.com to enter your developer account name, location and use case details.</li>
         <li>Review and accept the <a href="https://developer.twitter.com/en/developer-terms/agreement">developer agreement </a>and submit.</li>
