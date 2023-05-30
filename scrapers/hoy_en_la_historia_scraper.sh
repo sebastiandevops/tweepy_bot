@@ -16,7 +16,7 @@ sed -i '/^\s*$/d' "$dir"/output.txt
 # s/\./.\n/ finds the first occurrence of a dot (\.) on the last line and replaces it with the dot followed by a newline (.\n)
 sed -i '$ s/\./.\n/' "$dir"/output.txt
 
-grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/output.txt | grep -vE '^.{,60}$' > "$dir"/output2.txt
+grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/output.txt | grep -vE '^.{,140}$' > "$dir"/output2.txt
 
 #  substitution command that searches for the pattern "space-dash-space" (-) and replaces it with a comma and a space (, )
 sed 's/ - /, /g' "$dir"/output2.txt > "$dir"/hoy_en_la_historia.txt
