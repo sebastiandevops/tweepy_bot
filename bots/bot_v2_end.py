@@ -31,14 +31,29 @@ def tweet_job(api):
         original_tweet = api.update_status(status=mystr)
         print(mystr)
     else:
-        firstStr, secondStr = split_string(mystr)
-        firstStr = firstStr + " [1/2]"
-        secondStr = secondStr + " [2/2]"
-        original_tweet = api.update_status(status=firstStr)
-        api.update_status(status=secondStr,
-                          in_reply_to_status_id=original_tweet.id,
-                          auto_populate_reply_metadata=True)
-        print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}")
+        firstStr, secondStr, thirdStr = split_string(mystr)
+        if thirdStr == "":
+            firstStr = firstStr + " [1/2]"
+            secondStr = secondStr + " [2/2]"
+            original_tweet = api.update_status(status=firstStr)
+            api.update_status(status=secondStr,
+                              in_reply_to_status_id=original_tweet.id,
+                              auto_populate_reply_metadata=True)
+            print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}")
+        else:
+            firstStr = firstStr + " [1/2]"
+            secondStr = secondStr + " [2/3]"
+            thirdStr = thirdStr + " [3/3]"
+            original_tweet = api.update_status(status=firstStr)
+            reply1 = api.update_status(
+                status=secondStr,
+                in_reply_to_status_id=original_tweet.id,
+                auto_populate_reply_metadata=True)
+            api.update_status(
+                status=thirdStr,
+                in_reply_to_status_id=reply1.id,
+                auto_populate_reply_metadata=True)
+            print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}\nthird tweet: {thirdStr}")
 
 
 def main():
