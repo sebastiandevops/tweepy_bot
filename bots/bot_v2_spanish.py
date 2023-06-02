@@ -34,7 +34,8 @@ def tweet_job(api):
     # Note: this design means the bot runs continuously
     myline = myline
     mystr = myline.strip()
-    mystr = f"🤖 #HoyEnLaHistoria, {formatted_date}, " + mystr + " [© 2012-2023 Hoyenlahistoria.com]"
+    mystr = f"🤖 #HoyEnLaHistoria, {formatted_date}, " + mystr
+    + " [© 2012-2023 Hoyenlahistoria.com]"
 
     if len(mystr) <= 240:
         original_tweet = api.update_status(status=mystr)
@@ -62,7 +63,9 @@ def tweet_job(api):
                 status=thirdStr,
                 in_reply_to_status_id=reply1.id,
                 auto_populate_reply_metadata=True)
-            print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}\nthird tweet: {thirdStr}")
+            print(f"First tweet: {firstStr}\n"
+                  f"second tweet: {secondStr}\n"
+                  f"third tweet: {thirdStr}")
 
 
 def main():
