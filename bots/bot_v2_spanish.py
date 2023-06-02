@@ -16,7 +16,7 @@ from utils.split_string import split_string
 
 def tweet_job(api):
     home = os.getenv("HOME")
-    data = '/%s/estudio/tweepy_bot/scrapers/today_in_history.txt' % (home)
+    data = '/%s/estudio/tweepy_bot/scrapers/hoy_en_la_historia.txt' % (home)
     with open(data, 'r') as filename:
         lines = filename.readlines()
 
