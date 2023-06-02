@@ -2,13 +2,16 @@
 import random
 from bots.config import create_api
 
+import os
+
 from datetime import datetime
 from utils.split_string import split_string
 # Authenticate to Twitter
 
 
 def tweet_job(api):
-    data = '/home/sebastian/estudio/tweepy_bot/scrapers/today_in_history.txt'
+    home = os.getenv("HOME")
+    data = '/%s/estudio/tweepy_bot/scrapers/today_in_history.txt' % (home)
     with open(data, 'r') as filename:
         lines = filename.readlines()
 
