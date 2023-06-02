@@ -405,7 +405,7 @@ ACCESS_TOKEN_SECRET=[your access token secret]
 └── utils
     └── split_string.py
 
-4 directorie, 6 files
+4 directories, 6 files
 ```
 
 <p align="justify">Now we're done with our first twitter bot!</p>
