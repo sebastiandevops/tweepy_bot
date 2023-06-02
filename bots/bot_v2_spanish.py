@@ -34,8 +34,7 @@ def tweet_job(api):
     # Note: this design means the bot runs continuously
     myline = myline
     mystr = myline.strip()
-    mystr = f"🤖 #HoyEnLaHistoria, {formatted_date}, " + mystr
-    + " [© 2012-2023 Hoyenlahistoria.com]"
+    mystr = f"🤖 #HoyEnLaHistoria, {formatted_date}, " + mystr + " [© 2012-2023 Hoyenlahistoria.com]"
 
     if len(mystr) <= 240:
         original_tweet = api.update_status(status=mystr)
