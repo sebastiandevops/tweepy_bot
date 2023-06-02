@@ -3,7 +3,7 @@ timestamp=$(date +"%D %T")
 url="https://www.britannica.com/on-this-day"
 dir="$HOME/estudio/tweepy_bot/scrapers"
 file_path="$dir/today_in_history.txt"
-cd /home/sebastian/estudio/tweepy_bot || exit
+cd "$HOME"/estudio/tweepy_bot || exit
 git pull origin main
 if [ -f "$file_path" ]; then
     echo "today_in_history exists. Executing my_bot_end and data cleaner."
