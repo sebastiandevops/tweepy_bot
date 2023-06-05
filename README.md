@@ -267,24 +267,42 @@ def split_string(string):
 ```bash
 #!/usr/bin/env bash
 # Secuence
-url=$1
-dir="$HOME/estudio/tweepy_bot/scrapers"
-rm -rf "$dir"/hoy_en_la_historia.txt
-echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/datos.txt
-sed -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/datos.txt > "$dir"/output.txt
-sed -i '/^\s*$/d' "$dir"/output.txt
-sed -i '$ s/\./.\n/' "$dir"/output.txt
-grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/output.txt | grep -vE '^.{,60}$' > "$dir"/output2.txt
-sed 's/ - /, /g' "$dir"/output2.txt > "$dir"/hoy_en_la_historia.txt
 
-# Workspace cleanup
-rm -rf "$dir"/output* "$dir"/datos*
+# Get the URL argument passed to the script
+url=$1
+
+# Define the directory path
+dir="$HOME/estudio/tweepy_bot/scrapers"
+
+# Remove the existing hoy_en_la_historia.txt file
+rm -rf "$dir"/hoy_en_la_historia.txt
+
+# Fetch the content from the given URL, convert it to plain text, remove extra spaces, and save it to data.txt
+echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/data.txt
+
+# Insert a new line before a 3 or 4-digit number followed by a hyphen in data.txt
+sed -i -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/data.txt
+
+# Remove empty lines from data.txt
+sed -i '/^\s*$/d' "$dir"/data.txt
+
+# Insert a new line after the last period in data.txt
+sed -i '$ s/\./.\n/' "$dir"/data.txt
+
+# Filter out lines containing 'See All', 'SHOW', 'Efemérides' from output.txt and remove lines shorter than or equal to 140 characters, save the result to hoy_en_la_historia.txt
+grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/data.txt | grep -vE '^.{,140}$' > "$dir"/hoy_en_la_historia.txt
+
+# Replace ' - ' with ', ' in hoy_en_la_historia.txt
+sed -i 's/ - /, /g' "$dir"/hoy_en_la_historia.txt
+
+# Remove the temporary data.txt
+rm -rf "$dir"/data.txt
 ```
 
 <p align="justify">Here's a brief summary of the functionality of the provided bash script</p>
-<p align="justify">The script takes a URL as an argument and assigns it to the <code>url</code> variable. It sets the directory path where the data will be stored in the <code>dir</code> variable. The script removes any existing <code>hoy_en_la_historia.txt</code> file in the specified directory. It retrieves data from the specified URL using <code>curl</code>, processes the HTML response using <a href="https://github.com/mgdm/htmlq">htmlq</a> and <a href="https://pypi.org/project/html2text/">html2text</a> (make sure you install first both packages, follow the hyperlinks to see the installation instructions), and stores the result in a temporary file called <code>datos.txt</code>.</p>
+<p align="justify">The script takes a URL as an argument and assigns it to the <code>url</code> variable. It sets the directory path where the data will be stored in the <code>dir</code> variable. The script removes any existing <code>hoy_en_la_historia.txt</code> file in the specified directory. It retrieves data from the specified URL using <code>curl</code>, processes the HTML response using <a href="https://github.com/mgdm/htmlq">htmlq</a> and <a href="https://pypi.org/project/html2text/">html2text</a> (make sure you install first both packages, follow the hyperlinks to see the installation instructions), and stores the result in a temporary file called <code>data.txt</code>.</p>
 
-<p align="justify">The script performs various transformations on the datos.txt file using sed, tr, and grep commands to extract and format the desired data. Let's go through the commands used in the script one by one:</p>
+<p align="justify">The script performs various transformations on the data.txt file using sed, tr, and grep commands to extract and format the desired data. Let's go through the commands used in the script one by one:</p>
 
 <p align="justify"><code>url=$1</code>: This command assigns the first argument passed to the script to the variable <code>url</code>. It allows you to provide a URL as an argument when executing the script.</p>
 
@@ -292,10 +310,10 @@ rm -rf "$dir"/output* "$dir"/datos*
 
 <p align="justify"><code>rm -rf "$dir"/hoy_en_la_historia.txt</code>: This command removes any existing <code>hoy_en_la_historia.txt</code> file in the specified directory <code>$dir</code>.</p>
 
-<p align="justify"><code>echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/datos.txt</code>: This command retrieves the HTML content from the specified URL using <code>curl</code>, processes it using <code>htmlq</code> and <code>html2text</code>, and saves the result in a temporary file called <code>datos.txt</code>. The <code>echo</code> command and subsequent pipeline manipulate the text by removing excessive spaces and adding line breaks.</p>
+<p align="justify"><code>echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/data.txt</code>: This command retrieves the HTML content from the specified URL using <code>curl</code>, processes it using <code>htmlq</code> and <code>html2text</code>, and saves the result in a temporary file called <code>data.txt</code>. The <code>echo</code> command and subsequent pipeline manipulate the text by removing excessive spaces and adding line breaks.</p>
 
 
-<p align="justify"><code>sed -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/datos.txt > "$dir"/output.txt</code>: <code>([0-9]{3,4} -)</code> is the pattern that matches either a 3-digit or 4-digit sequence followed by a space and a dash. The captured group is then inserted into the replacement string <code>\n\1</code> to add a newline before the matched pattern.</p>
+<p align="justify"><code>sed -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/data.txt > "$dir"/output.txt</code>: <code>([0-9]{3,4} -)</code> is the pattern that matches either a 3-digit or 4-digit sequence followed by a space and a dash. The captured group is then inserted into the replacement string <code>\n\1</code> to add a newline before the matched pattern.</p>
 
 <p align="justify"><code>sed -i '/^\s*$/d' "$dir"/output.txt</code>: This command is used to delete empty lines in the file. <code>/^\s*$/</code> is a regular expression pattern that matches empty lines. The <code>^</code> represents the start of a line, <code>\s*</code> matches zero or more whitespace characters, and <code>$</code> represents the end of a line. <code>/d</code> is the sed command to delete the matched lines.</p>
 
@@ -305,7 +323,7 @@ rm -rf "$dir"/output* "$dir"/datos*
 
 <p align="justify"><code>sed 's/ - /, /g' "$dir"/output2.txt > "$dir"/hoy_en_la_historia.txt</code>: This is a substitution command that searches for the pattern "space-dash-space" <code> - </code> and replaces it with a comma and a space <code>, </code>.</p>
 
-<p align="justify"><code>rm -rf "$dir"/output* "$dir"/datos*</code>: This command removes all temporary files starting with <code>output</code> and <code>datos</code> in the specified directory <code>$dir</code> to clean our workspace.</p>
+<p align="justify"><code>rm -rf "$dir"/output* "$dir"/data*</code>: This command removes all temporary files starting with <code>output</code> and <code>data</code> in the specified directory <code>$dir</code> to clean our workspace.</p>
 
 <p align="justify">It saves the final formatted data into the <code>hoy_en_la_historia.txt</code> file, which is the file that we are using the get the data for our bot.</p>
 

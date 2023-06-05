@@ -1,25 +1,32 @@
 #!/usr/bin/env bash
 # Secuence
+
+# Get the URL argument passed to the script
 url=$1
+
+# Define the directory path
 dir="$HOME/estudio/tweepy_bot/scrapers"
+
+# Remove the existing hoy_en_la_historia.txt file
 rm -rf "$dir"/hoy_en_la_historia.txt
-echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/datos.txt
 
-# ([0-9]{3,4} -) is the pattern that matches either a 3-digit or 4-digit sequence followed by a space and a dash. The captured group is then inserted into the replacement string \n\1 to add a newline before the matched pattern.
-sed -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/datos.txt > "$dir"/output.txt
+# Fetch the content from the given URL, convert it to plain text, remove extra spaces, and save it to data.txt
+echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/data.txt
 
-# /^\s*$/ is a regular expression pattern that matches empty lines. The ^ represents the start of a line, \s* matches zero or more whitespace characters, and $ represents the end of a line.
-# /d is the sed command to delete the matched lines.
-sed -i '/^\s*$/d' "$dir"/output.txt
+# Insert a new line before a 3 or 4-digit number followed by a hyphen in data.txt
+sed -i -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/data.txt
 
-# $ matches the last line of the file.
-# s/\./.\n/ finds the first occurrence of a dot (\.) on the last line and replaces it with the dot followed by a newline (.\n)
-sed -i '$ s/\./.\n/' "$dir"/output.txt
+# Remove empty lines from data.txt
+sed -i '/^\s*$/d' "$dir"/data.txt
 
-grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/output.txt | grep -vE '^.{,140}$' > "$dir"/output2.txt
+# Insert a new line after the last period in data.txt
+sed -i '$ s/\./.\n/' "$dir"/data.txt
 
-#  substitution command that searches for the pattern "space-dash-space" (-) and replaces it with a comma and a space (, )
-sed 's/ - /, /g' "$dir"/output2.txt > "$dir"/hoy_en_la_historia.txt
+# Filter out lines containing 'See All', 'SHOW', 'Efemérides' from output.txt and remove lines shorter than or equal to 140 characters, save the result to hoy_en_la_historia.txt
+grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/data.txt | grep -vE '^.{,140}$' > "$dir"/hoy_en_la_historia.txt
 
-# Workspace cleanup
-rm -rf "$dir"/output* "$dir"/datos*
+# Replace ' - ' with ', ' in hoy_en_la_historia.txt
+sed -i 's/ - /, /g' "$dir"/hoy_en_la_historia.txt
+
+# Remove the temporary output* and datos* files
+rm -rf "$dir"/data.txt
