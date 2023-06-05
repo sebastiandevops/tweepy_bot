@@ -313,17 +313,17 @@ rm -rf "$dir"/data.txt
 <p align="justify"><code>echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/data.txt</code>: This command retrieves the HTML content from the specified URL using <code>curl</code>, processes it using <code>htmlq</code> and <code>html2text</code>, and saves the result in a temporary file called <code>data.txt</code>. The <code>echo</code> command and subsequent pipeline manipulate the text by removing excessive spaces and adding line breaks.</p>
 
 
-<p align="justify"><code>sed -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/data.txt > "$dir"/output.txt</code>: <code>([0-9]{3,4} -)</code> is the pattern that matches either a 3-digit or 4-digit sequence followed by a space and a dash. The captured group is then inserted into the replacement string <code>\n\1</code> to add a newline before the matched pattern.</p>
+<p align="justify"><code>sed -i -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/data.txt</code>: <code>([0-9]{3,4} -)</code> is the pattern that matches either a 3-digit or 4-digit sequence followed by a space and a dash. The captured group is then inserted into the replacement string <code>\n\1</code> to add a newline before the matched pattern.</p>
 
-<p align="justify"><code>sed -i '/^\s*$/d' "$dir"/output.txt</code>: This command is used to delete empty lines in the file. <code>/^\s*$/</code> is a regular expression pattern that matches empty lines. The <code>^</code> represents the start of a line, <code>\s*</code> matches zero or more whitespace characters, and <code>$</code> represents the end of a line. <code>/d</code> is the sed command to delete the matched lines.</p>
+<p align="justify"><code>sed -i '/^\s*$/d' "$dir"/data.txt</code>: This command is used to delete empty lines in the file. <code>/^\s*$/</code> is a regular expression pattern that matches empty lines. The <code>^</code> represents the start of a line, <code>\s*</code> matches zero or more whitespace characters, and <code>$</code> represents the end of a line. <code>/d</code> is the sed command to delete the matched lines.</p>
 
-<p align="justify"><code>sed -i '$ s/\./.\n/' "$dir"/output.txt</code>: <code>$</code> matches the last line of the file. <code>s/\./.\n/</code> finds the first occurrence of a dot <code>\.</code> on the last line and replaces it with the dot followed by a newline <code>.\n</code>.</p>
+<p align="justify"><code>sed -i '$ s/\./.\n/' "$dir"/data.txt</code>: <code>$</code> matches the last line of the file. <code>s/\./.\n/</code> finds the first occurrence of a dot <code>\.</code> on the last line and replaces it with the dot followed by a newline <code>.\n</code>.</p>
 
-<p align="justify"><code>grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/output.txt | grep -vE '^.{,60}$' > "$dir"/output2.txt</code>: This command filters out lines in <code>output3.txt</code> that contain certain keywords (See All, SHOW, Efemérides). It also removes lines that are shorter than or equal to 60 characters. The filtered lines are written to <code>output2.txt</code>.</p>
+<p align="justify"><code>grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/data.txt | grep -vE '^.{,60}$' > "$dir"/hoy_en_la_historia.txt</code>: This command filters out lines in <code>hoy_en_la_historia.txt</code> that contain certain keywords (See All, SHOW, Efemérides). It also removes lines that are shorter than or equal to 60 characters.</p>
 
-<p align="justify"><code>sed 's/ - /, /g' "$dir"/output2.txt > "$dir"/hoy_en_la_historia.txt</code>: This is a substitution command that searches for the pattern "space-dash-space" <code> - </code> and replaces it with a comma and a space <code>, </code>.</p>
+<p align="justify"><code>sed -i 's/ - /, /g' "$dir"/hoy_en_la_historia.txt</code>: This is a substitution command that searches for the pattern "space-dash-space" <code> - </code> and replaces it with a comma and a space <code>, </code>.</p>
 
-<p align="justify"><code>rm -rf "$dir"/output* "$dir"/data*</code>: This command removes all temporary files starting with <code>output</code> and <code>data</code> in the specified directory <code>$dir</code> to clean our workspace.</p>
+<p align="justify"><code>rm -rf "$dir"/data*</code>: This command removes all temporary files starting with <code>data</code> in the specified directory <code>$dir</code> to clean our workspace.</p>
 
 <p align="justify">It saves the final formatted data into the <code>hoy_en_la_historia.txt</code> file, which is the file that we are using the get the data for our bot.</p>
 
