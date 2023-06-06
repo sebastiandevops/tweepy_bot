@@ -31,7 +31,7 @@ sed -i -E 's/([0-9]{4}\s)/\n\1/' "$dir"/data.txt
 grep -E '[0-9]{4}\s' "$dir"/data.txt > "$dir"/processed.txt
 
 # Filter out lines containing "See All Biographies" or "born" from processed.txt, and remove lines shorter than or equal to 80 characters
-grep -v -e 'See All Biographies' -e 'born' "$dir"/processed.txt | grep -vE '^.{,80}$' > "$dir"/today_in_history.txt
+grep -v -e 'See All Biographies' -e 'born' "$dir"/processed.txt | grep -vE '^.{,220}$' > "$dir"/today_in_history.txt
 
 # Add a comma after the 4-digit year in today_in_history.txt
 sed -i -E 's/([0-9]{4}) /\1, /g' "$dir"/today_in_history.txt
