@@ -15,7 +15,7 @@ from utils.split_string import split_string
 
 def tweet_job(api):
     home = os.getenv("HOME")
-    data = '/%s/estudio/tweepy_bot/scrapers/today_in_history.txt' % (home)
+    data = '/%s/estudio/tweepy_bot/scrapers/hoy_en_la_historia.txt' % (home)
     with open(data, 'r') as filename:
         lines = filename.readlines()
 
@@ -41,21 +41,37 @@ def tweet_job(api):
     # Note: this design means the bot runs continuously
     myline = myline
     mystr = myline.strip()
-    mystr = f"🤖 #HoyEnLaHistoria, {formatted_date}, " + mystr
-    + " [© 2012-2023 Hoyenlahistoria.com]"
+    mystr = f"🤖 #HoyEnLaHistoria, {formatted_date}, " + mystr + " [© 2012-2023 Hoyenlahistoria.com]"
 
     if len(mystr) <= 240:
         original_tweet = api.update_status(status=mystr)
         print(mystr)
     else:
-        firstStr, secondStr = split_string(mystr)
-        firstStr = firstStr + " [1/2]"
-        secondStr = secondStr + " [2/2]"
-        original_tweet = api.update_status(status=firstStr)
-        api.update_status(status=secondStr,
-                          in_reply_to_status_id=original_tweet.id,
-                          auto_populate_reply_metadata=True)
-        print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}")
+        firstStr, secondStr, thirdStr = split_string(mystr)
+        if thirdStr == "":
+            firstStr = firstStr + " [1/2]"
+            secondStr = secondStr + " [2/2]"
+            original_tweet = api.update_status(status=firstStr)
+            api.update_status(status=secondStr,
+                              in_reply_to_status_id=original_tweet.id,
+                              auto_populate_reply_metadata=True)
+            print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}")
+        else:
+            firstStr = firstStr + " [1/2]"
+            secondStr = secondStr + " [2/3]"
+            thirdStr = thirdStr + " [3/3]"
+            original_tweet = api.update_status(status=firstStr)
+            reply1 = api.update_status(
+                status=secondStr,
+                in_reply_to_status_id=original_tweet.id,
+                auto_populate_reply_metadata=True)
+            api.update_status(
+                status=thirdStr,
+                in_reply_to_status_id=reply1.id,
+                auto_populate_reply_metadata=True)
+            print(f"First tweet: {firstStr}\n"
+                  f"second tweet: {secondStr}\n"
+                  f"third tweet: {thirdStr}")
 
 
 def main():
