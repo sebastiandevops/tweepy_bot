@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from bots.bot_v2_start import main
+from bots.bot_v2_spanish_start import main
 import time
 
 maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
