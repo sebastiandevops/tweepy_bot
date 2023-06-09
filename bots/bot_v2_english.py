@@ -15,7 +15,7 @@ def tweet_job(api):
     with open(data, 'r') as filename:
         lines = filename.readlines()
 
-    myline = max(lines, key=len)
+    myline = random.choice(lines)
 
     # Get the current date
     current_date = datetime.now()
