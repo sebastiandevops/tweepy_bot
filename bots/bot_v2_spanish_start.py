@@ -20,7 +20,8 @@ def tweet_job(api):
         lines = filename.readlines()
 
     # Find the longest line
-    myline = max(lines, key=len)
+    # myline = max(lines, key=len)
+    myline = random.choice(lines)
 
     lines.pop(lines.index(myline))
 
