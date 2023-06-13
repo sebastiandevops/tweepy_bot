@@ -2,6 +2,7 @@
 
 # tweepy-bots/bots/config.py
 import tweepy
+from tweepy.auth import OAuthHandler
 import os
 
 
