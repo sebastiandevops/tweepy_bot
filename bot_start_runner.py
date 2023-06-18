@@ -3,9 +3,9 @@
 import os
 import time
 
-from bots.config import create_api
-from bots.bots import tweet_start
-from utils.get_date import get_date_spanish
+from config import create_api
+from modules.tweet import tweet
+from modules.get_date import get_date
 
 api = create_api()
 
@@ -15,13 +15,13 @@ project_path = '/%s/estudio/tweepy_bot' % (home)
 data = '/%s/scrapers/hoy_en_la_historia.txt' % (project_path)
 
 source = "[© 2012-2023 Hoyenlahistoria.com]"
-
-date = get_date_spanish()
+tag = "🤖 #HoyEnLaHistoria"
+date = get_date(format="esp")
 
 for i in range(maxtries):
     try:
-        tweet_start(api, date, data, source)
+        tweet(api, tag, date, data, source, cleaner=True)
         break
-    except:
+    except Exception as i:
         time.sleep(900)
         print("fail", i)

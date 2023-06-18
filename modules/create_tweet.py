@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 
-from utils.split_string import split_string
+from modules.split_string import split_string
 
 
 def create_tweet(api, mystr):
+
+    """[TODO: Function to create a sigle tweet or thread]
+
+    Args:
+        api ([TODO:parameter]): [TODO: Twitter API object]
+        mystr ([TODO:parameter]): [TODO: String to be processed]
+    """
 
     if len(mystr) <= 240:
         response = api.create_tweet(text=mystr)
