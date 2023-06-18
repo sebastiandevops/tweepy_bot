@@ -6,11 +6,6 @@ from babel.dates import format_date
 from babel.numbers import format_decimal
 from utils.data_readers import read_and_delete, read
 
-sources = {
-    "esp": "[© 2012-2023 Hoyenlahistoria.com]",
-    "en":  "[©2023 Encyclopædia Britannica, Inc.]"
-}
-
 
 def get_line_start(data, source):
 
@@ -27,7 +22,7 @@ def get_line_start(data, source):
     # Create the formatted date with "de" separator
     formatted_date = f"{day} de {month}"
 
-    mystr = f'🤖 #HoyEnLaHistoria, {formatted_date}, {mystr} {source["esp"]}'
+    mystr = f'🤖 #HoyEnLaHistoria, {formatted_date}, {mystr} {source}'
 
     return mystr
 
@@ -48,7 +43,7 @@ def get_line_end(data, source):
 
     # Tweet each line, then wait one minute and tweet another.
     # Note: this design means the bot runs continuously
-    mystr = f'🤖 #HoyEnLaHistoria, {formatted_date}, {mystr} {source["es"]}'
+    mystr = f'🤖 #HoyEnLaHistoria, {formatted_date}, {mystr} {source}'
 
     return mystr
 
@@ -65,7 +60,7 @@ def get_line_english(data, source):
 
     # Tweet each line, then wait one minute and tweet another.
     # Note: this design means the bot runs continuously
-    mystr = f'🤖 #OnThisDay, {formatted_date}, {mystr} {source["en"]}'
+    mystr = f'🤖 #OnThisDay, {formatted_date}, {mystr} {source}'
 
     return mystr
 
@@ -82,7 +77,7 @@ def get_line_english_start(data, source):
 
     # Tweet each line, then wait one minute and tweet another.
     # Note: this design means the bot runs continuously
-    mystr = f'🤖 #OnThisDay, {formatted_date}, {mystr} {source["en"]}'
+    mystr = f'🤖 #OnThisDay, {formatted_date}, {mystr} {source}'
 
     return mystr
 
