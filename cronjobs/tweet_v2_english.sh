@@ -2,7 +2,7 @@
 url="https://www.britannica.com/on-this-day"
 timestamp=$(date +"%D %T")
 dir="$HOME/estudio/tweepy_bot"
-scraper="$dir"/scraper/britannica_scraper.sh
+scraper="$dir"/scrapers/britannica_scraper.sh
 bot_runner="bot_english_runner.py"
 branch="main"
 
