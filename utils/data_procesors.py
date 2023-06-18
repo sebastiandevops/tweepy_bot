@@ -1,26 +1,40 @@
 #!/usr/bin/env python3
 
-import random
 from datetime import datetime
 # import locale
 from babel.dates import format_date
 from babel.numbers import format_decimal
+from utils.data_readers import read_and_delete, read
+
+sources = {
+    "esp": "[© 2012-2023 Hoyenlahistoria.com]",
+    "en":  "[©2023 Encyclopædia Britannica, Inc.]"
+}
 
 
-def data_processor_start(data):
+def get_line_start(data, source):
 
-    with open(data, 'r') as filename:
-        lines = filename.readlines()
+    mystr = read_and_delete(data)
 
-    # Find the longest line
-    # myline = max(lines, key=len)
-    myline = random.choice(lines)
+    # Get the current date
+    current_date = datetime.now()
 
-    lines.pop(lines.index(myline))
+    # Format the date components separately
+    day = format_decimal(current_date.day, format='##')
+    month = format_date(current_date, format='MMMM', locale='es')
 
-    with open(data, 'w') as filename:
-        filename.writelines(lines)
+    # Format the date as "month day"
+    # Create the formatted date with "de" separator
+    formatted_date = f"{day} de {month}"
 
+    mystr = f'🤖 #HoyEnLaHistoria, {formatted_date}, {mystr} {source["esp"]}'
+
+    return mystr
+
+
+def get_line_end(data, source):
+
+    mystr = read(data)
     # Get the current date
     current_date = datetime.now()
 
@@ -34,46 +48,14 @@ def data_processor_start(data):
 
     # Tweet each line, then wait one minute and tweet another.
     # Note: this design means the bot runs continuously
-    myline = myline
-    mystr = myline.strip()
-    mystr = f"🤖 #HoyEnLaHistoria, {formatted_date}, " + mystr + " [© 2012-2023 Hoyenlahistoria.com]"
+    mystr = f'🤖 #HoyEnLaHistoria, {formatted_date}, {mystr} {source["es"]}'
 
     return mystr
 
 
-def data_processor_end(data):
+def get_line_english(data, source):
 
-    with open(data, 'r') as filename:
-        lines = filename.readlines()
-
-    myline = random.choice(lines)
-
-    # Get the current date
-    current_date = datetime.now()
-
-    # Format the date components separately
-    day = format_decimal(current_date.day, format='##')
-    month = format_date(current_date, format='MMMM', locale='es')
-
-    # Format the date as "month day"
-    # Create the formatted date with "de" separator
-    formatted_date = f"{day} de {month}"
-
-    # Tweet each line, then wait one minute and tweet another.
-    # Note: this design means the bot runs continuously
-    myline = myline
-    mystr = myline.strip()
-    mystr = f"🤖 #HoyEnLaHistoria, {formatted_date}, " + mystr + " [© 2012-2023 Hoyenlahistoria.com]"
-
-    return mystr
-
-
-def data_processor_english(data):
-
-    with open(data, 'r') as filename:
-        lines = filename.readlines()
-
-    myline = random.choice(lines)
+    mystr = read(data)
 
     # Get the current date
     current_date = datetime.now()
@@ -83,9 +65,24 @@ def data_processor_english(data):
 
     # Tweet each line, then wait one minute and tweet another.
     # Note: this design means the bot runs continuously
-    myline = myline
-    mystr = myline.strip()
-    mystr = f"🤖 #OnThisDay, {formatted_date}, " + mystr + " [©2023 Encyclopædia Britannica, Inc.]"
+    mystr = f'🤖 #OnThisDay, {formatted_date}, {mystr} {source["en"]}'
+
+    return mystr
+
+
+def get_line_english_start(data, source):
+
+    mystr = read_and_delete(data)
+
+    # Get the current date
+    current_date = datetime.now()
+
+    # Format the date as "month day"
+    formatted_date = current_date.strftime("%B %d")
+
+    # Tweet each line, then wait one minute and tweet another.
+    # Note: this design means the bot runs continuously
+    mystr = f'🤖 #OnThisDay, {formatted_date}, {mystr} {source["en"]}'
 
     return mystr
 
