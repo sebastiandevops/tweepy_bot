@@ -3,26 +3,30 @@
 import os
 import time
 
-from config import create_api
-from modules.tweet import tweet
-from modules.get_date import get_date
+from app.models import Tweet
+from app.config import create_api
+from app.services import get_date
 
-api = create_api()
 
-maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
-home = os.getenv("HOME")
-project_path = '/%s/estudio/tweepy_bot' % (home)
-data = '/%s/scrapers/today_in_history.txt' % (project_path)
+if __name__ == '__main__':
 
-source = "[©2023 Encyclopædia Britannica, Inc.]"
-tag = "🤖 #TodayInHistory"
+    api = create_api()
 
-date = get_date(format="eng")
+    maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
+    home = os.getenv("HOME")
+    project_path = '/%s/estudio/tweepy_bot' % (home)
+    data = '/%s/scrapers/today_in_history.txt' % (project_path)
 
-for i in range(maxtries):
-    try:
-        tweet(api, tag, date, data, source)
-        break
-    except Exception as i:
-        time.sleep(900)
-        print("fail", i)
+    source = "[©2023 Encyclopædia Britannica, Inc.]"
+    tag = "🤖 #OnThisDay"
+    date = get_date(format="eng")
+
+    for i in range(maxtries):
+        try:
+            app = Tweet(api, tag, date, data, source)
+            mystr = app.get_tweet()
+            app.post_tweet(mystr)
+            break
+        except Exception as i:
+            time.sleep(900)
+            print("fail", i)
