@@ -42,31 +42,17 @@ def read_file(data, cleaner):
     Returns:
         mystr (str): the text to pupulaate the tweet
     """
-    if cleaner is True:
-        with open(data, 'r') as filename:
-            lines = filename.readlines()
+    with open(data, 'r') as filename:
+        lines = filename.readlines()
 
-        # Find the longest line
-        # myline = max(lines, key=len)
-        myline = random.choice(lines)
+    myline = random.choice(lines)
 
-        lines.pop(lines.index(myline))
-
+    if cleaner:
+        lines.remove(myline)
         with open(data, 'w') as filename:
             filename.writelines(lines)
 
-        mystr = myline.strip()
-
-    else:
-        with open(data, 'r') as filename:
-            lines = filename.readlines()
-
-        # Find the longest line
-        # myline = max(lines, key=len)
-        myline = random.choice(lines)
-
-        mystr = myline.strip()
-
+    mystr = myline.strip()
     return mystr
 
 
