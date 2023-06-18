@@ -84,34 +84,23 @@ def create_tweet(api, mystr):
         print(f"Tweet: {mystr}")
         print(response)
     else:
-        firstStr, secondStr, thirdStr = split_string(mystr)
-        if thirdStr == "":
-            firstStr = firstStr + " [1/2]"
-            secondStr = secondStr + " [2/2]"
+        tweets = split_string(mystr)
+        n_tweets = len(tweets)
+        logs = response
+        if n_tweets > 1:
+            firstStr = tweets[0] + " [1/%s]" % (str(n_tweets))
             response = api.create_tweet(text=firstStr)
-            api.create_tweet(
-                text=secondStr,
-                in_reply_to_tweet_id=response.data['id']
-            )
-            print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}")
-            print(response)
-        else:
-            firstStr = firstStr + " [1/3]"
-            secondStr = secondStr + " [2/3]"
-            thirdStr = thirdStr + " [3/3]"
-            response = api.create_tweet(text=firstStr)
-            reply1 = api.create_tweet(
-                status=secondStr,
-                in_reply_to_tweet_id=response.data['id']
-            )
-            api.create_tweet(
-                status=thirdStr,
-                in_reply_to_tweet_id=reply1.data['id']
-            )
-            print(f"First tweet: {firstStr}\n"
-                  f"second tweet: {secondStr}\n"
-                  f"third tweet: {thirdStr}")
-            print(response)
+            logs.append(response)
+            i = 2
+            for tweet in tweets[1:]:
+                otherStr = tweet + " [%s/%s]" % (str(i), str(n_tweets))
+                response = api.create_tweet(
+                    text=otherStr,
+                    in_reply_to_tweet_id=response.data['id']
+                )
+                i += 1
+    print(logs)
+    print("Tweeted successfully!")
 
 
 def split_string(string):
@@ -123,35 +112,28 @@ def split_string(string):
     Returns:
         List of strings
     """
-    if len(string) > 234:
-        # First 234 characters
-        first_string = string[:234]
-        # Find the last space within the first 234 characters
-        last_space_index = first_string.rfind(' ')
-        if last_space_index != -1:
-            # Truncate to the last space
-            first_string = first_string[:last_space_index]
-        # Remaining characters after first_string
-        remaining_string = string[len(first_string):].strip()
-        if len(remaining_string) > 234:
+    tweets = []
+
+    if len(string) <= 234:
+        tweets.append(string)
+    else:
+        remaining_string = string
+        while len(remaining_string) > 234:
             # First 240 characters from remaining_string
-            second_string = remaining_string[:234]
+            new_string = remaining_string[:234]
             # Find the last space within the first 240 characters
-            last_space_index = second_string.rfind(' ')
+            last_space_index = new_string.rfind(' ')
             if last_space_index != -1:
                 # Truncate to the last space
-                second_string = second_string[:last_space_index]
+                new_string = new_string[:last_space_index]
+            tweets.append(new_string)
             # Remaining characters after second_string
-            third_string = remaining_string[len(second_string):].strip()
-        else:
-            second_string = remaining_string
-            third_string = ""
-    else:
-        first_string = string
-        second_string = ""
-        third_string = ""
+            remaining_string = remaining_string[len(new_string):].strip()
 
-    return first_string, second_string, third_string
+        if len(remaining_string) > 0:
+            tweets.append(remaining_string)
+
+    return tweets
 
 
 def get_date(format=""):
