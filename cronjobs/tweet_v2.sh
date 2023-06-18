@@ -4,7 +4,7 @@ url="https://www.hoyenlahistoria.com/efemerides.php"
 dir="$HOME/estudio/tweepy_bot/"
 file_path="$dir/hoy_en_la_historia.txt"
 scraper="$dir"/scrapers/hoy_en_la_historia_scraper.sh
-branch="api_v2"
+branch="main"
 
 cd "$dir" || exit
 git pull origin "$branch"
