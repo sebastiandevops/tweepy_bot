@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
 import os
-
-from bots.bots import tweet_start
 import time
 
+from bots.config import create_api
+from bots.bots import tweet_start
+
+api = create_api()
 
 maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
 home = os.getenv("HOME")
@@ -16,9 +18,10 @@ source = {
     "en":  "[©2023 Encyclopædia Britannica, Inc.]"
 }
 
+
 for i in range(maxtries):
     try:
-        tweet_start(data, source['esp'])
+        tweet_start(api, data, source['esp'])
         break
     except:
         time.sleep(900)

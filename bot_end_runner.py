@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
 import os
-
-from bots.bots import tweet_end
 import time
+
+from bots.config import create_api
+from bots.bots import tweet_end
+
+api = create_api()
 
 maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
 home = os.getenv("HOME")
@@ -17,7 +20,7 @@ source = {
 
 for i in range(maxtries):
     try:
-        tweet_end(data, source["esp"])
+        tweet_end(api, data, source["esp"])
         break
     except:
         time.sleep(900)
