@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-from bots.config import create_api
-
 from utils.get_line import get_line_end
 from utils.get_line import get_line_start
 from utils.get_line import get_line_english
