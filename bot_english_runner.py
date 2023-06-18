@@ -7,7 +7,7 @@ import time
 maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
 home = os.getenv("HOME")
 project_path = '/%s/estudio/tweepy_bot' % (home)
-data = '/%s/hoy_en_la_historia.txt' % (project_path)
+data = '/%s/today_in_history.txt' % (project_path)
 
 source = {
     "esp": "[© 2012-2023 Hoyenlahistoria.com]",
