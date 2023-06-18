@@ -3,7 +3,7 @@
 import os
 import time
 
-from app.models import Tweet
+from app.models import TweepyBot
 from app.config import create_api
 from app.services import get_date
 
@@ -23,9 +23,10 @@ if __name__ == '__main__':
 
     for i in range(maxtries):
         try:
-            app = Tweet(api, tag, date, data, source, cleaner=True)
+            app = TweepyBot(api, tag, date, data, source, cleaner=True)
             mystr = app.get_tweet()
             app.post_tweet(mystr)
+            print(app.__str__())
             break
         except Exception as i:
             time.sleep(900)

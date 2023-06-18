@@ -3,8 +3,8 @@
 from app.services import get_line, create_tweet
 
 
-class Tweet:
-    """Tweet class
+class TweepyBot:
+    """TweepyBot class
 
     Attributes:
         api (str): Twitter API object.
@@ -45,6 +45,28 @@ class Tweet:
             mystr (str): String to publish.
         """
         create_tweet(self.api, mystr)
+
+    def __str__(self):
+        """repr method.
+
+        Args:
+            None
+
+        """
+        representation = '''[TweepyBot]
+                            API: {}
+                            Tag: {}
+                            Date: {}
+                            Data: {}
+                            Source: {}
+                            Cleaner: {}
+                            '''.format(self.api,
+                                       self.tag,
+                                       self.date,
+                                       self.data,
+                                       self.source,
+                                       self.cleaner)
+        return representation
 
 
 if __name__ == "__main__":

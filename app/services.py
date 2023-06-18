@@ -82,15 +82,12 @@ def create_tweet(api, mystr):
     if len(mystr) <= 240:
         response = api.create_tweet(text=mystr)
         print(f"Tweet: {mystr}")
-        print(response)
     else:
         tweets = split_string(mystr)
         n_tweets = len(tweets)
-        logs = response
         if n_tweets > 1:
             firstStr = tweets[0] + " [1/%s]" % (str(n_tweets))
             response = api.create_tweet(text=firstStr)
-            logs.append(response)
             i = 2
             for tweet in tweets[1:]:
                 otherStr = tweet + " [%s/%s]" % (str(i), str(n_tweets))
@@ -99,7 +96,6 @@ def create_tweet(api, mystr):
                     in_reply_to_tweet_id=response.data['id']
                 )
                 i += 1
-    print(logs)
     print("Tweeted successfully!")
 
 
