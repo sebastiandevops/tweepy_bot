@@ -23,7 +23,14 @@ if __name__ == '__main__':
 
     for i in range(maxtries):
         try:
-            app = TweepyBot(api, tag, date, data, source, cleaner=True)
+            app = TweepyBot(
+                api=api,
+                tag=tag,
+                date=date,
+                data=data,
+                source=source,
+                cleaner=True
+            )
             mystr = app.get_tweet()
             app.post_tweet(mystr)
             print(app.__str__())

@@ -24,8 +24,10 @@ def get_line(tag, date, data, source, cleaner):
         mystr (str): line for the tweet.
     """
     mystr = read_file(data, cleaner)
-
-    mystr = f'{tag}, {date}, {mystr} {source}'
+    if date == "":
+        mystr = f'{tag}: {mystr} {source}'
+    else:
+        mystr = f'{tag}, {date}, {mystr} {source}'
 
     return mystr
 

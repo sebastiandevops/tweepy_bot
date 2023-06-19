@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from app.services import get_line, create_tweet
+from app.config import create_api
 
 
 class TweepyBot:
@@ -15,10 +16,20 @@ class TweepyBot:
         cleaner (boolean): Parameter to execute data cleaner.
                        It is false by default.
     """
-    def __init__(self, api, tag, date, data, source, cleaner=False):
+    def __init__(
+        self,
+        api=create_api(),
+        tag="🤖",
+        date="",
+        data="",
+        text="",
+        source="",
+        cleaner=False
+    ):
         self.api = api
         self.tag = tag
         self.date = date
+        self.text = text
         self.data = data
         self.source = source
         self.cleaner = cleaner
@@ -29,13 +40,16 @@ class TweepyBot:
         Returns:
             mystr (str): String to be posted
         """
-        mystr = get_line(
-            self.tag,
-            self.date,
-            self.data,
-            self.source,
-            self.cleaner
-        )
+        if self.text != "":
+            mystr = self.text
+        else:
+            mystr = get_line(
+                self.tag,
+                self.date,
+                self.data,
+                self.source,
+                self.cleaner
+            )
         return mystr
 
     def post_tweet(self, mystr):
