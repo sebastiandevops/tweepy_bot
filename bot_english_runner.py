@@ -14,12 +14,12 @@ if __name__ == '__main__':
 
     maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
     home = os.getenv("HOME")
-    project_path = '/%s/estudio/tweepy_bot' % (home)
-    data = '/%s/scrapers/today_in_history.txt' % (project_path)
+    project_path = '%s/estudio/tweepy_bot' % (home)
+    data = '%s/scrapers/today_in_history.txt' % (project_path)
 
     source = "[©2023 Encyclopædia Britannica, Inc.]"
     tag = "🤖 #OnThisDay"
-    date = get_date(format="eng")
+    date = get_date(date_format="eng")
 
     for i in range(maxtries):
         try:

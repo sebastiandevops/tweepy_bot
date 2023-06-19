@@ -53,15 +53,18 @@ class TweepyBot:
             None
 
         """
-        representation = f'''[TweepyBot]
-                            API: {self.api}
-                            Tag: {self.tag}
-                            Date: {self.date}
-                            Data: {self.data}
-                            Source: {self.source}
-                            Cleaner: {self.cleaner}
-                            '''
-
+        representation = "[TweepyBot]\
+                          \nAPI: {}\
+                          \nTag: {}\
+                          \nDate: {}\
+                          \nData: {}\
+                          \nSource: {}\
+                          \nCleaner: {}".format(self.api,
+                                                self.tag,
+                                                self.date,
+                                                self.data,
+                                                self.source,
+                                                self.cleaner)
         return representation
 
 

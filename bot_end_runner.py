@@ -14,12 +14,12 @@ if __name__ == '__main__':
 
     maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
     home = os.getenv("HOME")
-    project_path = '/%s/estudio/tweepy_bot' % (home)
-    data = '/%s/scrapers/hoy_en_la_historia.txt' % (project_path)
+    project_path = '%s/estudio/tweepy_bot' % (home)
+    data = '%s/scrapers/hoy_en_la_historia.txt' % (project_path)
 
     source = "[© 2012-2023 Hoyenlahistoria.com]"
     tag = "🤖 #HoyEnLaHistoria"
-    date = get_date(format="esp")
+    date = get_date(date_format="esp")
 
     for i in range(maxtries):
         try:

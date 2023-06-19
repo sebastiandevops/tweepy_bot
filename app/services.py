@@ -64,25 +64,37 @@ def create_tweet(api, mystr):
         api (str): Twitter API object
         mystr (str): String to be processed
     """
+    try:
+        if len(mystr) <= 240:
+            response = api.create_tweet(text=mystr)
+            responseStr = "************ Response Object ************\
+                           \n{}".format(response)
+            print(responseStr.lstrip())
+        else:
+            tweets = split_string(mystr)
+            n_tweets = len(tweets)
+            logs = []
+            if n_tweets > 1:
+                firstStr = tweets[0] + " [1/%s]" % (str(n_tweets))
+                response = api.create_tweet(text=firstStr)
+                i = 2
+                for tweet in tweets[1:]:
+                    otherStr = tweet + " [%s/%s]" % (str(i), str(n_tweets))
+                    logs.append(response)
+                    response = api.create_tweet(
+                        text=otherStr,
+                        in_reply_to_tweet_id=response.data['id']
+                    )
+                    i += 1
+                logs.append(response)
+            for i, item in enumerate(logs, start=1):
+                logsStr = "************ Response Object ************\
+                           \nResponse {}: {}\n".format(i, item)
+                print(logsStr.lstrip())
+        print("Tweeted successfully!")
 
-    if len(mystr) <= 240:
-        response = api.create_tweet(text=mystr)
-        print(f"Tweet: {mystr}")
-    else:
-        tweets = split_string(mystr)
-        n_tweets = len(tweets)
-        if n_tweets > 1:
-            firstStr = tweets[0] + " [1/%s]" % (str(n_tweets))
-            response = api.create_tweet(text=firstStr)
-            i = 2
-            for tweet in tweets[1:]:
-                otherStr = tweet + " [%s/%s]" % (str(i), str(n_tweets))
-                response = api.create_tweet(
-                    text=otherStr,
-                    in_reply_to_tweet_id=response.data['id']
-                )
-                i += 1
-    print("Tweeted successfully!")
+    except Exception as e:
+        print(f"Error creating tweet: {e}")
 
 
 def split_string(string):
@@ -118,7 +130,7 @@ def split_string(string):
     return tweets
 
 
-def get_date(format=""):
+def get_date(date_format=""):
     """Function to create a formatted date
 
     Args:
@@ -128,7 +140,7 @@ def get_date(format=""):
         formatted_date (str)
     """
     try:
-        if format == "esp":
+        if date_format == "esp":
             # Get the current date
             current_date = datetime.now()
 
@@ -140,14 +152,16 @@ def get_date(format=""):
             # Create the formatted date with "de" separator
             formatted_date = f"{day} de {month}"
 
-        elif format == "eng":
+        elif date_format == "eng":
             # Get the current date
             current_date = datetime.now()
 
             # Format the date as "month day"
             formatted_date = current_date.strftime("%B %d")
-    except Exception as e:
-        e = "format parameter should be [esp] or [eng]"
-        print(e)
+        else:
+            raise ValueError("Invalid date format")
+    except ValueError as e:
+        print(f"Error {e}")
+        return None
 
     return formatted_date
