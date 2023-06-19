@@ -69,17 +69,24 @@ class TweepyBot:
         Returns:
             A string representing the tweet content.
         """
-        if self.text is not None:
-            text = f'{self.hashtag} {self.text}'
-        else:
-            text = get_line(
-                self.hashtag,
-                self.date_format,
-                self.data,
-                self.source,
-                self.cleaner
-            )
-        return text
+        try:
+            if self.text is not None:
+                text = f'{self.hashtag} {self.text}'
+            elif self.data is None and self.text is None:
+                text = "Default tweet."
+            else:
+                text = get_line(
+                    self.hashtag,
+                    self.date_format,
+                    self.data,
+                    self.source,
+                    self.cleaner
+                )
+            return text
+        except Exception as e:
+            # Handle the exception (e.g., log the error or display a message)
+            print(f"An error occurred while generating the tweet: {str(e)}")
+            return None
 
     def post_tweet(self, text):
         """
@@ -88,7 +95,11 @@ class TweepyBot:
         Args:
             mystr: The string to be published as a tweet.
         """
-        create_tweet(self.api, text)
+        try:
+            create_tweet(self.api, text)
+        except Exception as e:
+            # Handle the exception (e.g., log the error or display a message)
+            print(f"An error occurred while posting the tweet: {str(e)}")
 
     def __str__(self):
         """repr method.

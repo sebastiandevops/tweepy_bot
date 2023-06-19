@@ -22,13 +22,18 @@ def get_line(hashtag, date_format, data, source, cleaner):
     Returns:
         str: The line to be tweeted.
     """
-    text = read_file(data, cleaner)
-    if date_format is None:
-        text = f'{hashtag}: {text} {source}'
-    else:
-        text = f'{hashtag}, {date_format}, {text} {source}'
-
-    return text
+    try:
+        text = read_file(data, cleaner)
+        if date_format is None:
+            text = f'{hashtag}: {text} {source}'
+        else:
+            text = f'{hashtag}, {date_format}, {text} {source}'
+        return text
+    except FileNotFoundError as e:
+        print(f"Error: File '{data}' not found. {str(e)}")
+    except Exception as e:
+        print(f"An error occurred while retrieving the tweet line: {str(e)}")
+    return None
 
 
 def read_file(data, cleaner):
@@ -92,9 +97,8 @@ def create_tweet(api, text):
                            \nResponse {}: {}\n".format(i, item)
                 print(logsStr.lstrip())
         print("Tweeted successfully!")
-
     except Exception as e:
-        print(f"Error creating tweet: {e}")
+        print(f"An error occurred while creating the tweet: {str(e)}")
 
 
 def split_string(string):

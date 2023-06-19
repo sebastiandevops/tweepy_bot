@@ -6,10 +6,22 @@ import os
 
 
 def create_api():
-    """Function to authenticate to Twitter API
+    """
+    Authenticates to the Twitter API using the provided environment variables.
 
     Returns:
-        Instance of TwitterAPI
+        tweepy.Client: An instance of the authenticated Twitter API.
+
+    Raises:
+        Exception: If an unexpected error occurs during authentication.
+
+    Note:
+        Before calling this function, ensure that the following environment
+        variables are set:
+        - TWITTER_CONSUMER_KEY: The Twitter API consumer key.
+        - TWITTER_CONSUMER_SECRET: The Twitter API consumer secret.
+        - TWITTER_ACCESS_TOKEN: The Twitter API access token.
+        - TWITTER_ACCESS_TOKEN_SECRET: The Twitter API access token secret.
     """
     consumer_key = os.getenv("TWITTER_CONSUMER_KEY")
     consumer_secret = os.getenv("TWITTER_CONSUMER_SECRET")
