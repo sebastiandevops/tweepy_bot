@@ -5,46 +5,50 @@ from app.config import create_api
 
 
 class TweepyBot:
-    """TweepyBot class
+    """
+    A class representing a Twitter bot powered by Tweepy.
 
     Attributes:
-        api (str): Twitter API object.
-        tag (str): Hashtag for the tweet.
-        date (str): Formatted date for the tweet.
-        data (str): Data to populate the tweet.
-        source (str): Data source for the tweet.
-        cleaner (boolean): Parameter to execute data cleaner.
-                       It is false by default.
+        api: The Twitter API object used for interacting
+             with the Twitter platform.
+        hashtag: The hashtag to be included in the tweet.
+        date: The formatted date to be included in the tweet.
+        data: The data to populate the tweet.
+        text: The custom text to be included in the tweet.
+              Overrides other tweet components if provided.
+        source: The data source for the tweet.
+        cleaner: A boolean indicating whether to execute a data cleaner.
+                 False by default.
     """
     def __init__(
         self,
         api=create_api(),
-        tag="🤖",
-        date="",
-        data="",
-        text="",
-        source="",
+        hashtag="🤖",
+        date=None,
+        data=None,
+        text=None,
+        source=None,
         cleaner=False
     ):
         self.api = api
-        self.tag = tag
+        self.hashtag = hashtag
         self.date = date
         self.text = text
         self.data = data
         self.source = source
         self.cleaner = cleaner
 
-    def get_tweet(self):
+    def prepare_tweet(self):
         """Function to get the line to post to Twitter
 
         Returns:
             mystr (str): String to be posted
         """
-        if self.text != "":
-            mystr = self.text
+        if self.text is not None:
+            mystr = f'{self.hashtag} {self.text}'
         else:
             mystr = get_line(
-                self.tag,
+                self.hashtag,
                 self.date,
                 self.data,
                 self.source,
@@ -69,12 +73,12 @@ class TweepyBot:
         """
         representation = "[TweepyBot]\
                           \nAPI: {}\
-                          \nTag: {}\
+                          \nHashtag: {}\
                           \nDate: {}\
                           \nData: {}\
                           \nSource: {}\
                           \nCleaner: {}".format(self.api,
-                                                self.tag,
+                                                self.hashtag,
                                                 self.date,
                                                 self.data,
                                                 self.source,

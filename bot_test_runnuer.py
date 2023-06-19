@@ -4,13 +4,10 @@ import os
 import time
 
 from app.models import TweepyBot
-from app.config import create_api
-from app.services import get_date
+# from app.services import get_date
 
 
 if __name__ == '__main__':
-
-    api = create_api()
 
     maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
     home = os.getenv("HOME")
@@ -22,16 +19,8 @@ if __name__ == '__main__':
 
     for i in range(maxtries):
         try:
-            app = TweepyBot(
-                api=api,
-                tag=tag,
-                date="",
-                data="",
-                text="This is a test",
-                source=source,
-                cleaner=True
-            )
-            mystr = app.get_tweet()
+            app = TweepyBot(data=data, source=source)
+            mystr = app.prepare_tweet()
             app.post_tweet(mystr)
             print(app.__str__())
             break

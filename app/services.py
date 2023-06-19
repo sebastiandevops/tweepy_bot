@@ -8,12 +8,12 @@ from babel.dates import format_date
 from babel.numbers import format_decimal
 
 
-def get_line(tag, date, data, source, cleaner):
+def get_line(hashtag, date, data, source, cleaner):
 
     """Function to read data and get the line to be tweeted
 
     Args:
-        tag (str): Hashtag for the tweet.
+        hashtag (str): Hashtag for the tweet.
         date (str): Should be "eng" or "esp".
         data (str): Data file path to be readed.
         cleaner (boolean): It tells the function
@@ -24,10 +24,10 @@ def get_line(tag, date, data, source, cleaner):
         mystr (str): line for the tweet.
     """
     mystr = read_file(data, cleaner)
-    if date == "":
-        mystr = f'{tag}: {mystr} {source}'
+    if date is None:
+        mystr = f'{hashtag}: {mystr} {source}'
     else:
-        mystr = f'{tag}, {date}, {mystr} {source}'
+        mystr = f'{hashtag}, {date}, {mystr} {source}'
 
     return mystr
 
