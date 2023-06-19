@@ -12,19 +12,42 @@ class TweepyBot:
         api: The Twitter API object used for interacting
              with the Twitter platform.
         hashtag: The hashtag to be included in the tweet.
-        date: The formatted date to be included in the tweet.
+        date_format: The formatted date to be included in the tweet.
         data: The data to populate the tweet.
         text: The custom text to be included in the tweet.
               Overrides other tweet components if provided.
         source: The data source for the tweet.
         cleaner: A boolean indicating whether to execute a data cleaner.
                  False by default.
+
+    Methods:
+        get_tweet():
+            Retrieves the line to post on Twitter, combining the tweet
+            components based on the provided attributes.
+            Returns:
+                A string representing the tweet content.
+
+        post_tweet(mystr):
+            Publishes a tweet or thread using the Twitter API.
+            Args:
+                mystr: The string to be published as a tweet.
+
+    Usage:
+        # Create an instance of TweepyBot
+        bot = TweepyBot(api=create_api(), hashtag="🤖", date_format=None,
+                        data=None, text=None, source=None, cleaner=False)
+
+        # Retrieve the tweet content
+        tweet_content = bot.get_tweet()
+
+        # Post the tweet
+        bot.post_tweet(tweet_content)
     """
     def __init__(
         self,
         api=create_api(),
         hashtag="🤖",
-        date=None,
+        date_format=None,
         data=None,
         text=None,
         source=None,
@@ -32,37 +55,40 @@ class TweepyBot:
     ):
         self.api = api
         self.hashtag = hashtag
-        self.date = date
+        self.date_format = date_format
         self.text = text
         self.data = data
         self.source = source
         self.cleaner = cleaner
 
     def prepare_tweet(self):
-        """Function to get the line to post to Twitter
+        """
+        Retrieves the line to post on Twitter, combining the tweet components
+        based on the provided attributes.
 
         Returns:
-            mystr (str): String to be posted
+            A string representing the tweet content.
         """
         if self.text is not None:
-            mystr = f'{self.hashtag} {self.text}'
+            text = f'{self.hashtag} {self.text}'
         else:
-            mystr = get_line(
+            text = get_line(
                 self.hashtag,
-                self.date,
+                self.date_format,
                 self.data,
                 self.source,
                 self.cleaner
             )
-        return mystr
+        return text
 
-    def post_tweet(self, mystr):
-        """Function to publish a tweet or thread using the Twitter API
+    def post_tweet(self, text):
+        """
+        Publishes a tweet or thread using the Twitter API.
 
         Args:
-            mystr (str): String to publish.
+            mystr: The string to be published as a tweet.
         """
-        create_tweet(self.api, mystr)
+        create_tweet(self.api, text)
 
     def __str__(self):
         """repr method.
@@ -74,12 +100,12 @@ class TweepyBot:
         representation = "[TweepyBot]\
                           \nAPI: {}\
                           \nHashtag: {}\
-                          \nDate: {}\
+                          \nDate format: {}\
                           \nData: {}\
                           \nSource: {}\
                           \nCleaner: {}".format(self.api,
                                                 self.hashtag,
-                                                self.date,
+                                                self.date_format,
                                                 self.data,
                                                 self.source,
                                                 self.cleaner)

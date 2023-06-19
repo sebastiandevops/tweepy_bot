@@ -14,15 +14,17 @@ if __name__ == '__main__':
     project_path = '%s/estudio/tweepy_bot' % (home)
     data = '%s/scrapers/history.txt' % (project_path)
 
-    source = "[Wikipedia®]"
-    tag = "🤖 #Historia"
+    hashtag = "🤖 #Historia"
 
     for i in range(maxtries):
         try:
-            app = TweepyBot(data=data, source=source)
-            mystr = app.prepare_tweet()
-            app.post_tweet(mystr)
-            print(app.__str__())
+            bot = TweepyBot(
+                data=data,
+                source="[Wikipedia®]"
+            )
+            tweet_content = bot.prepare_tweet()
+            bot.post_tweet(tweet_content)
+            print(bot.__str__())
             break
         except Exception as i:
             time.sleep(900)

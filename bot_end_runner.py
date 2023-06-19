@@ -13,19 +13,19 @@ if __name__ == '__main__':
     home = os.getenv("HOME")
     project_path = '%s/estudio/tweepy_bot' % (home)
     data = '%s/scrapers/hoy_en_la_historia.txt' % (project_path)
-    date = get_date(date_format="esp")
+    date_format = get_date(date_format="esp")
 
     for i in range(maxtries):
         try:
-            app = TweepyBot(
+            bot = TweepyBot(
                 hashtag="🤖 #HoyEnLaHistoria",
-                date=date,
+                date_format=date_format,
                 data=data,
                 source="[© 2012-2023 Hoyenlahistoria.com]"
             )
-            mystr = app.prepare_tweet()
-            app.post_tweet(mystr)
-            print(app.__str__())
+            tweet_content = bot.prepare_tweet()
+            bot.post_tweet(tweet_content)
+            print(bot.__str__())
             break
         except Exception as i:
             time.sleep(900)

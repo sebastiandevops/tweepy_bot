@@ -8,41 +8,39 @@ from babel.dates import format_date
 from babel.numbers import format_decimal
 
 
-def get_line(hashtag, date, data, source, cleaner):
-
-    """Function to read data and get the line to be tweeted
+def get_line(hashtag, date_format, data, source, cleaner):
+    """
+    Retrieve a line to be tweeted based on the provided parameters.
 
     Args:
-        hashtag (str): Hashtag for the tweet.
-        date (str): Should be "eng" or "esp".
-        data (str): Data file path to be readed.
-        cleaner (boolean): It tells the function
-                           if data should be cleaned.
-        source (str): Data source.
+        hashtag (str): The hashtag for the tweet.
+        date_format (str): Should be "eng" or "esp".
+        data (str): The path to the data file to be read.
+        source (str): The data source.
+        cleaner (bool): Indicates whether to clean the source file.
 
     Returns:
-        mystr (str): line for the tweet.
+        str: The line to be tweeted.
     """
-    mystr = read_file(data, cleaner)
-    if date is None:
-        mystr = f'{hashtag}: {mystr} {source}'
+    text = read_file(data, cleaner)
+    if date_format is None:
+        text = f'{hashtag}: {text} {source}'
     else:
-        mystr = f'{hashtag}, {date}, {mystr} {source}'
+        text = f'{hashtag}, {date_format}, {text} {source}'
 
-    return mystr
+    return text
 
 
 def read_file(data, cleaner):
-
-    """Function to read file and clean the line it cleaner is True
+    """
+    Read the file and optionally clean the line if cleaner is True.
 
     Args:
-        data (str): Data to read from file
-        cleaner (boolean): It tells the function if should
-                           clean the source file.
+        data (str): The data to read from the file.
+        cleaner (bool): Indicates whether to clean the source file.
 
     Returns:
-        mystr (str): the text to pupulaate the tweet
+        str: The text to populate the tweet.
     """
     with open(data, 'r') as filename:
         lines = filename.readlines()
@@ -54,26 +52,26 @@ def read_file(data, cleaner):
         with open(data, 'w') as filename:
             filename.writelines(lines)
 
-    mystr = myline.strip()
-    return mystr
+    text = myline.strip()
+    return text
 
 
-def create_tweet(api, mystr):
-
-    """Function to create a sigle tweet or thread
+def create_tweet(api, text):
+    """
+    Create a single tweet or thread using the Twitter API.
 
     Args:
-        api (str): Twitter API object
-        mystr (str): String to be processed
+        api: The Twitter API object.
+        text (str): The string to be processed.
     """
     try:
-        if len(mystr) <= 240:
-            response = api.create_tweet(text=mystr)
+        if len(text) <= 240:
+            response = api.create_tweet(text=text)
             responseStr = "************ Response Object ************\
                            \n{}".format(response)
             print(responseStr.lstrip())
         else:
-            tweets = split_string(mystr)
+            tweets = split_string(text)
             n_tweets = len(tweets)
             logs = []
             if n_tweets > 1:
@@ -100,13 +98,14 @@ def create_tweet(api, mystr):
 
 
 def split_string(string):
-    """Function to split string according to tweeter word boundaries.
+    """
+    Split the string into segments based on Twitter's character limit.
 
     Args:
-        string (str): string to be splitted.
+        string (str): The string to be split.
 
     Returns:
-        List of strings
+        list: List of strings representing the segmented tweets.
     """
     tweets = []
 
@@ -133,13 +132,14 @@ def split_string(string):
 
 
 def get_date(date_format=""):
-    """Function to create a formatted date
+    """
+    Create a formatted date.
 
     Args:
-        format (str): esp or eng format
+        date_format (str): The format for the date (either "esp" or "eng").
 
     Returns:
-        formatted_date (str)
+        str: The formatted date.
     """
     try:
         if date_format == "esp":
