@@ -61,46 +61,6 @@ def read_file(data, cleaner):
     return text
 
 
-def create_tweet(api, text):
-    """
-    Create a single tweet or thread using the Twitter API.
-
-    Args:
-        api: The Twitter API object.
-        text (str): The string to be processed.
-    """
-    try:
-        if len(text) <= 240:
-            response = api.create_tweet(text=text)
-            responseStr = "************ Response Object ************\
-                           \n{}".format(response)
-            print(responseStr.lstrip())
-        else:
-            tweets = split_string(text)
-            n_tweets = len(tweets)
-            logs = []
-            if n_tweets > 1:
-                firstStr = tweets[0] + " [1/%s]" % (str(n_tweets))
-                response = api.create_tweet(text=firstStr)
-                i = 2
-                for tweet in tweets[1:]:
-                    otherStr = tweet + " [%s/%s]" % (str(i), str(n_tweets))
-                    logs.append(response)
-                    response = api.create_tweet(
-                        text=otherStr,
-                        in_reply_to_tweet_id=response.data['id']
-                    )
-                    i += 1
-                logs.append(response)
-            for i, item in enumerate(logs, start=1):
-                logsStr = "************ Response Object ************\
-                           \nResponse {}: {}\n".format(i, item)
-                print(logsStr.lstrip())
-        print("Tweeted successfully!")
-    except Exception as e:
-        print(f"An error occurred while creating the tweet: {str(e)}")
-
-
 def split_string(string):
     """
     Split the string into segments based on Twitter's character limit.

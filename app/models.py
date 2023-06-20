@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from app.services import get_line, create_tweet
+from app.services import get_line, split_string
 from app.config import create_api
 
 
@@ -93,13 +93,38 @@ class TweepyBot:
         Publishes a tweet or thread using the Twitter API.
 
         Args:
-            mystr: The string to be published as a tweet.
+            text: The string to be published as a tweet or thread.
         """
         try:
-            create_tweet(self.api, text)
+            if len(text) <= 240:
+                response = self.api.create_tweet(text=text)
+                responseStr = "\n************ Response Object ************\
+                               \n{}".format(response)
+                print(responseStr.lstrip())
+            else:
+                tweets = split_string(text)
+                n_tweets = len(tweets)
+                logs = []
+                if n_tweets > 1:
+                    firstStr = tweets[0] + " [1/%s]" % (str(n_tweets))
+                    response = self.api.create_tweet(text=firstStr)
+                    i = 2
+                    for tweet in tweets[1:]:
+                        otherStr = tweet + " [%s/%s]" % (str(i), str(n_tweets))
+                        logs.append(response)
+                        response = self.api.create_tweet(
+                            text=otherStr,
+                            in_reply_to_tweet_id=response.data['id']
+                        )
+                        i += 1
+                    logs.append(response)
+                for i, item in enumerate(logs, start=1):
+                    logsStr = "\n************ Response Object ************\
+                               \nResponse {}: {}\n".format(i, item)
+                    print(logsStr.lstrip())
+            print("Tweeted successfully!")
         except Exception as e:
-            # Handle the exception (e.g., log the error or display a message)
-            print(f"An error occurred while posting the tweet: {str(e)}")
+            print(f"An error occurred while creating the tweet: {str(e)}")
 
     def __str__(self):
         """repr method.
@@ -108,7 +133,7 @@ class TweepyBot:
             None
 
         """
-        representation = "[TweepyBot]\
+        representation = "\n[TweepyBot]\
                           \nAPI: {}\
                           \nHashtag: {}\
                           \nDate format: {}\
