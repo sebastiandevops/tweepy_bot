@@ -117,7 +117,7 @@ def create_api():
 <p align="justify">This module contains the TweepyBot class, which represents the Twitter bot powered by Tweepy. It has various attributes and methods to handle the tweet generation and posting.</p>
 
 <p align="justify"><b>Attributes:</b>
-    <ul>
+    <ul align="justify">
         <li><code>api:</code> The instance of the authenticated Twitter API obtained from the config.py module.</li>
         <li><code>hashtag:</code> The hashtag to be included in the tweet.</li>
         <li><code>date_format:</code> The format for the date to be included in the tweet.</li>
@@ -129,7 +129,7 @@ def create_api():
 </p>
 
 <p align="justify"><b>Methods</b>
-    <ul>
+    <ul align="justify">
         <li><code>prepare_tweet():</code> Retrieves the line to be posted on Twitter by combining the tweet components based on the provided attributes.</li>
         <li><code>post_tweet(text):</code> Publishes a tweet or thread using the Twitter API.</li>
         <li><code>__str__():</code> Returns a string representation of the TweepyBot object.</li>
@@ -295,10 +295,9 @@ if __name__ == "__main__":
 <p align="justify">This module contains helper functions used by the TweepyBot class to generate and post tweets.</p>
 
 <p align="justify"><b>Functions</b>
-    <ul>
+    <ul align="justify">
         <li><code>get_line(hashtag, date_format, data, source, cleaner):</code> Retrieves a line to be tweeted based on the provided parameters. It reads the data file, optionally applies a cleaner, and formats the line.</li>
         <li><code>read_file(data, cleaner):</code> Reads the file and optionally cleans the line if the cleaner flag is set.</li>
-        <li><code>create_tweet(api, text):</code> Creates a single tweet or thread using the Twitter API. It handles splitting longer tweets into multiple tweets if necessary.</li>
         <li><code>split_string(string):</code> Splits a string into segments based on Twitter's character limit.</li>
         <li><code>get_date(date_format):</code> Creates a formatted date based on the provided date format.</li>
     </ul>
@@ -508,9 +507,9 @@ rm -rf "$dir"/data.txt
 
 <p align="justify">It saves the final formatted data into the <code>hoy_en_la_historia.txt</code> file, which is the file that we are using the get the data for our bot.</p>
 
-<p align="justify"><b>Functionalities</b></p>
+### Functionalities
 <p align="justify">The TweepyBot provides the following functionalities:
-    <ul>
+    <ul align="justify">
         <li>Authentication to the Twitter API using environment variables.</li>
         <li>Generation of tweets based on the specified components (hashtag, date, data, text, source) and formatting.</li>
         <li>Posting of tweets using the Twitter API, handling both single tweets and threaded tweets for longer content.</li>
@@ -540,30 +539,41 @@ bot.post_tweet(tweet_content)
 <p align="justify"><b>Bot runner</b></p>
 
 ```python
+❯ cat tests_bot.py
 #!/usr/bin/env python3
-from bots.bot_v1 import main
+
+import os
 import time
 
-maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
+from app.models import TweepyBot
+# from app.services import get_date
 
-for i in range(maxtries):
-    try:
-        main()
-        break
-    except:
-        time.sleep(900)
-        print("fail", i)
+
+if __name__ == '__main__':
+
+    maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
+    home = os.getenv("HOME")
+    project_path = '%s/estudio/tweepy_bot' % (home)
+    data = '%s/scrapers/history.txt' % (project_path)
+
+    hashtag = "🤖 #Historia"
+
+    for i in range(maxtries):
+        try:
+            bot = TweepyBot(
+                data=data,
+                text="This is a test",
+                source="[Wikipedia®]"
+            )
+            tweet_content = bot.prepare_tweet()
+            bot.post_tweet(tweet_content)
+            print(bot.__str__())
+            break
+        except Exception as i:
+            time.sleep(900)
+            print("fail", i)
+
 ```
-
-<p align="justify">Here's the script explanation:</p>
-
-<p align="justify">The script imports the <code>main</code> function from the <code>bots.bot_v1</code> module Which is the function that we define when created the bot.</p>
-
-<p align="justify">The variable <code>maxtries</code> is set to 8, indicating the maximum number of attempts the script will make to execute the <code>main()</code> function. The script enters a loop that iterates <code>maxtries</code> times using the <code>range()</code> function. Within each iteration, the <code>main()</code> function is called. If the execution of the <code>main()</code> function is successful (no exception is raised), the loop is terminated using the <code>break</code> statement, and the script finishes.</p>
-
-<p align="justify">If an exception occurs during the execution of the <code>main()</code> function, the script pauses execution for 900 seconds (15 minutes) using the <code>time.sleep()</code> function. After the pause, the loop continues to the next iteration, and the process repeats until either the <code>main()</code> function succeeds or the maximum number of tries is reached. If the maximum number of tries is reached, the script prints <code>"fail"</code> followed by the iteration number <code>i</code> indicating the failed attempt.</p>
-
-<p align="justify">In summary, this Python script repeatedly calls the <code>main()</code> function from the <code>bots.bot_v1</code> module with a maximum number of tries. If an exception occurs, it waits for a specific duration before retrying. The script provides a mechanism to handle failures with the cronjob call and ensures that the <code>main()</code> function is executed multiple times within a specified time frame.</p>
 
 <p align="justify">We are about to finish, lets check the bash script that we will use to automate our bot using crontab.</p>
 
@@ -644,45 +654,6 @@ ACCESS_TOKEN_SECRET=[your access token secret]
 ```
 
 <p align="justify">Now we're done with our first twitter bot!</p>
-
-<p align="justify">Here is an example of the tweepy bot runner:</p>
-
-```python
-❯ cat tests_bot.py
-#!/usr/bin/env python3
-
-import os
-import time
-
-from app.models import TweepyBot
-# from app.services import get_date
-
-
-if __name__ == '__main__':
-
-    maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
-    home = os.getenv("HOME")
-    project_path = '%s/estudio/tweepy_bot' % (home)
-    data = '%s/scrapers/history.txt' % (project_path)
-
-    hashtag = "🤖 #Historia"
-
-    for i in range(maxtries):
-        try:
-            bot = TweepyBot(
-                data=data,
-                text="This is a test",
-                source="[Wikipedia®]"
-            )
-            tweet_content = bot.prepare_tweet()
-            bot.post_tweet(tweet_content)
-            print(bot.__str__())
-            break
-        except Exception as i:
-            time.sleep(900)
-            print("fail", i)
-
-```
 
 <p align="justify"><b>Conclusion</b></p>
 <p align="justify">Creating a Twitter bot using Tweepy and the Twitter API has been a rewarding experience. Through the use of Tweepy's Python library and the authentication credentials provided by the Twitter developer account, I was able to automate the process of tweeting daily. By fetching data from a website, composing tweets, and formatting them appropriately, the bot script fulfilled the requirements of my school program. The implementation of Crontab jobs ensured the bot's automation, allowing for consistent and timely tweets. Overall, this project has not only deepened my understanding of APIs, data scraping, and automation but has also strengthened my skills as a software developer.</p>
