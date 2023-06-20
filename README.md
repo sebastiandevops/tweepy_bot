@@ -60,205 +60,386 @@ pip install git+https://github.com/tweepy/tweepy.git
 <p align="justify"><b>Authentication credentials</b></p>
 <p align="justify">In order to create your authentication credentials, go to the <a href="https://developer.twitter.com/en/portal/dashboard">developer portal dashboard</a> select your application and the click on "keys and tokens". Once you are on your project page, select "Generate API Key and Secret" and also select "Access Token and Secret", keep in mind that the last one should be created with read and write permissions, which guarantees that our bot can write tweets for you using the Twitter API. Don't forget to store the keys so you can use it later in our configuration file for Twitter Authentication.</p>
 
-<p align="justify">You may want to test your credentials using this python script:</p>
 
-```python
-#!/usr/bin/python3
-import tweepy
+<p align="justify"><b>Architecture</b></p>
+<p align="justify">The TweepyBot consists of three main modules: config.py, models.py, and services.py.</p>
 
-# Authenticate to Twitter
-auth = tweepy.OAuthHandler("[API_KEY]",
-    "[API_SECRET_KEY]")
-auth.set_access_token("[ACCESS_TOKEN]",
-    "[ACCESS_TOKEN_SECRET]")
-
-api = tweepy.API(auth)
-
-try:
-    api.verify_credentials()
-    print("Authentication OK")
-except Exception as e:
-    print("Error during authentication")
-    raise e
-```
-
-<p align="justify">Make sure you replace the square bracket fields with your credentials. Once you're done we can continue with the next step.</p>
-
-<p align="justify"><b>Create your configuration file to Authenticate our bot</b></p>
+<p align="justify"><b>config.py</b></p>
+<p align="justify">This module handles the authentication to the Twitter API. It uses the tweepy.Client class from the Tweepy library to create an instance of the authenticated Twitter API. The required authentication credentials (consumer key, consumer secret, access token, and access token secret) are obtained from environment variables. If the authentication is successful, the API instance is returned.</p>
 
 ```python
 #!/usr/bin/python3
 
+# tweepy-bots/bots/config.py
 import tweepy
 import os
 
 
 def create_api():
-    consumer_key = os.getenv("API_KEY")
-    consumer_secret = os.getenv("API_SECRET_KEY")
-    access_token = os.getenv("ACCESS_TOKEN")
-    access_token_secret = os.getenv("ACCESS_TOKEN_SECRET")
+    """
+    Authenticates to the Twitter API using the provided environment variables.
 
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_token, access_token_secret)
-    api = tweepy.API(auth)
+    Returns:
+        tweepy.Client: An instance of the authenticated Twitter API.
+
+    Raises:
+        Exception: If an unexpected error occurs during authentication.
+
+    Note:
+        Before calling this function, ensure that the following environment
+        variables are set:
+        - TWITTER_CONSUMER_KEY: The Twitter API consumer key.
+        - TWITTER_CONSUMER_SECRET: The Twitter API consumer secret.
+        - TWITTER_ACCESS_TOKEN: The Twitter API access token.
+        - TWITTER_ACCESS_TOKEN_SECRET: The Twitter API access token secret.
+    """
+    consumer_key = os.getenv("TWITTER_CONSUMER_KEY")
+    consumer_secret = os.getenv("TWITTER_CONSUMER_SECRET")
+    access_token = os.getenv("TWITTER_ACCESS_TOKEN")
+    access_token_secret = os.getenv("TWITTER_ACCESS_TOKEN_SECRET")
+
     try:
-        api.verify_credentials()
-        print("Authentication OK")
+        api = tweepy.Client(
+                  consumer_key=consumer_key,
+                  consumer_secret=consumer_secret,
+                  access_token=access_token,
+                  access_token_secret=access_token_secret
+              )
+        print("Successfully authenticated!")
+        return api
     except Exception as e:
-        print("Error during authentication")
-        raise e
-    return api
+        print(f'Error during authentication: {e}')
 ```
 
-<p align="justify">Here's an explanation of the authentication script:</p>
 
-<p align="justify">The script starts with a shebang <code>#!/usr/bin/python3</code>, which specifies the interpreter to be used to execute the script. In this case, it's set to Python 3.
+<p align="justify"><b>models.py</b></p>
 
-<p align="justify">The script imports the necessary modules, <code>tweepy</code> and <code>os</code>. Alongside of Tweepy, we'll use <code>os</code>, which allows interaction with the operating system, particularly to retrieve environment variables. In this case we need that library because we will store our Twitter keys as environment variables.</P>
+<p align="justify">This module contains the TweepyBot class, which represents the Twitter bot powered by Tweepy. It has various attributes and methods to handle the tweet generation and posting.</p>
 
-<p align="justify">The <code>create_api()</code> function is defined. This function is responsible for creating and returning an instance of the Tweepy API, which will be used to interact with the Twitter API.</p>
+<p align="justify"><b>Attributes:</b>
+    <ul>
+        <li><code>api:</code> The instance of the authenticated Twitter API obtained from the config.py module.</li>
+        <li><code>hashtag:</code> The hashtag to be included in the tweet.</li>
+        <li><code>date_format:</code> The format for the date to be included in the tweet.</li>
+        <li><code>data:</code> The data to populate the tweet.</li>
+        <li><code>text:</code> The custom text to be included in the tweet, overriding other tweet components if provided.</li>
+        <li><code>source:</code> The data source for the tweet.</li>
+        <li><code>cleaner:</code> A boolean indicating whether to execute a data cleaner.</li>
+    </ul>
+</p>
 
-<p align="justify">Inside the <code>create_api()</code> function, the script retrieves several environment variables using <code>os.getenv()</code>. These environment variables are expected to contain the necessary Twitter API credentials: <code>API_KEY</code>, <code>API_SECRET_KEY</code>, <code>ACCESS_TOKEN</code>, and <code>ACCESS_TOKEN_SECRET</code>.</p>
-
-<p align="justify">The script uses the credentials obtained from the environment variables to initialize an instance of <code>tweepy.OAuthHandler</code>. This class is responsible for handling the OAuth 1.0a authentication process required by the Twitter API.</p>
-
-<p align="justify">The <code>auth.set_access_token()</code> method is called to set the access token and access token secret obtained from the environment variables.</p>
-
-<p align="justify">An instance of tweepy.API is created, passing the <code>auth</code> object as an argument. This instance represents the authenticated connection to the Twitter API.</p>
-
-<p align="justify">The script then attempts to verify the credentials by calling <code>api.verify_credentials()</code>. If the verification is successful, it prints <code>"Authentication OK"</code>. Otherwise, it catches any exception raised, prints <code>"Error during authentication"</code> and re-raises the exception.</p>
-
-<p align="justify">Finally, the created api object is returned from the <code>create_api()</code> function.</p>
-
-<p align="justify">In summary, this script defines a function <code>create_api()</code> that creates and returns an authenticated instance of tweepy.API. It retrieves the necessary Twitter API credentials from environment variables, sets up the authentication, and verifies the credentials. This function can be used to establish a connection to the Twitter API for further interactions in your Twitter bot.</p>
-
-<p align="justify"><b>Create your bot</b></p>
-<p align="justify">Bot modules: <code>bot_v1.py</code> and <code>split_string.py</code></p>
-
-```python
-#!/usr/bin/python3
-# bot_v1.py
-import random
-
-from bots.config import create_api
-
-from datetime import datetime
-# import locale
-from babel.dates import format_date
-from babel.numbers import format_decimal
-
-from utils.split_string import split_string
-# Authenticate to Twitter
-
-
-def tweet_job(api):
-    data = '~/tweepy_bot/scrapers/hoy_en_la_historia.txt'
-    with open(data, 'r') as filename:
-        lines = filename.readlines()
-
-    myline = random.choice(lines)
-
-    # Get the current date
-    current_date = datetime.now()
-
-    # Format the date components separately
-    day = format_decimal(current_date.day, format='##')
-    month = format_date(current_date, format='MMMM', locale='es')
-
-    # Format the date as "month day"
-    # Create the formatted date with "de" separator
-    formatted_date = f"{day} de {month}"
-
-    # Tweet each line, then wait one minute and tweet another.
-    # Note: this design means the bot runs continuously
-    myline = myline
-    mystr = myline.strip()
-    mystr = f"🤖 #HoyEnLaHistoria, {formatted_date}, " + mystr + " [© 2012-2023 Hoyenlahistoria.com]"
-
-    if len(mystr) <= 240:
-        original_tweet = api.update_status(status=mystr)
-        print(mystr)
-    else:
-        firstStr, secondStr = split_string(mystr)
-        firstStr = firstStr + " [1/2]"
-        secondStr = secondStr + " [2/2]"
-        original_tweet = api.update_status(status=firstStr)
-        api.update_status(status=secondStr,
-                          in_reply_to_status_id=original_tweet.id,
-                          auto_populate_reply_metadata=True)
-        print(f"First tweet: {firstStr}\nsecond tweet: {secondStr}")
-
-
-def main():
-    api = create_api()
-    tweet_job(api)
-
-
-if __name__ == "__main__":
-    main()
-```
-
-<p align="justify">Let's go through the script step by step:</p>
-
-<p align="justify">The script imports the <code>random</code> module, which will be used to choose a random line from the file, and the <code>datetime</code> module from the standard library, which will be used to get the current date.</p>
-
-<p align="justify">We also imports the <code>create_api()</code> which we created in the previous step, this function is imported from the <code>bots.config</code> module and is responsible for creating an authenticated instance of <code>tweepy.API</code> that connects to the Twitter API.</p>
-
-<p align="justify">Aditionally, we import specific functions from the <code>babel.dates</code> and <code>babel.numbers modules</code>. These functions will be used for formatting the date and decimal numbers in a localized manner.</p>
-
-<p align="justify">The script also imports the <code>split_string</code>function from the <code>utils.split_string</code> module. This function will be used to split the tweet into multiple parts if its length exceeds Twitter character limit.</p>
-
-<p align="justify">The <code>tweet_job(api)</code> function is defined. This function takes the api object (the authenticated instance of <code>tweepy.API</code>) as an argument. Inside the <code>tweet_job()</code> function, the script opens a file named <code>hoy_en_la_historia.txt</code> located at the specified path. It reads all the lines from the file and stores them in the lines list.</p>
-
-<p align="justify">The script randomly selects a line from the lines list using <code>random.choice()</code> and assigns it to the <code>myline</code> variable.</p>
-
-<p align="justify">We also get the current date using <code>datetime.now()</code> and formats the date components separately. It formats the day as a two-digit decimal number and the month as the full month name in Spanish using the <code>format_decimal()</code> and <code>format_date()</code> functions from the babel library, respectively.</p>
-
-<p align="justify">The script creates a formatted date string by combining the day, month, and a custom text. If the length of the tweet string <code>mystr</code> is less than or equal to 240 characters (the Twitter character limit), it directly tweets the <code>mystr</code> using <code>api.update_status()</code> and prints the tweet.</p>
-
-<p align="justify">If the length of the tweet string exceeds 240 characters, it splits the tweet using the <code>split_string()</code> function, which splits the string into two parts while considering word boundaries. It adds a marker to indicate the order of the tweets. We'll go through it in the next step.</p>
-
-<p align="justify">The script tweets the first part of the split string using <code>api.update_status()</code> and assigns the tweet object to <code>original_tweet</code>. It then tweets the second part as a reply to the original tweet using <code>api.update_status()</code> with the <code>in_reply_to_status_id</code> parameter set to the ID of the original tweet.</p>
-
-<p align="justify">Also the <code>main()</code> function is defined, which calls the <code>create_api()</code> function to create an authenticated API instance and passes it to the <code>tweet_job()</code> function.</p>
-
-<p align="justify">Finally, we use the entrypoint, which is used to check if the current module is the main module by using the <code>if __name__ == "__main__":</code> condition. If it is, it calls the <code>main()</code> function to start the execution of the script.</p>
-
-<p align="justify">In summary, this script defines a function <code>tweet_job()</code> that reads lines from a file, selects a random line, formats the current date, and tweets the content. If the tweet exceeds the character limit, it splits the tweet into multiple parts. The script also defines a <code>main()</code> function that creates an authenticated API instance and calls <code>tweet_job()</code>. When executed as the main module, it sets everything in motion.</p>
-
-<p align="justify">Let's checkout the <code>split_string()</code> function</p>
+<p align="justify"><b>Methods</b>
+    <ul>
+        <li><code>prepare_tweet():</code> Retrieves the line to be posted on Twitter by combining the tweet components based on the provided attributes.</li>
+        <li><code>post_tweet(text):</code> Publishes a tweet or thread using the Twitter API.</li>
+        <li><code>__str__():</code> Returns a string representation of the TweepyBot object.</li>
+    </ul>
+</p>
 
 ```python
 #!/usr/bin/env python3
 
-def split_string(string):
-    if len(string) > 234:
-        # First 240 characters
-        first_string = string[:234]
-        # Find the last space within the first 240 characters
-        last_space_index = first_string.rfind(' ')
-        if last_space_index != -1:
-            # Truncate to the last space
-            first_string = first_string[:last_space_index]
-        # Remaining characters
-        second_string = string[len(first_string):].strip()
-    else:
-        first_string = string
-        second_string = ""
+from app.services import get_line, split_string
+from app.config import create_api
 
-    return first_string, second_string
+
+class TweepyBot:
+    """
+    A class representing a Twitter bot powered by Tweepy.
+
+    Attributes:
+        api: The Twitter API object used for interacting
+             with the Twitter platform.
+        hashtag: The hashtag to be included in the tweet.
+        date_format: The formatted date to be included in the tweet.
+        data: The data to populate the tweet.
+        text: The custom text to be included in the tweet.
+              Overrides other tweet components if provided.
+        source: The data source for the tweet.
+        cleaner: A boolean indicating whether to execute a data cleaner.
+                 False by default.
+
+    Methods:
+        get_tweet():
+            Retrieves the line to post on Twitter, combining the tweet
+            components based on the provided attributes.
+            Returns:
+                A string representing the tweet content.
+
+        post_tweet(mystr):
+            Publishes a tweet or thread using the Twitter API.
+            Args:
+                mystr: The string to be published as a tweet.
+
+    Usage:
+        # Create an instance of TweepyBot
+        bot = TweepyBot(api=create_api(), hashtag="🤖", date_format=None,
+                        data=None, text=None, source=None, cleaner=False)
+
+        # Retrieve the tweet content
+        tweet_content = bot.get_tweet()
+
+        # Post the tweet
+        bot.post_tweet(tweet_content)
+    """
+    def __init__(
+        self,
+        api=create_api(),
+        hashtag="🤖",
+        date_format=None,
+        data=None,
+        text=None,
+        source=None,
+        cleaner=False
+    ):
+        self.api = api
+        self.hashtag = hashtag
+        self.date_format = date_format
+        self.text = text
+        self.data = data
+        self.source = source
+        self.cleaner = cleaner
+
+    def prepare_tweet(self):
+        """
+        Retrieves the line to post on Twitter, combining the tweet components
+        based on the provided attributes.
+
+        Returns:
+            A string representing the tweet content.
+        """
+        try:
+            if self.text is not None:
+                text = f'{self.hashtag} {self.text}'
+            elif self.data is None and self.text is None:
+                text = "Default tweet."
+            else:
+                text = get_line(
+                    self.hashtag,
+                    self.date_format,
+                    self.data,
+                    self.source,
+                    self.cleaner
+                )
+            return text
+        except Exception as e:
+            # Handle the exception (e.g., log the error or display a message)
+            print(f"An error occurred while generating the tweet: {str(e)}")
+            return None
+
+    def post_tweet(self, text):
+        """
+        Publishes a tweet or thread using the Twitter API.
+
+        Args:
+            text: The string to be published as a tweet or thread.
+        """
+        try:
+            if len(text) <= 240:
+                response = self.api.create_tweet(text=text)
+                responseStr = "\n************ Response Object ************\
+                               \n{}".format(response)
+                print(responseStr.lstrip())
+            else:
+                tweets = split_string(text)
+                n_tweets = len(tweets)
+                logs = []
+                if n_tweets > 1:
+                    firstStr = tweets[0] + " [1/%s]" % (str(n_tweets))
+                    response = self.api.create_tweet(text=firstStr)
+                    i = 2
+                    for tweet in tweets[1:]:
+                        otherStr = tweet + " [%s/%s]" % (str(i), str(n_tweets))
+                        logs.append(response)
+                        response = self.api.create_tweet(
+                            text=otherStr,
+                            in_reply_to_tweet_id=response.data['id']
+                        )
+                        i += 1
+                    logs.append(response)
+                for i, item in enumerate(logs, start=1):
+                    logsStr = "\n************ Response Object ************\
+                               \nResponse {}: {}\n".format(i, item)
+                    print(logsStr.lstrip())
+            print("Tweeted successfully!")
+        except Exception as e:
+            print(f"An error occurred while creating the tweet: {str(e)}")
+
+    def __str__(self):
+        """repr method.
+
+        Args:
+            None
+
+        """
+        representation = "[TweepyBot]\
+                          \nAPI: {}\
+                          \nHashtag: {}\
+                          \nDate format: {}\
+                          \nData: {}\
+                          \nSource: {}\
+                          \nCleaner: {}".format(self.api,
+                                                self.hashtag,
+                                                self.date_format,
+                                                self.data,
+                                                self.source,
+                                                self.cleaner)
+        return representation
+
+
+if __name__ == "__main__":
+    pass
 ```
 
-<p align="justify">The <code>split_string()</code> function takes a string as input and splits it into two parts while ensuring that the total length of the resulting strings does not exceed a certain limit. Here's a breakdown of the function's logic:</p>
+<p align="justify"><b>services.py</b></p>
+<p align="justify">This module contains helper functions used by the TweepyBot class to generate and post tweets.</p>
 
-<p align="justify">If the length of the input string is greater than 234 characters (slightly below the Twitter character limit of 240), the function proceeds to split the string. The first 234 characters of the input string are assigned to the variable <code>first_string</code>.</p>
+<p align="justify"><b>Functions</b>
+    <ul>
+        <li><code>get_line(hashtag, date_format, data, source, cleaner):</code> Retrieves a line to be tweeted based on the provided parameters. It reads the data file, optionally applies a cleaner, and formats the line.</li>
+        <li><code>read_file(data, cleaner):</code> Reads the file and optionally cleans the line if the cleaner flag is set.</li>
+        <li><code>create_tweet(api, text):</code> Creates a single tweet or thread using the Twitter API. It handles splitting longer tweets into multiple tweets if necessary.</li>
+        <li><code>split_string(string):</code> Splits a string into segments based on Twitter's character limit.</li>
+        <li><code>get_date(date_format):</code> Creates a formatted date based on the provided date format.</li>
+    </ul>
+</p>
 
-<p align="justify">The function searches for the last space within the first 234 characters using the <code>rfind()</code> method. This helps ensure that the split occurs at a word boundary. If a space is found within the first 234 characters, <code>first_string</code> is truncated to the last space, ensuring that it doesn't cut off words. The remaining characters from the input string, after the split point, are assigned to the variable <code>second_string</code>. Any leading or trailing whitespace is stripped using the <code>strip()</code> method. If the length of the input string is less than or equal to 234 characters, the entire input string is assigned to <code>first_string</code>, and <code>second_string</code> is set to an empty string.</P>
+```python
+#!/usr/bin/env python3
 
-<p align="justify">Finally, the function returns a <a href="https://www.w3schools.com/python/python_tuples.asp">tuple</a> containing <code>first_string</code> and <code>second_string</code>.</p>
+ import random
 
-<p align="justify">In summary, the <code>split_string()</code> function splits a given string into two parts, with the first part having a maximum length of 234 characters (accounting for the Twitter character limit) while ensuring that the split occurs at a word boundary. It provides a convenient way to split long strings for tweeting purposes, maintaining readability and coherence.</p>
+ from datetime import datetime
+ # import locale
+ from babel.dates import format_date
+ from babel.numbers import format_decimal
+
+
+ def get_line(hashtag, date_format, data, source, cleaner):
+     """
+     Retrieve a line to be tweeted based on the provided parameters.
+
+     Args:
+         hashtag (str): The hashtag for the tweet.
+         date_format (str): Should be "eng" or "esp".
+         data (str): The path to the data file to be read.
+         source (str): The data source.
+         cleaner (bool): Indicates whether to clean the source file.
+
+     Returns:
+         str: The line to be tweeted.
+     """
+     try:
+         text = read_file(data, cleaner)
+         if date_format is None:
+             text = f'{hashtag}: {text} {source}'
+         else:
+             text = f'{hashtag}, {date_format}, {text} {source}'
+         return text
+     except FileNotFoundError as e:
+         print(f"Error: File '{data}' not found. {str(e)}")
+     except Exception as e:
+         print(f"An error occurred while retrieving the tweet line: {str(e)}")
+     return None
+
+
+ def read_file(data, cleaner):
+     """
+     Read the file and optionally clean the line if cleaner is True.
+
+     Args:
+         data (str): The data to read from the file.
+         cleaner (bool): Indicates whether to clean the source file.
+
+     Returns:
+         str: The text to populate the tweet.
+     """
+     with open(data, 'r') as filename:
+         lines = filename.readlines()
+
+     myline = random.choice(lines)
+
+     if cleaner:
+         lines.remove(myline)
+         with open(data, 'w') as filename:
+             filename.writelines(lines)
+
+     text = myline.strip()
+     return text
+
+
+ def split_string(string):
+     """
+     Split the string into segments based on Twitter's character limit.
+
+     Args:
+         string (str): The string to be split.
+
+     Returns:
+         list: List of strings representing the segmented tweets.
+     """
+     tweets = []
+
+     if len(string) <= 234:
+         tweets.append(string)
+     else:
+         remaining_string = string
+         while len(remaining_string) > 234:
+             # First 240 characters from remaining_string
+             new_string = remaining_string[:234]
+             # Find the last space within the first 240 characters
+             last_space_index = new_string.rfind(' ')
+             if last_space_index != -1:
+                 # Truncate to the last space
+                 new_string = new_string[:last_space_index]
+             tweets.append(new_string)
+             # Remaining characters after second_string
+             remaining_string = remaining_string[len(new_string):].strip()
+
+         if len(remaining_string) > 0:
+             tweets.append(remaining_string)
+
+     return tweets
+
+
+ def get_date(date_format=""):
+     """
+     Create a formatted date.
+
+     Args:
+         date_format (str): The format for the date (either "esp" or "eng").
+
+     Returns:
+         str: The formatted date.
+     """
+     try:
+         if date_format == "esp":
+             # Get the current date
+             current_date = datetime.now()
+
+             # Format the date components separately
+             day = format_decimal(current_date.day, format='##')
+             month = format_date(current_date, format='MMMM', locale='es')
+
+             # Format the date as "month day"
+             # Create the formatted date with "de" separator
+             formatted_date = f"{day} de {month}"
+
+         elif date_format == "eng":
+             # Get the current date
+             current_date = datetime.now()
+
+             # Format the date as "month day"
+             formatted_date = current_date.strftime("%B %d")
+         else:
+             raise ValueError("Invalid date format")
+     except ValueError as e:
+         print(f"Error {e}")
+         return None
+
+     return formatted_date
+```
+
 
 <p align="justify">Now let's create our data scraper using bash!</p>
 
@@ -326,6 +507,33 @@ rm -rf "$dir"/data.txt
 <p align="justify"><code>rm -rf "$dir"/data*</code>: This command removes all temporary files starting with <code>data</code> in the specified directory <code>$dir</code> to clean our workspace.</p>
 
 <p align="justify">It saves the final formatted data into the <code>hoy_en_la_historia.txt</code> file, which is the file that we are using the get the data for our bot.</p>
+
+<p align="justify"><b>Functionalities</b></p>
+<p align="justify">The TweepyBot provides the following functionalities:
+    <ul>
+        <li>Authentication to the Twitter API using environment variables.</li>
+        <li>Generation of tweets based on the specified components (hashtag, date, data, text, source) and formatting.</li>
+        <li>Posting of tweets using the Twitter API, handling both single tweets and threaded tweets for longer content.</li>
+        <li>Support for cleaning the source data file by removing already used lines.</li>
+        <li>Formatting of dates in English or Spanish based on the specified date format.</li>
+    </ul>
+</p>
+
+<p align="justify">To use the <code>TweepyBot</code>, you can create an instance of the <code>TweepyBot</code> class with the required parameters and then call the <code>get_tweet()</code> method to retrieve the tweet content. Finally, you can call the <code>post_tweet()</code> method to publish the tweet.</p>
+
+<p align="justify">Example usage:</p>
+
+```
+# Create an instance of TweepyBot
+bot = TweepyBot(api=create_api(), hashtag="🤖", date_format=None, data=None, text=None, source=None, cleaner=False)
+
+# Retrieve the tweet content
+tweet_content = bot.prepare_tweet()
+
+# Post the tweet
+bot.post_tweet(tweet_content)
+```
+
 
 <p align="justify">Now let's create the script to call our main bot module from a bash script that will be automated using crontab linux package.</p>
 
@@ -411,22 +619,70 @@ ACCESS_TOKEN_SECRET=[your access token secret]
 
 ```bash
 ~/tweepy_bot
-❯ tree
+❯ tree -I __pycache__
 .
+├── app
+│   ├── config.py
+│   ├── models.py
+│   └── services.py
 ├── bot_runner.py
-├── bots
-│   ├── bot_v1.py
-│   └── config.py
-├── cron_script.sh
+├── cronjobs
+│   ├── tweet.sh
+│   ├── tweet_v2_english.sh
+│   └── tweet_v2.sh
+├── README.md
 ├── scrapers
-│   └── scraper.sh
-└── utils
-    └── split_string.py
+│   ├── britannica_scraper.sh
+│   ├── history.txt
+│   ├── hoy_en_la_historia_scraper.sh
+│   ├── hoy_en_la_historia.txt
+│   ├── on_this_day_scraper.sh
+│   └── today_in_history.txt
+└── tests_bot.py
 
-4 directories, 6 files
+4 directories, 21 files
 ```
 
 <p align="justify">Now we're done with our first twitter bot!</p>
+
+<p align="justify">Here is an example of the tweepy bot runner:</p>
+
+```python
+❯ cat tests_bot.py
+#!/usr/bin/env python3
+
+import os
+import time
+
+from app.models import TweepyBot
+# from app.services import get_date
+
+
+if __name__ == '__main__':
+
+    maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
+    home = os.getenv("HOME")
+    project_path = '%s/estudio/tweepy_bot' % (home)
+    data = '%s/scrapers/history.txt' % (project_path)
+
+    hashtag = "🤖 #Historia"
+
+    for i in range(maxtries):
+        try:
+            bot = TweepyBot(
+                data=data,
+                text="This is a test",
+                source="[Wikipedia®]"
+            )
+            tweet_content = bot.prepare_tweet()
+            bot.post_tweet(tweet_content)
+            print(bot.__str__())
+            break
+        except Exception as i:
+            time.sleep(900)
+            print("fail", i)
+
+```
 
 <p align="justify"><b>Conclusion</b></p>
 <p align="justify">Creating a Twitter bot using Tweepy and the Twitter API has been a rewarding experience. Through the use of Tweepy's Python library and the authentication credentials provided by the Twitter developer account, I was able to automate the process of tweeting daily. By fetching data from a website, composing tweets, and formatting them appropriately, the bot script fulfilled the requirements of my school program. The implementation of Crontab jobs ensured the bot's automation, allowing for consistent and timely tweets. Overall, this project has not only deepened my understanding of APIs, data scraping, and automation but has also strengthened my skills as a software developer.</p>
