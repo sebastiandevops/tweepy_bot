@@ -139,12 +139,12 @@ class TweepyBot:
                           \nDate format: {}\
                           \nData: {}\
                           \nSource: {}\
-                          \nCleaner: {}".format(self.api,
-                                                self.hashtag,
-                                                self.date_format,
-                                                self.data,
-                                                self.source,
-                                                self.cleaner)
+                          \nCleaner: {}\n".format(self.api,
+                                                  self.hashtag,
+                                                  self.date_format,
+                                                  self.data,
+                                                  self.source,
+                                                  self.cleaner)
         return representation
 
 
