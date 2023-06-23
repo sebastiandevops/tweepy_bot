@@ -4,7 +4,6 @@ import os
 import time
 
 from app.models import TweepyBot
-from app.services import get_date
 
 
 if __name__ == '__main__':
@@ -13,13 +12,12 @@ if __name__ == '__main__':
     home = os.getenv("HOME")
     project_path = '%s/estudio/tweepy_bot' % (home)
     data = '%s/scrapers/today_in_history.txt' % (project_path)
-    date_format = get_date(date_format="eng")
 
     for i in range(maxtries):
         try:
             bot = TweepyBot(
                 hashtag="🤖 #OnThisDay",
-                date_format=date_format,
+                date_format="eng",
                 data=data,
                 source="[©2023 Encyclopædia Britannica, Inc.]"
             )

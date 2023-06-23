@@ -19,9 +19,7 @@ if __name__ == '__main__':
     for i in range(maxtries):
         try:
             bot = TweepyBot(
-                data=data,
                 text="This is a test",
-                source="[Wikipedia®]"
             )
             tweet_content = bot.prepare_tweet()
             bot.post_tweet(tweet_content)

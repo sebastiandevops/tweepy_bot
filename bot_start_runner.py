@@ -13,13 +13,12 @@ if __name__ == '__main__':
     home = os.getenv("HOME")
     project_path = '%s/estudio/tweepy_bot' % (home)
     data = '%s/scrapers/hoy_en_la_historia.txt' % (project_path)
-    date_format = get_date(date_format="esp")
 
     for i in range(maxtries):
         try:
             bot = TweepyBot(
                 hashtag="🤖 #HoyEnLaHistoria",
-                date_format=date_format,
+                date_format="esp",
                 data=data,
                 source="[© 2012-2023 Hoyenlahistoria.com]",
                 cleaner=True

@@ -3,6 +3,11 @@
 from app.services import get_line, split_string
 from app.config import create_api
 
+from datetime import datetime
+# import locale
+from babel.dates import format_date
+from babel.numbers import format_decimal
+
 
 class TweepyBot:
     """
@@ -12,7 +17,8 @@ class TweepyBot:
         api: The Twitter API object used for interacting
              with the Twitter platform.
         hashtag: The hashtag to be included in the tweet.
-        date_format: The formatted date to be included in the tweet.
+        date_format: The format for the date (either "esp" or "eng").
+                     Default is None.
         data: The data to populate the tweet.
         text: The custom text to be included in the tweet.
               Overrides other tweet components if provided.
@@ -61,6 +67,42 @@ class TweepyBot:
         self.source = source
         self.cleaner = cleaner
 
+    def get_formatted_date(self):
+        """
+        Create a formatted date.
+
+        Returns:
+            str: The formatted date.
+        """
+        try:
+            if self.date_format is None:
+                return None
+            elif self.date_format == "esp":
+                # Get the current date
+                current_date = datetime.now()
+
+                # Format the date components separately
+                day = format_decimal(current_date.day, format='##')
+                month = format_date(current_date, format='MMMM', locale='es')
+
+                # Format the date as "month day"
+                # Create the formatted date with "de" separator
+                formatted_date = f"{day} de {month}"
+
+            elif self.date_format == "eng":
+                # Get the current date
+                current_date = datetime.now()
+
+                # Format the date as "month day"
+                formatted_date = current_date.strftime("%B %d")
+            else:
+                raise ValueError("Invalid date format")
+        except ValueError as e:
+            print(f"Error {e}")
+            return None
+
+        return formatted_date
+
     def prepare_tweet(self):
         """
         Retrieves the line to post on Twitter, combining the tweet components
@@ -77,7 +119,7 @@ class TweepyBot:
             else:
                 text = get_line(
                     self.hashtag,
-                    self.date_format,
+                    self.get_formatted_date(),
                     self.data,
                     self.source,
                     self.cleaner

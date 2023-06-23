@@ -8,13 +8,13 @@ from babel.dates import format_date
 from babel.numbers import format_decimal
 
 
-def get_line(hashtag, date_format, data, source, cleaner):
+def get_line(hashtag, formatted_date, data, source, cleaner):
     """
     Retrieve a line to be tweeted based on the provided parameters.
 
     Args:
         hashtag (str): The hashtag for the tweet.
-        date_format (str): Should be "eng" or "esp".
+        formatted_date (str): Should be "eng" or "esp".
         data (str): The path to the data file to be read.
         source (str): The data source.
         cleaner (bool): Indicates whether to clean the source file.
@@ -24,10 +24,10 @@ def get_line(hashtag, date_format, data, source, cleaner):
     """
     try:
         text = read_file(data, cleaner)
-        if date_format is None:
+        if formatted_date is None:
             text = f'{hashtag}: {text} {source}'
         else:
-            text = f'{hashtag}, {date_format}, {text} {source}'
+            text = f'{hashtag}, {formatted_date}, {text} {source}'
         return text
     except FileNotFoundError as e:
         print(f"Error: File '{data}' not found. {str(e)}")
@@ -93,41 +93,3 @@ def split_string(string):
             tweets.append(remaining_string)
 
     return tweets
-
-
-def get_date(date_format=""):
-    """
-    Create a formatted date.
-
-    Args:
-        date_format (str): The format for the date (either "esp" or "eng").
-
-    Returns:
-        str: The formatted date.
-    """
-    try:
-        if date_format == "esp":
-            # Get the current date
-            current_date = datetime.now()
-
-            # Format the date components separately
-            day = format_decimal(current_date.day, format='##')
-            month = format_date(current_date, format='MMMM', locale='es')
-
-            # Format the date as "month day"
-            # Create the formatted date with "de" separator
-            formatted_date = f"{day} de {month}"
-
-        elif date_format == "eng":
-            # Get the current date
-            current_date = datetime.now()
-
-            # Format the date as "month day"
-            formatted_date = current_date.strftime("%B %d")
-        else:
-            raise ValueError("Invalid date format")
-    except ValueError as e:
-        print(f"Error {e}")
-        return None
-
-    return formatted_date
