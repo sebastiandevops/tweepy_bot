@@ -11,14 +11,14 @@ if __name__ == '__main__':
     maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
     home = os.getenv("HOME")
     project_path = '%s/estudio/tweepy_bot' % (home)
-    data = '%s/scrapers/today_in_history.txt' % (project_path)
+    data_file = '%s/scrapers/today_in_history.txt' % (project_path)
 
     for i in range(maxtries):
         try:
             bot = TweepyBot(
                 hashtag="🤖 #OnThisDay",
                 date_format="eng",
-                data=data,
+                data=data_file,
                 source="[©2023 Encyclopædia Britannica, Inc.]"
             )
             tweet_content = bot.prepare_tweet()

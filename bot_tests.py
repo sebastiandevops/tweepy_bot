@@ -12,7 +12,7 @@ if __name__ == '__main__':
     maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
     home = os.getenv("HOME")
     project_path = '%s/estudio/tweepy_bot' % (home)
-    data = '%s/scrapers/history.txt' % (project_path)
+    data_file = '%s/scrapers/history.txt' % (project_path)
 
     hashtag = "🤖 #Historia"
 
