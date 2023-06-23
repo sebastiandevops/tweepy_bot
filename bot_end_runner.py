@@ -4,7 +4,6 @@ import os
 import time
 
 from app.models import TweepyBot
-from app.services import get_date
 
 
 if __name__ == '__main__':
