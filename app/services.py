@@ -2,11 +2,6 @@
 
 import random
 
-from datetime import datetime
-# import locale
-from babel.dates import format_date
-from babel.numbers import format_decimal
-
 
 def get_line(hashtag, formatted_date, data, source, cleaner):
     """
