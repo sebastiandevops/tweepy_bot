@@ -5,7 +5,7 @@
 url=$1
 
 # Define the directory path
-dir="$HOME/estudio/tweepy_bot/scrapers/"
+dir="$HOME"/estudio/tweepy_bot/scrapers
 
 # Remove the existing hoy_en_la_historia.txt file
 rm -rf "$dir"/hoy_en_la_historia.txt
@@ -30,6 +30,9 @@ sed -i 's/ - /, /g' "$dir"/hoy_en_la_historia.txt
 
 # removes any leading white spaces at the beginning of each line in the file.
 sed -i 's/^[[:space:]]*//' "$dir"/hoy_en_la_historia.txt
+
+# remove the content after the last dot (excluding the dot itself), but only if the line does not end with a parenthesis symbol.
+sed -i -E 's/(\.[^.]*[^)])\..*/\1./' "$dir"/hoy_en_la_historia.txt
 
 # Remove the temporary output* and datos* files
 rm -rf "$dir"/data.txt
