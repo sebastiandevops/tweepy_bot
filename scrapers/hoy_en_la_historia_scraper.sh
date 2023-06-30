@@ -28,11 +28,14 @@ grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/data.txt | grep -vE '^.{,
 # Replace ' - ' with ', ' in hoy_en_la_historia.txt
 sed -i 's/ - /, /g' "$dir"/hoy_en_la_historia.txt
 
+# remove all possible spaces at the end of the line
+sed -i 's/[[:blank:]]*$//' "$dir"/hoy_en_la_historia.txt
+
 # removes any leading white spaces at the beginning of each line in the file.
 sed -i 's/^[[:space:]]*//' "$dir"/hoy_en_la_historia.txt
 
-# remove the content after the last dot (excluding the dot itself), but only if the line does not end with a parenthesis symbol.
-sed -i -E 's/(\.[^.]*[^)])\..*/\1./' "$dir"/hoy_en_la_historia.txt
+# # remove the content after the last dot (excluding the dot itself), but only if the line does not end with a parenthesis symbol.
+# sed -i -E 's/(\.[^.]*[^)])\..*/\1./' "$dir"/hoy_en_la_historia.txt
 
 # Remove the temporary output* and datos* files
 rm -rf "$dir"/data.txt
