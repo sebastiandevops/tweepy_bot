@@ -29,7 +29,12 @@ class TweepyBot:
                  False by default.
 
     Methods:
-        get_tweet():
+        get_formatted_date():
+            Create a formatted date.
+            Returns:
+                A string with the formatted date.
+
+        prepare_tweet():
             Retrieves the line to post on Twitter, combining the tweet
             components based on the provided attributes.
             Returns:
