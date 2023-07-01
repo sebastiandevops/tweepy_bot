@@ -3,7 +3,7 @@
 import random
 
 
-def get_line(hashtag, formatted_date, data, source, cleaner):
+def get_line(hashtag, formatted_date, data, line, source, cleaner):
     """
     Retrieve a line to be tweeted based on the provided parameters.
 
@@ -18,7 +18,7 @@ def get_line(hashtag, formatted_date, data, source, cleaner):
         str: The line to be tweeted.
     """
     try:
-        text = read_file(data, cleaner)
+        text = read_file(data, line, cleaner)
         if formatted_date is None:
             text = f'{hashtag}: {text} {source}'
         else:
@@ -31,12 +31,14 @@ def get_line(hashtag, formatted_date, data, source, cleaner):
     return None
 
 
-def read_file(data, cleaner):
+def read_file(data, line, cleaner):
     """
     Read the file and optionally clean the line if cleaner is True.
 
     Args:
         data (str): The data to read from the file.
+        line: The desired line. It can be either "longest" or "random".
+              Default is None. If None, the tweet line will be random.
         cleaner (bool): Indicates whether to clean the source file.
 
     Returns:
@@ -44,8 +46,24 @@ def read_file(data, cleaner):
     """
     with open(data, 'r') as filename:
         lines = filename.readlines()
-
-    myline = random.choice(lines)
+    try:
+        if line == "longest":
+            # Find the longest line
+            if len(lines) > 1:
+                myline = max(lines, key=len)
+            elif len(lines) == 1:
+                myline = lines[0]
+            else:
+                raise ValueError("No lines found in the file.")
+        elif line == "random" or line is None:
+            if len(lines) > 0:
+                myline = random.choice(lines)
+            else:
+                raise ValueError("No lines found in the file.")
+    except ValueError as e:
+        e = "line should be either random, longest or None"
+        print(f"Error: {e}")
+        myline = ""
 
     if cleaner:
         lines.remove(myline)

@@ -20,6 +20,8 @@ class TweepyBot:
         date_format: The format for the date (either "esp" or "eng").
                      Default is None.
         data: The data to populate the tweet.
+        line: The desired line. It can be either "longest" or "random".
+              Default is None. If None, the tweet line will be random.
         text: The custom text to be included in the tweet.
               Overrides other tweet components if provided.
         source: The data source for the tweet.
@@ -54,8 +56,9 @@ class TweepyBot:
         api=create_api(),
         hashtag="🤖",
         date_format=None,
-        data=None,
         text=None,
+        data=None,
+        line=None,
         source=None,
         cleaner=False
     ):
@@ -64,6 +67,7 @@ class TweepyBot:
         self.date_format = date_format
         self.text = text
         self.data = data
+        self.line = line
         self.source = source
         self.cleaner = cleaner
 
@@ -121,6 +125,7 @@ class TweepyBot:
                     self.hashtag,
                     self.get_formatted_date(),
                     self.data,
+                    self.line,
                     self.source,
                     self.cleaner
                 )
