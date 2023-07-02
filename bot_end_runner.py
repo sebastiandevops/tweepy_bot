@@ -19,7 +19,6 @@ if __name__ == '__main__':
                 hashtag="🤖 #HoyEnLaHistoria",
                 date_format="esp",
                 data=data_file,
-                line="longest",
                 source="[© 2012-2023 Hoyenlahistoria.com]"
             )
             tweet_content = bot.prepare_tweet()
