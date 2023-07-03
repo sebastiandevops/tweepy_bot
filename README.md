@@ -120,8 +120,9 @@ def create_api():
     <ul align="justify">
         <li><code>api:</code> The instance of the authenticated Twitter API obtained from the config.py module.</li>
         <li><code>hashtag:</code> The hashtag to be included in the tweet.</li>
-        <li><code>date_format:</code> The format for the date to be included in the tweet.</li>
+        <li><code>date_format:</code> The format for the date to be included in the tweet (either "esp" or "eng").</li>
         <li><code>data:</code> The data to populate the tweet.</li>
+        <li><code>line:</code> The desired line. It can be either "longest" or "random". Default is None. If None, the tweet line will be random.</li>
         <li><code>text:</code> The custom text to be included in the tweet, overriding other tweet components if provided.</li>
         <li><code>source:</code> The data source for the tweet.</li>
         <li><code>cleaner:</code> A boolean indicating whether to execute a data cleaner.</li>
@@ -130,6 +131,7 @@ def create_api():
 
 <p align="justify"><b>Methods</b>
     <ul align="justify">
+        <li><code>get_formatted_date():</code> Retrieves the formatted date for the tweet.</li>
         <li><code>prepare_tweet():</code> Retrieves the line to be posted on Twitter by combining the tweet components based on the provided attributes.</li>
         <li><code>post_tweet(text):</code> Publishes a tweet or thread using the Twitter API.</li>
         <li><code>__str__():</code> Returns a string representation of the TweepyBot object.</li>
@@ -142,6 +144,11 @@ def create_api():
 from app.services import get_line, split_string
 from app.config import create_api
 
+from datetime import datetime
+# import locale
+from babel.dates import format_date
+from babel.numbers import format_decimal
+
 
 class TweepyBot:
     """
@@ -151,8 +158,11 @@ class TweepyBot:
         api: The Twitter API object used for interacting
              with the Twitter platform.
         hashtag: The hashtag to be included in the tweet.
-        date_format: The formatted date to be included in the tweet.
+        date_format: The format for the date (either "esp" or "eng").
+                     Default is None.
         data: The data to populate the tweet.
+        line: The desired line. It can be either "longest" or "random".
+              Default is None. If None, the tweet line will be random.
         text: The custom text to be included in the tweet.
               Overrides other tweet components if provided.
         source: The data source for the tweet.
@@ -160,7 +170,12 @@ class TweepyBot:
                  False by default.
 
     Methods:
-        get_tweet():
+        get_formatted_date():
+            Create a formatted date.
+            Returns:
+                A string with the formatted date.
+
+        prepare_tweet():
             Retrieves the line to post on Twitter, combining the tweet
             components based on the provided attributes.
             Returns:
@@ -187,8 +202,9 @@ class TweepyBot:
         api=create_api(),
         hashtag="🤖",
         date_format=None,
-        data=None,
         text=None,
+        data=None,
+        line=None,
         source=None,
         cleaner=False
     ):
@@ -197,8 +213,45 @@ class TweepyBot:
         self.date_format = date_format
         self.text = text
         self.data = data
+        self.line = line
         self.source = source
         self.cleaner = cleaner
+
+    def get_formatted_date(self):
+        """
+        Create a formatted date.
+
+        Returns:
+            str: The formatted date.
+        """
+        try:
+            if self.date_format is None:
+                return None
+            elif self.date_format == "esp":
+                # Get the current date
+                current_date = datetime.now()
+
+                # Format the date components separately
+                day = format_decimal(current_date.day, format='##')
+                month = format_date(current_date, format='MMMM', locale='es')
+
+                # Format the date as "month day"
+                # Create the formatted date with "de" separator
+                formatted_date = f"{day} de {month}"
+
+            elif self.date_format == "eng":
+                # Get the current date
+                current_date = datetime.now()
+
+                # Format the date as "month day"
+                formatted_date = current_date.strftime("%B %d")
+            else:
+                raise ValueError("Invalid date format")
+        except ValueError as e:
+            print(f"Error {e}")
+            return None
+
+        return formatted_date
 
     def prepare_tweet(self):
         """
@@ -216,8 +269,9 @@ class TweepyBot:
             else:
                 text = get_line(
                     self.hashtag,
-                    self.date_format,
+                    self.get_formatted_date(),
                     self.data,
+                    self.line,
                     self.source,
                     self.cleaner
                 )
@@ -272,18 +326,18 @@ class TweepyBot:
             None
 
         """
-        representation = "[TweepyBot]\
+        representation = "\n[TweepyBot]\
                           \nAPI: {}\
                           \nHashtag: {}\
                           \nDate format: {}\
                           \nData: {}\
                           \nSource: {}\
-                          \nCleaner: {}".format(self.api,
-                                                self.hashtag,
-                                                self.date_format,
-                                                self.data,
-                                                self.source,
-                                                self.cleaner)
+                          \nCleaner: {}\n".format(self.api,
+                                                  self.hashtag,
+                                                  self.date_format,
+                                                  self.data,
+                                                  self.source,
+                                                  self.cleaner)
         return representation
 
 
@@ -296,147 +350,121 @@ if __name__ == "__main__":
 
 <p align="justify"><b>Functions</b>
     <ul align="justify">
-        <li><code>get_line(hashtag, date_format, data, source, cleaner):</code> Retrieves a line to be tweeted based on the provided parameters. It reads the data file, optionally applies a cleaner, and formats the line.</li>
-        <li><code>read_file(data, cleaner):</code> Reads the file and optionally cleans the line if the cleaner flag is set.</li>
+        <li><code>get_line(hashtag, date_format, data, line, source, cleaner):</code> Retrieves a line to be tweeted based on the provided parameters. It reads the data file, optionally applies a cleaner, and formats the line.</li>
+        <li><code>read_file(data, line, cleaner):</code> Reads the file and optionally cleans the line if the cleaner flag is set.</li>
         <li><code>split_string(string):</code> Splits a string into segments based on Twitter's character limit.</li>
-        <li><code>get_date(date_format):</code> Creates a formatted date based on the provided date format.</li>
     </ul>
 </p>
 
 ```python
 #!/usr/bin/env python3
 
- import random
-
- from datetime import datetime
- # import locale
- from babel.dates import format_date
- from babel.numbers import format_decimal
+import random
 
 
- def get_line(hashtag, date_format, data, source, cleaner):
-     """
-     Retrieve a line to be tweeted based on the provided parameters.
+def get_line(hashtag, formatted_date, data, line, source, cleaner):
+    """
+    Retrieve a line to be tweeted based on the provided parameters.
 
-     Args:
-         hashtag (str): The hashtag for the tweet.
-         date_format (str): Should be "eng" or "esp".
-         data (str): The path to the data file to be read.
-         source (str): The data source.
-         cleaner (bool): Indicates whether to clean the source file.
+    Args:
+        hashtag (str): The hashtag for the tweet.
+        formatted_date (str): Should be "eng" or "esp".
+        data (str): The path to the data file to be read.
+        source (str): The data source.
+        cleaner (bool): Indicates whether to clean the source file.
 
-     Returns:
-         str: The line to be tweeted.
-     """
-     try:
-         text = read_file(data, cleaner)
-         if date_format is None:
-             text = f'{hashtag}: {text} {source}'
-         else:
-             text = f'{hashtag}, {date_format}, {text} {source}'
-         return text
-     except FileNotFoundError as e:
-         print(f"Error: File '{data}' not found. {str(e)}")
-     except Exception as e:
-         print(f"An error occurred while retrieving the tweet line: {str(e)}")
-     return None
-
-
- def read_file(data, cleaner):
-     """
-     Read the file and optionally clean the line if cleaner is True.
-
-     Args:
-         data (str): The data to read from the file.
-         cleaner (bool): Indicates whether to clean the source file.
-
-     Returns:
-         str: The text to populate the tweet.
-     """
-     with open(data, 'r') as filename:
-         lines = filename.readlines()
-
-     myline = random.choice(lines)
-
-     if cleaner:
-         lines.remove(myline)
-         with open(data, 'w') as filename:
-             filename.writelines(lines)
-
-     text = myline.strip()
-     return text
+    Returns:
+        str: The line to be tweeted.
+    """
+    try:
+        text = read_file(data, line, cleaner)
+        if formatted_date is None:
+            text = f'{hashtag}: {text} {source}'
+        else:
+            text = f'{hashtag}, {formatted_date}, {text} {source}'
+        return text
+    except FileNotFoundError as e:
+        print(f"Error: File '{data}' not found. {str(e)}")
+    except Exception as e:
+        print(f"An error occurred while retrieving the tweet line: {str(e)}")
+    return None
 
 
- def split_string(string):
-     """
-     Split the string into segments based on Twitter's character limit.
+def read_file(data, line, cleaner):
+    """
+    Read the file and optionally clean the line if cleaner is True.
 
-     Args:
-         string (str): The string to be split.
+    Args:
+        data (str): The data to read from the file.
+        line: The desired line. It can be either "longest" or "random".
+              Default is None. If None, the tweet line will be random.
+        cleaner (bool): Indicates whether to clean the source file.
 
-     Returns:
-         list: List of strings representing the segmented tweets.
-     """
-     tweets = []
+    Returns:
+        str: The text to populate the tweet.
+    """
+    with open(data, 'r') as filename:
+        lines = filename.readlines()
+    try:
+        if line == "longest":
+            # Find the longest line
+            if len(lines) > 1:
+                myline = max(lines, key=len)
+            elif len(lines) == 1:
+                myline = lines[0]
+            else:
+                raise ValueError("No lines found in the file.")
+        elif line == "random" or line is None:
+            if len(lines) > 0:
+                myline = random.choice(lines)
+            else:
+                raise ValueError("No lines found in the file.")
+    except ValueError as e:
+        e = "line should be either random, longest or None"
+        print(f"Error: {e}")
+        myline = ""
 
-     if len(string) <= 234:
-         tweets.append(string)
-     else:
-         remaining_string = string
-         while len(remaining_string) > 234:
-             # First 240 characters from remaining_string
-             new_string = remaining_string[:234]
-             # Find the last space within the first 240 characters
-             last_space_index = new_string.rfind(' ')
-             if last_space_index != -1:
-                 # Truncate to the last space
-                 new_string = new_string[:last_space_index]
-             tweets.append(new_string)
-             # Remaining characters after second_string
-             remaining_string = remaining_string[len(new_string):].strip()
+    if cleaner:
+        lines.remove(myline)
+        with open(data, 'w') as filename:
+            filename.writelines(lines)
 
-         if len(remaining_string) > 0:
-             tweets.append(remaining_string)
-
-     return tweets
+    text = myline.strip()
+    return text
 
 
- def get_date(date_format=""):
-     """
-     Create a formatted date.
+def split_string(string):
+    """
+    Split the string into segments based on Twitter's character limit.
 
-     Args:
-         date_format (str): The format for the date (either "esp" or "eng").
+    Args:
+        string (str): The string to be split.
 
-     Returns:
-         str: The formatted date.
-     """
-     try:
-         if date_format == "esp":
-             # Get the current date
-             current_date = datetime.now()
+    Returns:
+        list: List of strings representing the segmented tweets.
+    """
+    tweets = []
 
-             # Format the date components separately
-             day = format_decimal(current_date.day, format='##')
-             month = format_date(current_date, format='MMMM', locale='es')
+    if len(string) <= 234:
+        tweets.append(string)
+    else:
+        remaining_string = string
+        while len(remaining_string) > 234:
+            # First 240 characters from remaining_string
+            new_string = remaining_string[:234]
+            # Find the last space within the first 240 characters
+            last_space_index = new_string.rfind(' ')
+            if last_space_index != -1:
+                # Truncate to the last space
+                new_string = new_string[:last_space_index]
+            tweets.append(new_string)
+            # Remaining characters after second_string
+            remaining_string = remaining_string[len(new_string):].strip()
 
-             # Format the date as "month day"
-             # Create the formatted date with "de" separator
-             formatted_date = f"{day} de {month}"
+        if len(remaining_string) > 0:
+            tweets.append(remaining_string)
 
-         elif date_format == "eng":
-             # Get the current date
-             current_date = datetime.now()
-
-             # Format the date as "month day"
-             formatted_date = current_date.strftime("%B %d")
-         else:
-             raise ValueError("Invalid date format")
-     except ValueError as e:
-         print(f"Error {e}")
-         return None
-
-     return formatted_date
+    return tweets
 ```
 
 
@@ -452,7 +480,7 @@ if __name__ == "__main__":
 url=$1
 
 # Define the directory path
-dir="$HOME/estudio/tweepy_bot/scrapers"
+dir="$HOME"/estudio/tweepy_bot/scrapers
 
 # Remove the existing hoy_en_la_historia.txt file
 rm -rf "$dir"/hoy_en_la_historia.txt
@@ -460,8 +488,8 @@ rm -rf "$dir"/hoy_en_la_historia.txt
 # Fetch the content from the given URL, convert it to plain text, remove extra spaces, and save it to data.txt
 echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/data.txt
 
-# Insert a new line before a 3 or 4-digit number followed by a hyphen in data.txt
-sed -i -E 's/([0-9]{3,4} -)/\n\1/g' "$dir"/data.txt
+# Insert a new line before either a 2 to 4 digit number followed by a hyphen or a space, followed by a 2 to 4 digit number, followed by "a.C. -" in data.txt
+sed -i -E 's/([0-9]{2,4} -| [0-9]{2,4} a\.C\. -)/\n\1/g' "$dir"/data.txt
 
 # Remove empty lines from data.txt
 sed -i '/^\s*$/d' "$dir"/data.txt
@@ -475,7 +503,16 @@ grep -v -e 'See All' -e 'SHOW' -e 'Efemérides' "$dir"/data.txt | grep -vE '^.{,
 # Replace ' - ' with ', ' in hoy_en_la_historia.txt
 sed -i 's/ - /, /g' "$dir"/hoy_en_la_historia.txt
 
-# Remove the temporary data.txt
+# remove all possible spaces at the end of the line
+sed -i 's/[[:blank:]]*$//' "$dir"/hoy_en_la_historia.txt
+
+# removes any leading white spaces at the beginning of each line in the file.
+sed -i 's/^[[:space:]]*//' "$dir"/hoy_en_la_historia.txt
+
+# remove the content after the last dot (excluding the dot itself), but only if the line does not end with a parenthesis symbol.
+sed -i -E '/\)\s*$/!s/\.[^.]*$/\./' "$dir"/hoy_en_la_historia.txt
+
+# Remove the temporary output* and datos* files
 rm -rf "$dir"/data.txt
 ```
 
