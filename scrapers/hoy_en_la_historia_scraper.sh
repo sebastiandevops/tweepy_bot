@@ -16,7 +16,6 @@ echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G'
 # Insert a new line after the "Efemérides por día" line in data.txt
 sed -i '/Efemérides por día/s//\n&/g' "$dir"/data.txt
 
-# insert a new line both before the word "Acontecimiento"
 sed -i '/Acontecimiento/s//\n&/g' "$dir"/data.txt
 
 # Insert a new line after the "Todos los tiposEfeméridesCumpleañosMuertes" line in data.txt
@@ -50,17 +49,14 @@ sed -i 's/^[[:space:]]*//' "$dir"/hoy_en_la_historia.txt
 sed -i -E '/\)\s*$/!s/\.[^.]*$/\./' "$dir"/hoy_en_la_historia.txt
 
 #Handle Acontecimiento
-# Command 1: Insert a new line before the last sequence of 3 or 4 numbers in lines starting with "Acontecimiento"
-sed -i -E '/^Acontecimiento/ s/([0-9]{3,4})([^0-9]*$)/\n\1\2/' "$dir"/hoy_en_la_historia.txt
+# Command 1: Insert a new line before the last sequence of 3 or 4 numbers in lines starting with "Acontecimiento" and add a comma after that sequence
+sed -i -E '/^Acontecimiento/ s/([0-9]{3,4}) ([^0-9]|$)/\n\1, \2/' "$dir"/hoy_en_la_historia.txt
 
 # Command 2: Remove everything after the last dot in lines starting with "Acontecimiento"
 sed -i -E '/^Acontecimiento/ s/\.([^.]*)$/\./' "$dir"/hoy_en_la_historia.txt
 
 # Command 3: Remove the word "Acontecimiento" from lines starting with that word
 sed -i -E 's/^Acontecimiento //' "$dir"/hoy_en_la_historia.txt
-
-# Command 4: Add a comma after the last sequence of 2, 3, or 4 numbers in lines
-sed -i -E ':a; s/([0-9]{2,4}) /\1, /; t; n; ba' "$dir"/hoy_en_la_historia.txt
 
 # Remove the temporary output* and datos* files
 rm -rf "$dir"/data.txt
