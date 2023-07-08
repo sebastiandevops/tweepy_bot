@@ -39,6 +39,11 @@ else
     # Place your commands to be executed if the file does not exist here
     bash "$scraper" "$url"
     python3 "$dir"/bot_start_runner.py
+    scraper_exit_code=$(wc -l hoy_en_la_historia.txt | tr -dc '0-9')
+    if [[ $scraper_exit_code -ne 0 ]]; then
+        echo "Failed to scrape data from url: $scraper_exit_code"
+        exit 1
+    fi
     git add .
     git commit -m "My_bot_start executed: $timestamp"
     git push origin "$(git rev-parse --abbrev-ref HEAD)"

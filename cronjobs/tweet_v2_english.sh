@@ -27,6 +27,12 @@ fi
 
 # run scraper and bot
 bash "$scraper" "$url"
+scraper_exit_code=$(wc -l today_in_history.txt | tr -dc '0-9')
+if [[ $scraper_exit_code -ne 0 ]]; then
+    echo "Failed to scrape data from url: $scraper_exit_code"
+    exit 1
+fi
+
 python3 "$dir"/"$bot_runner"
 
 # remote update
