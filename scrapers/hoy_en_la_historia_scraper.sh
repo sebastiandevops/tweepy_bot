@@ -33,8 +33,8 @@ sed -i '/^\s*$/d' "$dir"/hoy_en_la_historia.txt
 # Insert a new line after the last period in data.txt
 sed -i '$ s/\./.\n/' "$dir"/hoy_en_la_historia.txt
 
-# Remove lines with less than or equal to 20 characters from hoy_en_la_historia.txt
-sed -i '/^.\{0,20\}$/d' "$dir"/hoy_en_la_historia.txt
+# Remove lines with less than or equal to 140 characters from hoy_en_la_historia.txt
+sed -i '/^.\{0,140\}$/d' "$dir"/hoy_en_la_historia.txt
 
 # inserts a comma after the year
 sed -i -E ':a; s/([0-9]{2,4}) /\1, /; t; n; ba' "$dir"/hoy_en_la_historia.txt
