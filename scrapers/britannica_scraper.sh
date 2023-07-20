@@ -21,6 +21,9 @@ sed -i '/Test your knowledge/s//\n&/g' "$dir"/data.txt
 # Insert a new line after the text "See All Biographies On This Day" in data.txt
 sed -i 's/See All Biographies On This Day/&\n/' "$dir"/data.txt
 
+# Insert a new line after the text "SHOW ANOTHER EVENT" in data.txt
+sed -i 's/SHOW ANOTHER EVENT/&\n/' "$dir"/data.txt
+
 # Insert a new line after periods followed by a lowercase letter and a non-comma character
 sed -i -E 's/([^A-Z])\.([^,])/\1.\n\2/g' "$dir"/data.txt
 
