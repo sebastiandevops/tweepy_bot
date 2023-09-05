@@ -190,11 +190,15 @@ class TweepyBot:
                           \nHashtag: {}\
                           \nDate format: {}\
                           \nData: {}\
+                          \nLine: {}\
+                          \nText: {}\
                           \nSource: {}\
                           \nCleaner: {}\n".format(self.api,
                                                   self.hashtag,
                                                   self.date_format,
                                                   self.data,
+                                                  self.line,
+                                                  self.text,
                                                   self.source,
                                                   self.cleaner)
         return representation
