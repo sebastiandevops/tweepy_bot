@@ -932,7 +932,6 @@ Ptolomeo compila un catálogo de todas las estrellas visibles a ojo desnudo. Tam
 69: Vespasiano es proclamado emperador, instaurando la dinastía Flavia.
 87: Los romanos son derrotados por los desacios del rey Decébalo en la Primera Batalla de Tapae.
 96: El emperador Domiciano es asesinado, el Senado romano instaura al venerable Nerva como emperador ese mismo día.
-Siglo I: Aparece el códice, por primera vez en el Imperio romano.
 1: El león se extingue en Europa occidental.
 79: Entra en erupción el volcán Vesubio, destruyendo a su paso a Pompeya y Herculano.
 33: Según la tradición Jesús de Nazaret es crucificado en Jerusalén.
