@@ -480,7 +480,7 @@ def split_string(string):
 url=$1
 
 # Define the directory path
-dir="$HOME"/estudio/tweepy_bot/scrapers
+dir="$HOME"/projects/tweepy_bot/scrapers
 
 # Remove the existing hoy_en_la_historia.txt file
 rm -rf "$dir"/hoy_en_la_historia.txt
@@ -523,7 +523,7 @@ rm -rf "$dir"/data.txt
 
 <p align="justify"><code>url=$1</code>: This command assigns the first argument passed to the script to the variable <code>url</code>. It allows you to provide a URL as an argument when executing the script.</p>
 
-<p align="justify"><code>dir="$HOME/estudio/tweepy_bot/scrapers"</code>: This command sets the directory path where the data will be stored. It assigns the specified path to the variable <code>dir</code>.</p>
+<p align="justify"><code>dir="$HOME/projects/tweepy_bot/scrapers"</code>: This command sets the directory path where the data will be stored. It assigns the specified path to the variable <code>dir</code>.</p>
 
 <p align="justify"><code>rm -rf "$dir"/hoy_en_la_historia.txt</code>: This command removes any existing <code>hoy_en_la_historia.txt</code> file in the specified directory <code>$dir</code>.</p>
 
@@ -590,7 +590,7 @@ if __name__ == '__main__':
 
     maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
     home = os.getenv("HOME")
-    project_path = '%s/estudio/tweepy_bot' % (home)
+    project_path = '%s/projects/tweepy_bot' % (home)
     data = '%s/scrapers/history.txt' % (project_path)
 
     hashtag = "🤖 #Historia"

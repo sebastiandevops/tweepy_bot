@@ -4,7 +4,7 @@
 url="https://www.hoyenlahistoria.com/efemerides.php"
 
 # paths
-dir="$HOME/estudio/tweepy_bot"
+dir="$HOME/projects/tweepy_bot"
 file_path="$dir"/scrapers/hoy_en_la_historia.txt
 scraper="$dir"/scrapers/hoy_en_la_historia_scraper.sh
 

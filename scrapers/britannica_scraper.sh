@@ -4,7 +4,7 @@
 url=$1
 
 # Define the directory path
-dir="$HOME"/estudio/tweepy_bot/scrapers
+dir="$HOME"/projects/tweepy_bot/scrapers
 
 # Fetch the content from the given URL, convert it to plain text, remove extra spaces, and save it to data.txt
 echo $(curl --silent "$url" | htmlq --text | html2text) | tr -s ' ' | sed '/./G' > "$dir"/data.txt

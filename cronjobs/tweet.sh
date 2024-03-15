@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 timestamp=$(date +"%D %T")
-dir="$HOME/estudio/tweepy_bot/"
+dir="$HOME/projects/tweepy_bot/"
 # Change directory and handle potential errors
 cd "$dir" || {
     echo "Failed to change directory to $dir"

@@ -5,7 +5,7 @@
 # Set the URL argument passed to the script
 url=$1
 # Define the directory path
-dir="$HOME"/estudio/tweepy_bot/scrapers
+dir="$HOME"/projects/tweepy_bot/scrapers
 
 # Remove the existing hoy_en_la_historia.txt file
 rm -rf "$dir"/hoy_en_la_historia.txt

@@ -11,7 +11,7 @@ api = create_api()
 
 maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
 home = os.getenv("HOME")
-project_path = '/%s/estudio/tweepy_bot' % (home)
+project_path = '/%s/projects/tweepy_bot' % (home)
 data = '/%s/scrapers/today_in_history.txt' % (project_path)
 
 source = "[©2023 Encyclopædia Britannica, Inc.]"

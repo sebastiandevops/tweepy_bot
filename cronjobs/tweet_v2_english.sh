@@ -4,7 +4,7 @@
 url="https://www.britannica.com/on-this-day"
 
 # paths
-dir="$HOME/estudio/tweepy_bot"
+dir="$HOME/projects/tweepy_bot"
 scraper="$dir"/scrapers/britannica_scraper.sh
 bot_runner="bot_english_runner.py"
 

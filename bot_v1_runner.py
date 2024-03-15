@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     maxtries = 8    # 8 * 15 minutes = about 2 hours total of waiting,
     home = os.getenv("HOME")
-    project_path = '%s/estudio/tweepy_bot' % (home)
+    project_path = '%s/projects/tweepy_bot' % (home)
     data_file = '%s/scrapers/history.txt' % (project_path)
 
     for i in range(maxtries):
