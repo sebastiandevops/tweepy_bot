@@ -44,7 +44,7 @@ def read_file(data, line, cleaner):
     Returns:
         str: The text to populate the tweet.
     """
-    with open(data, 'r') as filename:
+    with open(data, 'r', encoding='utf-8', errors='replace') as filename:
         lines = filename.readlines()
     try:
         if line == "longest":
