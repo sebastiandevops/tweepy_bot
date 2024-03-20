@@ -1,23 +1,62 @@
-1255, El aristotelismo fue adoptado oficialmente en la Universidad de París al proclamar la Facultad de Artes un nuevo plan que imponía el estudio de todas las obras conocidas de Aristóteles.
-1279, final de la dinastía Song, derrotada en la batalla de Yamen por los mongoles de la dinastía Yuan.
-1563, en Francia se promulga el Edicto de Amboise que pone fin a la Primera Guerra de Religión.
-1808, se produce un motín en la localidad madrileña de Aranjuez, que provocará la caída de Manuel Godoy y, posteriormente, del rey Carlos IV.
-1812, en Cádiz se publica la primera Constitución Española denominada popularmente «la Pepa» (origen de la frase «¡Viva la Pepa!»).
-1814, en el marco de la Guerra de la Independencia de Chile, tiene lugar el Combate de Quilo entre las tropas de Bernardo O'Higgins y Manuel Barañao.
-1818, en Chile, el ejército español vence al ejército chileno/argentino en la batalla de Cancha Rayada, durante la Guerra de la Independencia.
-1844, en Azua (República Dominicana) se libra la primera batalla de la independencia; las fuerzas patriotas vencen a las haitianas.
-1854, en la provincia de Buenos Aires (Argentina) se fundan el partido de Zárate y su ciudad cabecera del mismo nombre.
-1858, en la Ciudad de Buenos Aires (Argentina) se funda el Histórico Colegio San José de Buenos Aires.
-1880, en Fregenal de la Sierra (Badajoz) se realiza la primera llamada telefónica a larga distancia en España gracias a Rodrigo Sánchez-Arjona y Sánchez-Arjona, que tendió una línea telefónica entre su casa en el municipo bajoextremeño y una finca de su propiedad, llamada de "Las Mimbres".
-1911, se conmemora por primera vez el Día Internacional de la Mujer, en años posteriores la celebración se traslada al 8 de marzo.
-1915, el planeta Plutón es fotografiado por primera vez, aunque no fue reconocido como tal.
-1973, en la localidad de Vicente López (provincia de Buenos Aires) se funda el Colegio Los Molinos.
-1982, en el marco de la Guerra de las Malvinas, tropas argentinas desembarcan en las islas Georgias del Sur.
-1989, en El Salvador, Alfredo Cristiani, candidato presidencial del partido de oposición, ARENA, derrota en las elecciones presidenciales celebradas en ese mismo día a Fidel Chávez Mena, candidato presidencial del partido oficial PDC.
-1995, Michael Jordan anunció su vuelta a la NBA con una rueda de prensa en la que solo decía: "I'm back (He vuelto)".
-2002, en la Antártida, un iceberg de grandes proporciones (3000, m2 y de 200, m de profundidad) se desprende de la plataforma continental; se disolverá en un mes.
-2003, en Irak, tropas de Estados Unidos invaden por segunda vez ese país (Segunda Guerra del Golfo). De acuerdo con el Tiempo Universal Coordinado (UTC), la invasión comienza a la 01:00, del 20, de marzo.
-2006, en Bielorrusia, Aleksandr Lukashenko logra su tercer mandato como presidente.
-2007, en España, la energía eólica bate un nuevo récord de producción, al alcanzar los 8375, MW a las 17:40, (hora local). Esta es una potencia superior a la producida por las seis centrales nucleares que hay en España (8 reactores que juntos generan 7742, MW).
-2011, la Luna, en su elipsis, atraviesa el punto más cercano a la Tierra, a 356.577, km.
-2013, La selección dominicana, gana el Clásico Mundial de Béisbol, ante la selección de Puerto Rico 18, de marzo
+1179, Alfonso VIII y Alfonso II, reyes de Castilla y Aragón, respectivamente, firman el Tratado de Cazola, por el que ambos reinos se reparten las zonas de conquista en al-Ándalus: Valencia, Denia y Játiva para Aragón y el resto de territorios musulmanes para Castilla.
+1254, Las aldeas de Calatayud lograron configurarse en Comunidad por privilegio de Jaime I, rey de Aragón.
+1565, Felipe II, rey de España, encarga a Pedro Menéndez de Avilés la conquista y conversión a la fe católica de los indígenas de las provincias de la Florida. Rey de España Felipe II de España 1600, (Jueves Santo), en Linköping (Suecia) sucede el Baño de Sangre de Linköping (Carlos IX de Suecia decapita a cinco opositores nobles).
+1616, en Inglaterra, el rey Jacobo I libera a sir Walter Raleigh de la Torre de Londres luego de 13, años de prisión.
+1778, Por disposición de las autoridades realistas los territorios chilenos de Mendoza, San Juan y Tucumán son segregados del Reino de Chile e incorporados al Virreinato del Plata.
+1800, en la llanura de Heliópolis (Egipto), los franceses —dirigidos por Kleber— vencen a los turcos.
+1807, en Egipto, los británicos se apoderan de Alejandría, tras la llegada del ejército de Napoleón a Egipto.
+1814, en Chile se libra la batalla de Membrillar, donde las fuerzas chilenas de Juan Mackenna logran frenar temporalmente el avance del ejército realista de Gabino Gaínza rumbo a la capital chilena.
+1814, en Venezuela, cerca de la población aragüeña de San Mateo se libra la Batalla de San Mateo. El general Simón Bolívar comanda las tropas que derrotan a los realistas encabezados por José Tomás Boves. El más grande de los libertadores de América Simon Bolivar 1815, en Francia, el emperador Napoleón Bonaparte regresa a París desde la isla de Elba con un ejército de 140.000, y 200.000, voluntarios; comienzan los Cien Días.
+1823, en España, las Cortes españolas —sin esperar el avance de las tropas francesas— deciden su traslado y el del rey desde Madrid a Sevilla y Cádiz, con la esperanza de que la presencia francesa provoque un generalizado movimiento de resistencia, semejante al de 1808.
+1852, en EE. UU., Harriet Beecher Stowe publica La cabaña del tío Tom, que supuso un gran apoyo a la causa de la emancipación de los negros.
+1854, en la ciudad de Ripon (Wisconsin) se funda el Partido Republicano de Estados Unidos.
+1856, en la Hacienda Santa Rosa (Costa Rica), el presidente Juan Rafael Mora Porras reúne a un grupo de militares costarricenses y echa del país al delincuente estadounidense William Walker y sus filibusteros.
+1861, en la ciudad de Mendoza (Argentina) ocurre un terremoto que la destruye por completo.
+1865, en Madrid, Emilio Castelar es expedientado por la autoría del artículo «El rasgo», publicado en el periódico La Democracia.
+1873, la Asamblea Nacional republicana de España aprueba la abolición de la esclavitud en la isla de Puerto Rico.
+1888, en la antigua ciudadela de Barcelona, que ha sido convertida en un parque, la regente María Cristina inaugura la Exposición Universal.
+1899, Martha M. Place se convierte en la primera mujer en ser ajusticiada en la silla eléctrica.
+1906, la isla de Ustica, al norte de Palermo (Sicilia) es devastada por un terremoto y una erupción volcánica.
+1906, Segismundo Moret presenta su dimisión ante el rey en plena crisis del Gobierno español.
+1909, en Hamburgo se bota el crucero de guerra Von der Tann, que desplaza 17.000, t.
+1912, en el Salón Imperial de Sevilla debuta con gran éxito la bailarina española Pastora Imperio.
+1913, en el Galgenberg es descubierta una gran necrópolis con urnas de la Edad de Bronce.
+1915, en el observatorio de Barcelona, el astrónomo José Comas y Solá, descubre el asteroide 804, bautizado con el nombre de Hispania. Es el primer asteroide descubierto por científicos españoles.
+1915, en Francia —durante la Primera Guerra Mundial— los zepelines alemanes bombardean París.
+1918, Harlow Shapley calcula, utilizando la telemetría fotométrica, que el Sol se encuentra a una distancia de 50.000, años-luz del centro de nuestra galaxia (la Vía Láctea).
+1926, en Cantón (China), Chiang Kai-shek da un golpe de Estado, con lo que se inicia la represión contra los comunistas.
+1928, el gobernador civil de Barcelona prohíbe la entrada de jóvenes menores de 18, años en los salones de baile si no van acompañados por algún familiar.
+1931, consejo de guerra contra los dirigentes de la revuelta de Jaca (España). Una mujer, Victoria Kent, interviene por primera vez en un suceso de esta índole, como defensora de uno de los acusados.
+1932, el dirigible alemán Graf Zeppelin inaugura sus vuelos regulares a América del Sur.
+1933, en Florida (EE. UU.), el italiano Giuseppe Zangara es ejecutado en la silla eléctrica por asesinar a Anton Cermak en un intento de asesinato contra el presidente Franklin D. Roosevelt.
+1934, en Kiel (Alemania) tienen lugar las primeras pruebas con los aparatos de radar construidos por Rudolf Kunhold en 1933.
+1942, en el marco de la Segunda Guerra Mundial, en Zgierz (Polonia), 100, polacos son sacados de un campo de concentración y fusilados por los nazis alemanes.
+1942, en el marco del Holocausto, en la ciudad de Rohatyn (óblast de Ivano-Frankivsk, en el oeste de Ucrania), la SS alemana mata a 3000, judíos, incluidos 600, niños y niñas, aniquilando el 70% del ghetto de esa ciudad.
+1943, el Gobierno polaco en el exilio informa del asesinato de judíos mientras se desalojaban los guetos.
+1945, en el transcurso de la Segunda Guerra Mundial, la isla de Iwo Jima, defendida por japoneses, queda en poder de los estadounidenses tras un mes de lucha feroz, en el que murieron 20.000, soldados por cada bando.
+1946, el Senado de Puerto Rico aprueba un proyecto de ley que restablece el uso del español como lengua oficial.
+1948, en Estados Unidos, El limpiabotas (italófono) se convierte en el primer filme no anglófono ganador del Premio de la Academia.
+1952, la anulación de la ley de segregación racial por el Tribunal Supremo de Sudáfrica produce una grave crisis constitucional.
+1962, en Argentina el presidente Arturo Frondizi decreta la intervención federal de las provincias de Buenos Aires, Chaco, Río Negro, Santiago del Estero y Tucumán, en razón del triunfo en dichas jurisdicciones de partidarios del derrocado expresidente Juan Domingo Perón.
+1964, el Consejo de Ministros español acuerda, por decreto, declarar el 1 de abril fiesta nacional abonable y no recuperable.
+1966, en Inglaterra es robado el trofeo Jules Rimet (de la Copa Mundial de Fútbol) cuatro meses antes de su inicio, durante una exhibición pública en el Salón Central de Westminster. El trofeo fue encontrado sólo siete días después, envuelto en periódico al fondo del seto de un jardín suburbano en Upper Norwood (Londres), por un perro llamado Pickles.
+1969, en Inglaterra se casan el músico beatle John Lennon y la música japonesa Yoko Ono Cantautor y Beatle John Lennon 1974, fuera del Palacio de Buckingham (en Londres), un tal Ian Ball intenta infructuosamente de secuestrar a la princesa Anne y su marido, el capitán Mark Phillips.
+1977, en la India, la oposición gana las elecciones legislativas e Indira Gandhi dimite.
+1980, en México, la cúpula del grupo guerrillero argentino Montoneros se divide y funda «Montoneros-17, de octubre»: Eduardo Astiz, Gerardo Bavio, Sylvia Bermann, Miguel Bonasso, René Cháves, Jaime Dri, Ernesto Jauretche, Pedro Orgambide, Julio Rodríguez Anido, Susana Sanz y Daniel Vaca Narvaja. Denuncian que Montoneros tiene un «complejo clausewitziano», que cree que la lucha social es una guerra entre dos fuerzas militares convencionales.
+1987, la FDA (Food and Drug Administration: Administración de Medicamentos y Alimentos) aprueba la AZT (droga contra el sida).
+1988, el partido ultraderechista ARENA (Alianza Republicana Nacionalista), encabezado por Alfredo Cristiani, vence en las elecciones legislativas y municipales celebradas en El Salvador.
+1990, en Filipinas, la ex primera dama Imelda Marcos (viuda del dictador Ferdinand Marcos), es enjuiciada por los delitos de soborno y mal uso de los fondos del gobierno.
+1992, El piloto estadounidense Kenny Bernstein superó por primera vez las 300, mph (482,803, km/h) en la línea de meta de una carrera de arrancones de cuarto de milla en la fecha de Gainesville de la National Hot Rod Association.
+1993, en Rusia, el presidente Borís Yeltsin disuelve el Parlamento y asume poderes especiales, medidas declaradas inconstitucionales tres días después.
+1994, Zine el Abidine es reelegido presidente de Túnez. La Agrupación Constitucional Democrática gana las primeras elecciones parlamentarias celebradas en este país.
+1995, en Tokio (Japón), miembros de la secta religiosa Aum Shinrikyo liberan gas sarín en cinco estaciones de metro, matando a 13, personas e hiriendo 5510, (Atentado en el Metro de Tokio).
+1997, la Justicia española condena a Mario Conde, ex presidente de Banesto, a seis años de cárcel por apropiación indebida y falsedad de documento mercantil, en relación con el «caso Argentia Trust».
+2000, el programa europeo Levántate y anda, encaminado a devolver la movilidad a parapléjicos, presenta sus primeros resultados con una demostración pública en la que tres minusválidos, a los que se les había implantado un mecanismo de electroestimulación, ponen en movimiento sus miembros.
+2001, la mayor plataforma petrolera mundial, la P-36, brasileña, con una extensión equivalente a un campo de fútbol y una altura de 100, metros, se hunde frente a las costas de Río de Janeiro.
+2003, Una coalición de países, liderados por Estados Unidos, invade Irak y se de inicio a la Guerra de Irak, que durará hasta el año 2011.
+2004, centenares de miles de personas se manifiestan en las calles de las principales ciudades del mundo para rechazar la ocupación de Irak, al cumplirse un año del inicio de la guerra.
+2005, la ciudad de Fukuoka (Japón) es sacudida por un terremoto grado 6,6. Es su mayor sismo en un siglo. Muere una persona y cientos son heridos y evacuados.
+2006, en el este de Australia el huracán Larry toca tierra, destruyendo la mayor parte de la cosecha de banana del país.
+2007, el presidente de Ecuador, Rafael Correa, forma un Congreso Nacional a su medida, gracias a la legitimación de 21, diputados suplentes para desbancar a los opositores a la reforma constitucional.
+2007, Irak ahorca (en el aniversario de la invasión del país) al que fuera su vicepresidente, Taha Yasín Ramadán, que fue condenado a muerte por la misma matanza que Sadam Husein.
+2012, en México, un terremoto de 7.9 grados en la escala sismológica de Richter sacude a los estados de Guerrero, Michoacán, Oaxaca, Chiapas, Puebla, Tlaxcala, Hidalgo, Morelos, Veracruz, Estado de México y Ciudad de México, dejando diversos daños materiales y dos víctimas.
