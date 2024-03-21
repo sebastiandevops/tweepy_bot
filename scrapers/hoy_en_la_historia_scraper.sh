@@ -68,5 +68,8 @@ sed -i '' -E 's/^Acontecimiento //' "$dir"/hoy_en_la_historia.txt
 # Remove empty lines from data.txt
 sed -i '' '/^\s*$/d' "$dir"/hoy_en_la_historia.txt
 
+# removes commas following a number sequence and retains the first comma after the year at the start of each line
+sed -i '' -E 's/^([0-9]{1,4}),/\1|/; s/([0-9]{1,4}),/\1/g; s/\|/,/' "$dir"/hoy_en_la_historia.txt
+
 # Remove the temporary output* and datos* files
 rm -rf "$dir"/data.txt
