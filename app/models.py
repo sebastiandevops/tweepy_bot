@@ -4,9 +4,9 @@ from app.services import get_line, split_string
 from app.config import create_api
 
 from datetime import datetime
+
 # import locale
-from babel.dates import format_date
-from babel.numbers import format_decimal
+import locale
 
 
 class TweepyBot:
@@ -87,18 +87,19 @@ class TweepyBot:
             if self.date_format is None:
                 return None
             elif self.date_format == "esp":
+                # Set the locale to Spanish
+                locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
+
                 # Get the current date
                 current_date = datetime.now()
 
-                # Format the date components separately
-                day = format_decimal(current_date.day, format='##')
-                month = format_date(current_date, format='MMMM', locale='es')
-
-                # Format the date as "month day"
-                # Create the formatted date with "de" separator
-                formatted_date = f"{day} de {month}"
+                # Format the date as "day de month"
+                formatted_date = current_date.strftime("%d de %B")
 
             elif self.date_format == "eng":
+                # Set the locale to English
+                locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
+
                 # Get the current date
                 current_date = datetime.now()
 
