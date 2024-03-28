@@ -400,7 +400,6 @@ VIH/sida (1920-1981).
 1789 Los Estados generales de 1789.
 1789 La Asamblea Nacional.
 1789 La Asamblea Constituyente.
-1789 La revolución de Liejana.
 1789 La revolución de Brabante.
 1790 Se obtiene el primer acero fundido.
 1790 Se impone la mecánica newtoniana y la teoría de la gravitación universal. A finales de siglo, Lagrange propone la síntesis lagrangiana de las ecuaciones de Newton.
