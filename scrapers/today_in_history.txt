@@ -1,14 +1,17 @@
 cssText='z-index: 2147483647, !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;display: block !important;';i.
- 1831, Mysterious chess pieces go on display On this day in 1831, nearly 80 newly discovered chess pieces were exhibited at Edinburgh's Society of Antiquaries of Scotland.
- 2013, Maria Tallchief, whose exquisite technique made her one of the greatest ballerinas in the United States, died at age 88.
- 2007, Kurt Vonnegut, who is known for such wryly satirical novels as Slaughterhouse-Five (1969), died at age 84.
- 1979, Idi Amin, whose brutality as president of Uganda from 1971, to 1979, earned him the nickname “Butcher of Uganda,” fled the country as Tanzanian-led forces neared Kampala.
- 1970, Apollo 13 was launched from Cape Kennedy (now Cape Canaveral) in Florida.
- 1961, The trial of Nazi leader Adolf Eichmann began in Jerusalem; eight months later it ended with a death sentence.
- 1953, English mathematician Andrew John Wiles, deviser of a proof of Fermat's last theorem, was born in Cambridge.
- 1951, U.S. President Harry S. Truman relieved General Douglas MacArthur of his command of United Nations and U.S. forces during the Korean War, citing the general's insubordination and unwillingness to conduct a limited war.
- 1895, Poet, essayist, and revolutionary José Julián Martí landed in Cuba at the head of an invading force whose goal was to win independence from Spain.
- 1893, Dean Acheson—U.S. secretary of state from 1949, to 1953, adviser to four presidents, and the principal creator of U.S. foreign policy in the Cold War period following World War II—was born in Middletown, Connecticut.
- 1848, Emperor Ferdinand I of Austria confirmed the March Laws, which formed the foundation of the modern state of Hungary.
- 1815, The eruption of Mount Tambora, a volcano on the island of Sumbawa in what is now Indonesia, killed about 10,000 people and caused lasting harm around the world.
- 1814, Facing an invasion of France by forces bent on his overthrow, Napoleon abdicated unconditionally as emperor at Fontainebleau.
+ 2010, A volcano grounds Europe's air traffic After weeks of small earthquakes and lava flows that signaled an eruption was imminent, Eyjafjallajökull volcano in Iceland began sending a plume of ash into the skies on this day in 2010.
+ 2021, American hedge-fund investment manager Bernie Madoff, who operated the world's largest Ponzi scheme, died in federal prison at the age of 82.
+ 2014, Boko Haram, an Islamic sectarian movement that was declared a terrorist group in Nigeria in 2013, kidnapped more than 275 girls from a boarding school in Chibok, sparking worldwide condemnation.
+ 2004, Bartholomew I, ecumenical patriarch of the Eastern Orthodox Church, formally accepted the apology offered by Pope John Paul II in 2001, for the sacking of Constantinople (now Istanbul) by Crusader armies in the early 13th century.
+ 2003, Researchers announced the end of the Human Genome Project; over the course of 13 years, they had successfully determined, stored, and rendered publicly available the sequences of almost all the genetic content of the human genome.
+ 1986, U.S. warplanes bombed several sites in Libya, killing or wounding several of Muammar al-Qaddafi's children and narrowly missing Qaddafi himself.
+ 1952, Ralph Ellison's debut novel, Invisible Man, was published; a bildungsroman that tells the story of a naive and idealistic young Black man, it is widely regarded as a classic.
+ 1941, Pete Rose, who in 1985, broke Ty Cobb's record for the most career hits in Major League Baseball, was born in Cincinnati, Ohio.
+ 1939, John Steinbeck's classic novel The Grapes of Wrath—which was set during the Great Depression and traces the migration of an Oklahoma Dust Bowl family to California and their subsequent hardships as migrant farmworkers—was published.
+ 1924, Louis Sullivan, the father of modern American architecture, died in Chicago.
+ 1904, John Gielgud, an English actor, producer, and director considered one of the greatest performers of his generation on stage and screen, particularly as a Shakespearean actor, was born in London.
+ 1902, American businessman J.C. Penney opened his first dry-goods store, which was in Kemmerer, Wyoming.
+ 1866, Anne Sullivan Macy, Helen Keller's teacher, was born near Springfield, Massachusetts.
+ 1865, U.S. President Abraham Lincoln was shot by John Wilkes Booth while attending a play at Ford's Theatre in Washington, D.C. He died the next morning.
+ 1828, Noah Webster published An American Dictionary of the English Language; based on the principle that word usage should evolve from the spoken language, the work was hugely influential, though it was initially attacked for its “Americanism.
+ 1471, The deposed and exiled king of England, Edward IV, defeated King Henry VI's forces at the Battle of Barnet, near London, enabling him to retake the throne.
